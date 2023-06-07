@@ -24,10 +24,17 @@ const Home = () => {
 
       <Buildings />
     </Canvas>
-
-          <button onClick={() => setPosition([2, 1, 3])}>clikkkkkkkkkck</button>
-          <button onClick={() => setPosition([-2, 1, 1])}>punt c</button>
-
+    <div className='knops'>
+<div className='button1'>
+          <button onClick={() => setPosition([0, 0.5, 1])}>punt a</button>
+          </div>
+          <div className='button2'>      
+          <button onClick={() => setPosition([-0.5, 0.5, -0.5])}>punt b</button>
+          </div>
+          <div className='button3'>  
+          <button onClick={() => setPosition([-0.2, 1, -2])}>punt c</button>
+          </div>
+          </div>
 </>
   );
   

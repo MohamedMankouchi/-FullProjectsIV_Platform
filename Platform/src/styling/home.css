@@ -1,5 +1,12 @@
-button {
-    z-index: 5;
-    position: absolute; 
+.knops {
+    display: flex;
+    position: absolute;
+    z-index: 25;
+    gap: 10px;
     top: 0;
-}
+  }
+  
+  .buttons button {
+    flex: 1;
+  }
+  

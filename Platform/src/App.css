@@ -20,9 +20,6 @@ body {
 }
 
 .container {
-  border: 2px solid red;
-}
-.container {
   text-align: center;
 }
 
@@ -30,4 +27,8 @@ body {
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+
+.timer {
+  font-size: 60px;
 }

@@ -1,4 +1,6 @@
+import { useEffect } from "react";
 import "./App.css";
+import Countdown from "react-countdown";
 
 function App() {
   return (
@@ -6,6 +8,7 @@ function App() {
       <div className="container">
         <h1>COMING SOON..</h1>
         <p>FINAL SHOW 2023</p>
+        <Countdown date={new Date("2023-06-23T19:00:00").getTime()} />
       </div>
       <div className="media">
         <h1>Follow our socials for updates !</h1>

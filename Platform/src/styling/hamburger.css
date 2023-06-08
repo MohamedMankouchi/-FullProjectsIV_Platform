@@ -7,7 +7,6 @@
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   width: 100%;
   z-index: 99;
- 
 }
 .header ul {
   margin: 0;
@@ -124,11 +123,15 @@
   .mobile-header {
     display: none;
   }
+  .header {
+    box-shadow: none;
+  }
 
   .desk-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 25px;
   }
 
   .header .logo {
@@ -138,9 +141,22 @@
   .header ul {
     gap: 25px;
     margin-right: 20px;
+    padding: 14px 20px;
   }
 
   .header li a {
     padding: 0;
+  }
+
+  .list-nav {
+    background-image: url("./../images/border.svg");
+    background-size: cover;
+    border: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header .logo {
+    width: 350px;
   }
 }

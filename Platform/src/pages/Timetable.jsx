@@ -5,3 +5,4 @@ export const Timetable = () => {
     <div>Timetable</div>
   )
 }
+export default Timetable()

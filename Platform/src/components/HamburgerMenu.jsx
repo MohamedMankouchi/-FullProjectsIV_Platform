@@ -11,16 +11,19 @@ export const HamburgerMenu = () => {
       </label>
       <ul class="menu">
         <li>
-          <a href="#work">Our Work</a>
+          <a>HOME</a>
         </li>
         <li>
-          <a href="#about">About</a>
+          <a href="#about">LIVESTREAM</a>
         </li>
         <li>
-          <a href="#careers">Careers</a>
+          <a href="#careers">INFO</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#contact">TIMESCHEDULE</a>
+        </li>
+        <li>
+          <a href="#contact">SHOWCASE</a>
         </li>
       </ul>
     </header>

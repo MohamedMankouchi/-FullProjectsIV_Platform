@@ -40,7 +40,7 @@ const Home = () => {
           <button onClick={() => setPosition([-30,12, 0])}>Info</button>
         </div>
         <div className='button2'>
-          <button onClick={() => setPosition([0, 2, -20])}>Timetable</button>
+          <button onClick={() => setPosition([0, 2, -30])}>Timetable</button>
         </div>
         <div className='button3'>
           <button onClick={() => setPosition([30,15, 5])}>Live Show</button>

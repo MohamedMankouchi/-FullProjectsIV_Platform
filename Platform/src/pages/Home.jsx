@@ -23,10 +23,10 @@ const Home = () => {
           <button onClick={() => setPosition([0, 0.5, 1])}>punt a</button>
         </div>
         <div className='button2'>
-          <button onClick={() => setPosition([-0.5, 1, -0.5])}>punt b</button>
+          <button onClick={() => setPosition([-0.9, 0.5, 0])}>punt b</button>
         </div>
         <div className='button3'>
-          <button onClick={() => setPosition([-0.2, 0.5, -1.1])}>punt c</button>
+          <button onClick={() => setPosition([0, 0.4, -0.8])}>punt c</button>
         </div>
       </div>
     </>

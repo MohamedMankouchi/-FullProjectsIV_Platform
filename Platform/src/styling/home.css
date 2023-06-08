@@ -1,19 +1,33 @@
 .knops {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
     position:absolute;
     z-index: 0;
-    top: 30px;
-    left: 25%;
-   text-align: center;
-   top: 100px;
+    top: 40%;
   }
   
-  .knops button {
-    margin-left: 10px;
+.knops button {
+    margin-left: -10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
     flex: 1;
-    border: 1px solid none;
-    border-radius: 15px;
+    margin-bottom: 15px;
+    border: solid 1px;    
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.031);
+    font-size: 12pt;
+    font-weight: 900;
+    text-align: left;
+    width: 150px; 
   }
+
+.knops button:hover {
+  background-color: #ffffff90;
   
+
+
+
+}
+

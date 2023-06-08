@@ -12,7 +12,7 @@ import * as THREE from "three";
 import skyImg from "../assets/cubemap.png";
 
 const Home = () => {
-  const [position, setPosition] = useState([-8.6, -5, 55]);
+  const [position, setPosition] = useState([-8.6,0, 49]);
 
   return (
     <>
@@ -37,15 +37,15 @@ const Home = () => {
         <div className="button1">
           <button onClick={() => setPosition([-30, 12, 0])}>Info</button>
         </div>
-        <div className="button2">
-          <button onClick={() => setPosition([0, 2, -20])}>Timetable</button>
+        <div className='button2'>
+          <button onClick={() => setPosition([0, 2, -30])}>Timetable</button>
         </div>
         <div className="button3">
           <button onClick={() => setPosition([30, 15, 5])}>Live Show</button>
         </div>
 
-        <div className="button4">
-          <button onClick={() => setPosition([-30, 0, -2])}>Showroom</button>
+        <div className='button4'>
+          <button onClick={() => setPosition([15, 50, 15])}>Showroom</button>
         </div>
       </div>
     </>

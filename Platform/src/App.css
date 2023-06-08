@@ -26,10 +26,6 @@ body {
   margin-top: 50px;
 }
 
-.span {
-  font-size: 20px;
-}
-
 .container {
   text-align: center;
 }
@@ -38,7 +34,9 @@ body {
   display: flex;
   justify-content: center;
   gap: 20px;
+  margin-bottom: 25px;
 }
+
 @media (min-width: 320px) {
   .timer h1 {
     font-size: 35px;
@@ -48,6 +46,12 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  .timer {
+    display: flex;
+    gap: 25px;
+  }
+}
 @media (min-width: 1024px) {
   .timer h1 {
     font-size: 85px;

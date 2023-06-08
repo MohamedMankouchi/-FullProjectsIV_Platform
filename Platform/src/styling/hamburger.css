@@ -25,7 +25,9 @@
 .header .menu-btn:hover {
   background-color: #f4f4f4;
 }
-
+.span {
+  font-size: 20px;
+}
 .header .logo {
   display: block;
   float: left;

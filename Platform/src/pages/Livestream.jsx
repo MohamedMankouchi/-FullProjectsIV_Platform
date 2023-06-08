@@ -9,10 +9,7 @@ export const Livestream = () => {
       return <h1>You are good to gooo</h1>;
     } else {
       return (
-        <div
-          style={{ display: "flex", gap: "35px", justifyContent: "center" }}
-          className="timer"
-        >
+        <div className="timer">
           <div className="day">
             <h1>
               {days} <span className="span">Days</span>

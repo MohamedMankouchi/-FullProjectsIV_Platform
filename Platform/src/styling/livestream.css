@@ -9,22 +9,21 @@ body {
   background-image: url("../images/BACK.jpg");
   background-position: center;
   color: white;
+  height: 100% !important;
 }
 .headerLive {
   background-color: transparent;
   box-shadow: none;
 }
 
-@media (min-width: 768px) {
-  .outerwrapper {
-    height: 100%;
-  }
-}
 @media (min-width: 1024px) {
+
   .headerLive ul {
     background-color: transparent;
   }
-
+  .outerwrapper {
+    height: auto;
+  }
   .headerLive ul li a {
     color: white;
   }

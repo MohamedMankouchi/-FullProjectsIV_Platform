@@ -3,7 +3,6 @@ import "../App.css";
 import Countdown from "react-countdown";
 import { HamburgerMenu } from "../components/HamburgerMenu";
 import "../styling/livestream.css";
-import "../App.css";
 export const Livestream = () => {
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {

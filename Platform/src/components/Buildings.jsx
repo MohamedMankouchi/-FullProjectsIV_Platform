@@ -14,33 +14,55 @@ export function Buildings(props) {
   const { nodes, materials } = useGLTF('./models/Buildings-transformed.glb');
   
   return (
-    <group {...props} dispose={null}>
+      <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={0.3}>
         <group position={[0, 0, 0.99]} scale={[1, 1.48, 0.57]}>
           <mesh geometry={nodes.Cube_0.geometry} material={materials.Grey_Light}>
-                          <meshStandardMaterial color="grey" />
+            <meshStandardMaterial color="202, 207, 210" />
+          </mesh>
 
-        </mesh>
- 
-          <mesh geometry={nodes.Cube_1.geometry} material={materials.Grey_Dark} />
-          <mesh geometry={nodes.Cube_2.geometry} material={materials.Tan_Grey} />
-          <mesh geometry={nodes.Cube_3.geometry} material={materials.Glow} />
+          <mesh geometry={nodes.Cube_1.geometry} material={materials.Grey_Dark}>
+            <meshStandardMaterial color="#424949" />
+          </mesh>
+
+          <mesh geometry={nodes.Cube_2.geometry} material={materials.Tan_Grey}>
+            <meshStandardMaterial color="#D0D3D4" />
+          </mesh>
+
+          <mesh geometry={nodes.Cube_3.geometry} material={materials.Glow}>
+            <meshStandardMaterial color="white" />
+          </mesh>
         </group>
         <group position={[0, 0, 0.99]} scale={[1, 1.48, 0.57]}>
-          <mesh geometry={nodes.Cube001_0.geometry} material={materials.Grey_Light} />
-          <mesh geometry={nodes.Cube001_1.geometry} material={materials.Grey_Dark} />
+          <mesh geometry={nodes.Cube001_0.geometry} material={materials.Grey_Light}>
+            <meshStandardMaterial color="202, 207, 210" />
+          </mesh>
+
+          <mesh geometry={nodes.Cube001_1.geometry} material={materials.Grey_Dark}>
+            <meshStandardMaterial color="#424949" />
+          </mesh>
+
           <mesh geometry={nodes.Cube001_2.geometry} material={materials.Glow}>
-              <meshStandardMaterial color="orange" />
-        </mesh>
+            <meshStandardMaterial color="orange" />
+          </mesh>
         </group>
         <group position={[0, 0, 0.99]} scale={[1, 1.48, 0.57]}>
-          <mesh geometry={nodes.Cube002_0.geometry} material={materials.Grey_Dark} />
-          <mesh geometry={nodes.Cube002_1.geometry} material={materials.Yellow} />
+          <mesh geometry={nodes.Cube002_0.geometry} material={materials.Grey_Dark}>
+            <meshStandardMaterial color="#424949" />
+          </mesh>
+
+          <mesh geometry={nodes.Cube002_1.geometry} material={materials.Yellow}>
+            <meshStandardMaterial color="yellow" />
+          </mesh>
         </group>
-        <mesh geometry={nodes.Plane_0.geometry} material={materials.Ground_Tan} scale={[10.52, 10.52, 1.55]} >
-        <meshStandardMaterial color="orange" />
+
+        <mesh geometry={nodes.Plane_0.geometry} material={materials.Ground_Tan} scale={[10.52, 10.52, 1.55]}>
+          <meshStandardMaterial color="#784212" />
         </mesh>
-        <mesh geometry={nodes.Cube003_0.geometry} material={materials.Tan_Grey} position={[0, 0, 0.99]} scale={[1, 1.48, 0.57]} />
+
+        <mesh geometry={nodes.Cube003_0.geometry} material={materials.Tan_Grey} position={[0, 0, 0.99]} scale={[1, 1.48, 0.57]}>
+          <meshStandardMaterial color="#D0D3D4" />
+        </mesh>
       </group>
     </group>
   )

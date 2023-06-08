@@ -17,7 +17,11 @@ export function Buildings(props) {
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={0.3}>
         <group position={[0, 0, 0.99]} scale={[1, 1.48, 0.57]}>
-          <mesh geometry={nodes.Cube_0.geometry} material={materials.Grey_Light} />
+          <mesh geometry={nodes.Cube_0.geometry} material={materials.Grey_Light}>
+                          <meshStandardMaterial color="grey" />
+
+        </mesh>
+ 
           <mesh geometry={nodes.Cube_1.geometry} material={materials.Grey_Dark} />
           <mesh geometry={nodes.Cube_2.geometry} material={materials.Tan_Grey} />
           <mesh geometry={nodes.Cube_3.geometry} material={materials.Glow} />
@@ -25,144 +29,18 @@ export function Buildings(props) {
         <group position={[0, 0, 0.99]} scale={[1, 1.48, 0.57]}>
           <mesh geometry={nodes.Cube001_0.geometry} material={materials.Grey_Light} />
           <mesh geometry={nodes.Cube001_1.geometry} material={materials.Grey_Dark} />
-          <mesh geometry={nodes.Cube001_2.geometry} material={materials.Glow} />
+          <mesh geometry={nodes.Cube001_2.geometry} material={materials.Glow}>
+              <meshStandardMaterial color="orange" />
+        </mesh>
         </group>
         <group position={[0, 0, 0.99]} scale={[1, 1.48, 0.57]}>
           <mesh geometry={nodes.Cube002_0.geometry} material={materials.Grey_Dark} />
           <mesh geometry={nodes.Cube002_1.geometry} material={materials.Yellow} />
         </group>
-        <group position={[1.71, -1.05, 0.1]} scale={[1, 1.48, 0.57]}>
-          <mesh geometry={nodes.Cube004_0.geometry} material={materials.Grey_Light} />
-          <mesh geometry={nodes.Cube004_1.geometry} material={materials.Grey_Dark} />
-        </group>
-        <group position={[0, 26.02, 1.37]} scale={[2.19, 2.19, 1.03]}>
-          <mesh geometry={nodes.Cube005_0.geometry} material={materials.Grey_Light} />
-          <mesh geometry={nodes.Cube005_1.geometry} material={materials.Grey_Dark} />
-          <mesh geometry={nodes.Cube005_2.geometry} material={materials.Glow} />
-          <mesh geometry={nodes.Cube005_3.geometry} material={materials.Tan_Grey} />
-          <mesh geometry={nodes.Cube005_4.geometry} material={materials.Yellow} />
-          <mesh geometry={nodes.Cube005_5.geometry} material={materials.Black_Light} />
-        </group>
-        <group position={[2.24, 25.19, 0.97]} scale={[1, 1.48, 0.57]}>
-          <mesh geometry={nodes.Cube008_0.geometry} material={materials.Grey_Dark} />
-          <mesh geometry={nodes.Cube008_1.geometry} material={materials.Yellow} />
-        </group>
-        <group position={[4.17, 26.95, 0.25]} rotation={[0, 0, Math.PI / 2]} scale={[1, 1.48, 0.57]}>
-          <mesh geometry={nodes.Cube007_0.geometry} material={materials.Grey_Light} />
-          <mesh geometry={nodes.Cube007_1.geometry} material={materials.Grey_Dark} />
-          <mesh geometry={nodes.Cube007_2.geometry} material={materials.Glow} />
-        </group>
-        <group position={[0.55, 23.43, 0.52]} scale={[1, 1.48, 0.57]}>
-          <mesh geometry={nodes.Cube009_0.geometry} material={materials.Grey_Dark} />
-          <mesh geometry={nodes.Cube009_1.geometry} material={materials.Yellow} />
-        </group>
-        <group position={[0.73, 23.09, 0.23]} rotation={[0, 0, 0.42]} scale={[1, 1.48, 0.57]}>
-          <mesh geometry={nodes.Cube010_0.geometry} material={materials.Grey_Light} />
-          <mesh geometry={nodes.Cube010_1.geometry} material={materials.Grey_Dark} />
-        </group>
-        <group position={[-2.25, 31.61, 0.38]} rotation={[0, 0, -Math.PI]} scale={[1, 1.48, 0.57]}>
-          <mesh geometry={nodes.Cube011_0.geometry} material={materials.Grey_Dark} />
-          <mesh geometry={nodes.Cube011_1.geometry} material={materials.Yellow} />
-        </group>
-        <group position={[3.21, 27.51, 0.07]} rotation={[0, 0, 2.25]} scale={[1, 1.48, 0.57]}>
-          <mesh geometry={nodes.Cube012_0.geometry} material={materials.Grey_Light} />
-          <mesh geometry={nodes.Cube012_1.geometry} material={materials.Grey_Dark} />
-        </group>
-        <group position={[-4.73, 28.81, 1.06]} rotation={[0, 0, -2.42]} scale={[3.4, 3.4, 1.6]}>
-          <mesh geometry={nodes.Cube013_0.geometry} material={materials.Grey_Light} />
-          <mesh geometry={nodes.Cube013_1.geometry} material={materials.Grey_Dark} />
-        </group>
-        <group position={[-5.55, 24.58, 1.06]} rotation={[0, 0, -0.8]} scale={[3.4, 3.4, 1.6]}>
-          <mesh geometry={nodes.Cube014_0.geometry} material={materials.Grey_Light} />
-          <mesh geometry={nodes.Cube014_1.geometry} material={materials.Grey_Dark} />
-        </group>
-        <group position={[2.42, 27.43, 0.68]} rotation={[0, 0, -0.81]} scale={0.13}>
-          <mesh geometry={nodes.Cylinder001_0.geometry} material={materials.Grey_Light} />
-          <mesh geometry={nodes.Cylinder001_1.geometry} material={materials.Tan_Grey} />
-          <mesh geometry={nodes.Cylinder001_2.geometry} material={materials.Glow} />
-        </group>
-        <group position={[2.24, 25.19, 0.97]} scale={[1, 1.48, 0.57]}>
-          <mesh geometry={nodes.Cube015_0.geometry} material={materials.Grey_Dark} />
-          <mesh geometry={nodes.Cube015_1.geometry} material={materials.Yellow} />
-        </group>
-        <group position={[2.24, 25.19, 0.97]} scale={[1, 1.48, 0.57]}>
-          <mesh geometry={nodes.Cube016_0.geometry} material={materials.Grey_Dark} />
-          <mesh geometry={nodes.Cube016_1.geometry} material={materials.Yellow} />
-        </group>
-        <group position={[2.24, 25.19, 0.97]} scale={[1, 1.48, 0.57]}>
-          <mesh geometry={nodes.Cube017_0.geometry} material={materials.Grey_Dark} />
-          <mesh geometry={nodes.Cube017_1.geometry} material={materials.Yellow} />
-        </group>
-        <group position={[2.42, 27.43, 0.68]} rotation={[0, 0, -0.81]} scale={0.13}>
-          <mesh geometry={nodes.Cylinder000_0.geometry} material={materials.Grey_Light} />
-          <mesh geometry={nodes.Cylinder000_1.geometry} material={materials.Tan_Grey} />
-          <mesh geometry={nodes.Cylinder000_2.geometry} material={materials.Glow} />
-        </group>
-        <group position={[2.42, 27.43, 0.68]} rotation={[0, 0, -0.81]} scale={0.13}>
-          <mesh geometry={nodes.Cylinder002_0.geometry} material={materials.Grey_Light} />
-          <mesh geometry={nodes.Cylinder002_1.geometry} material={materials.Tan_Grey} />
-          <mesh geometry={nodes.Cylinder002_2.geometry} material={materials.Glow} />
-        </group>
-        <group position={[2.42, 27.43, 0.68]} rotation={[0, 0, -0.81]} scale={0.13}>
-          <mesh geometry={nodes.Cylinder003_0.geometry} material={materials.Grey_Light} />
-          <mesh geometry={nodes.Cylinder003_1.geometry} material={materials.Tan_Grey} />
-          <mesh geometry={nodes.Cylinder003_2.geometry} material={materials.Glow} />
-        </group>
-        <group position={[2.42, 27.43, 0.68]} rotation={[0, 0, -0.81]} scale={0.13}>
-          <mesh geometry={nodes.Cylinder004_0.geometry} material={materials.Grey_Light} />
-          <mesh geometry={nodes.Cylinder004_1.geometry} material={materials.Tan_Grey} />
-          <mesh geometry={nodes.Cylinder004_2.geometry} material={materials.Glow} />
-        </group>
-        <group position={[0, -30.37, 0.53]} scale={[3.2, 3.2, 0.06]}>
-          <mesh geometry={nodes.Cube018_0.geometry} material={materials.Grey_Light} />
-          <mesh geometry={nodes.Cube018_1.geometry} material={materials.Yellow} />
-          <mesh geometry={nodes.Cube018_2.geometry} material={materials.Grey_Dark} />
-        </group>
-        <group position={[1.3, -24.92, 0.28]} rotation={[0, 0, Math.PI / 2]} scale={[1, 1.48, 0.57]}>
-          <mesh geometry={nodes.Cube019_0.geometry} material={materials.Grey_Light} />
-          <mesh geometry={nodes.Cube019_1.geometry} material={materials.Grey_Dark} />
-          <mesh geometry={nodes.Cube019_2.geometry} material={materials.Glow} />
-        </group>
-        <group position={[-1.31, -24.92, 0.28]} rotation={[0, 0, Math.PI / 2]} scale={[1, 1.48, 0.57]}>
-          <mesh geometry={nodes.Cube020_0.geometry} material={materials.Grey_Light} />
-          <mesh geometry={nodes.Cube020_1.geometry} material={materials.Grey_Dark} />
-          <mesh geometry={nodes.Cube020_2.geometry} material={materials.Glow} />
-        </group>
-        <group position={[0.11, -25.48, 0.72]} rotation={[0, 0, -0.81]} scale={0.13}>
-          <mesh geometry={nodes.Cylinder005_0.geometry} material={materials.Grey_Light} />
-          <mesh geometry={nodes.Cylinder005_1.geometry} material={materials.Tan_Grey} />
-          <mesh geometry={nodes.Cylinder005_2.geometry} material={materials.Glow} />
-        </group>
-        <group position={[0.01, -25.84, 0.71]} rotation={[1.57, 0.79, -2.38]} scale={0.13}>
-          <mesh geometry={nodes.Cylinder006_0.geometry} material={materials.Grey_Light} />
-          <mesh geometry={nodes.Cylinder006_1.geometry} material={materials.Tan_Grey} />
-          <mesh geometry={nodes.Cylinder006_2.geometry} material={materials.Glow} />
-        </group>
-        <group position={[0.3, -25.68, 0.72]} rotation={[0, 0, 0.46]} scale={0.13}>
-          <mesh geometry={nodes.Cylinder007_0.geometry} material={materials.Grey_Light} />
-          <mesh geometry={nodes.Cylinder007_1.geometry} material={materials.Tan_Grey} />
-          <mesh geometry={nodes.Cylinder007_2.geometry} material={materials.Glow} />
-        </group>
-        <group position={[0.27, -25.53, 0.98]} rotation={[0, 0, 0.46]} scale={0.13}>
-          <mesh geometry={nodes.Cylinder008_0.geometry} material={materials.Grey_Light} />
-          <mesh geometry={nodes.Cylinder008_1.geometry} material={materials.Tan_Grey} />
-          <mesh geometry={nodes.Cylinder008_2.geometry} material={materials.Glow} />
-        </group>
-        <group position={[0.42, -25.45, 0.72]} scale={0.13}>
-          <mesh geometry={nodes.Cylinder009_0.geometry} material={materials.Grey_Light} />
-          <mesh geometry={nodes.Cylinder009_1.geometry} material={materials.Tan_Grey} />
-          <mesh geometry={nodes.Cylinder009_2.geometry} material={materials.Glow} />
-        </group>
-        <group position={[-0.26, -25.58, 0.75]} rotation={[0, 0, -0.53]} scale={[1, 1.48, 0.57]}>
-          <mesh geometry={nodes.Cube021_0.geometry} material={materials.Grey_Dark} />
-          <mesh geometry={nodes.Cube021_1.geometry} material={materials.Grey_Light} />
-          <mesh geometry={nodes.Cube021_2.geometry} material={materials.Glow} />
-        </group>
-        <mesh geometry={nodes.Plane_0.geometry} material={materials.Ground_Tan} scale={[4.52, 4.52, 1.55]} />
+        <mesh geometry={nodes.Plane_0.geometry} material={materials.Ground_Tan} scale={[10.52, 10.52, 1.55]} >
+        <meshStandardMaterial color="orange" />
+        </mesh>
         <mesh geometry={nodes.Cube003_0.geometry} material={materials.Tan_Grey} position={[0, 0, 0.99]} scale={[1, 1.48, 0.57]} />
-        <mesh geometry={nodes.Cube006_0.geometry} material={materials.Tan_Grey} position={[3.45, 26.9, 0.36]} rotation={[0, 0, Math.PI / 2]} scale={[1, 1.48, 0.57]} />
-        <mesh geometry={nodes.Plane003_0.geometry} material={materials.Ground_Tan} position={[-0.31, 28.77, 0.07]} scale={9.75} />
-        <mesh geometry={nodes.Plane004_0.geometry} material={materials.Ground_Tan} position={[-0.31, -27.5, 0.07]} scale={9.75} />
       </group>
     </group>
   )

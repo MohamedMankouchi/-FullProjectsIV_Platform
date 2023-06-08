@@ -38,7 +38,7 @@
 .header .menu {
   clear: both;
   max-height: 0;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.5s ease-out;
 }
 
 /* menu icon */
@@ -87,7 +87,7 @@
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 100vh;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {

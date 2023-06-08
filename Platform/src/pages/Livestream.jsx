@@ -14,20 +14,24 @@ export const Livestream = () => {
           className="timer"
         >
           <div className="day">
-            <h1>{days} </h1>
-            Days
+            <h1>
+              {days} <span className="span">Days</span>
+            </h1>
           </div>
           <div className="hour">
-            <h1>{hours} </h1>
-            Hours
+            <h1>
+              {hours} <span className="span">Hours</span>{" "}
+            </h1>
           </div>
           <div className="min">
-            <h1>{minutes} </h1>
-            Minutes
+            <h1>
+              {minutes} <span className="span">Minutes</span>{" "}
+            </h1>
           </div>
           <div className="sec">
-            <h1>{seconds}</h1>
-            Seconds
+            <h1>
+              {seconds} <span className="span">Seconds</span>
+            </h1>
           </div>
         </div>
       );
@@ -35,11 +39,13 @@ export const Livestream = () => {
   };
   return (
     <div>
-        <HamburgerMenu />
+      <HamburgerMenu />
       <div className="wrapper">
         <div className="container">
           <h1>The show begins in...</h1>
           <p>FINAL SHOW 2023</p>
+          <p>Be ready on Friday June 23th.</p>
+
           <Countdown
             renderer={renderer}
             date={new Date("2023-06-23T19:00:00").getTime()}

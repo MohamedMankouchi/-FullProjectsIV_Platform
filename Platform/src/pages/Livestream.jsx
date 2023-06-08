@@ -2,7 +2,8 @@ import React from "react";
 import "../App.css";
 import Countdown from "react-countdown";
 import { HamburgerMenu } from "../components/HamburgerMenu";
-
+import "../styling/livestream.css";
+import "../App.css";
 export const Livestream = () => {
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
@@ -35,8 +36,8 @@ export const Livestream = () => {
     }
   };
   return (
-    <div>
-      <HamburgerMenu />
+    <div className="outerwrapper">
+      <HamburgerMenu className={"headerLive"} />
       <div className="wrapper">
         <div className="container">
           <h1>The show begins in...</h1>

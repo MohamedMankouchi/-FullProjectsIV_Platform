@@ -2,12 +2,14 @@ import React from "react";
 import "../styling/home.css";
 import { Buildings } from "../components/Buildings";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+import { OrbitControls, Environment,Lightformer  } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useState } from "react";
 import { Sky } from "@react-three/drei";
 import {HamburgerMenu}  from "../components/HamburgerMenu";
 import { Scrapertest512 } from "../components/Scrapertest512";
+import * as THREE from "three";
+import skyImg from "../assets/cubemap.png"
 
 const Home = () => {
   const [position, setPosition] = useState([2, 1, 0]);
@@ -19,10 +21,18 @@ const Home = () => {
         <ambientLight intensity={1} />
         <CameraRig position={position} />
         <pointLight position={[10, 10, 10]} />
-        <Sky distance={1000} sunPosition={[0, 1, 0]} inclination={2} azimuth={5.25}  />
         <OrbitControls />
+        
+
 
         <Scrapertest512 />
+          <mesh>
+          <sphereGeometry args={[400, 60, 40]} />
+          <meshBasicMaterial
+            map={new THREE.TextureLoader().load(skyImg)}
+            side={THREE.BackSide}
+          />
+        </mesh>
       </Canvas>
       
       <div className='knops'>

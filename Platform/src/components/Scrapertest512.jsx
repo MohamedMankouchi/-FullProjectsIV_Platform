@@ -189,6 +189,7 @@ export function Scrapertest512(props) {
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardJ_3.geometry} material={materials.KB3D_CBP_SteelPanelWhiteD} />
         </group>
       </group>
+     
       <mesh geometry={nodes.StaticMeshActor_4_StaticMeshComponent0.geometry} material={materials.KB3D_CBD_SteelGalvanGray} position={[49.7, 535.6, 743.6]} rotation={[0, -Math.PI / 2, 0]} />
       <mesh geometry={nodes.StaticMeshActor_6_StaticMeshComponent0.geometry} material={materials.KB3D_CBP_SteelPanelWhiteD} position={[50.24, 511.28, 749.53]} rotation={[0, Math.PI / 2, 0]} scale={0.25} />
     </group>

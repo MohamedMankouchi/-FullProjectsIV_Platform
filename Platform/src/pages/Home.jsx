@@ -7,6 +7,7 @@ import { useFrame } from "@react-three/fiber";
 import { useState } from "react";
 import { Sky } from "@react-three/drei";
 import {HamburgerMenu}  from "../components/HamburgerMenu";
+import { Scrapertest512 } from "../components/Scrapertest512";
 
 const Home = () => {
   const [position, setPosition] = useState([2, 1, 0]);
@@ -14,7 +15,6 @@ const Home = () => {
   return (
     <>
 
-    <HamburgerMenu/>
       <Canvas>
         <ambientLight intensity={1} />
         <CameraRig position={position} />
@@ -22,7 +22,7 @@ const Home = () => {
         <Sky distance={1000} sunPosition={[0, 1, 0]} inclination={2} azimuth={5.25}  />
         <OrbitControls />
 
-        <Buildings />
+        <Scrapertest512 />
       </Canvas>
       
       <div className='knops'>
@@ -47,7 +47,7 @@ const Home = () => {
 
 function CameraRig({ position: [x, y, z] }) {
   useFrame((state) => {
-    state.camera.position.lerp({ x, y, z }, 0.03, "easeInOut");
+    //state.camera.position.lerp({ x, y, z }, 0.03, "easeInOut");
     state.camera.lookAt(0, 0, 0);
   });
 }

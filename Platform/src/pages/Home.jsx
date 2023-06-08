@@ -5,6 +5,8 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 import { useState } from 'react';
+import { Sky } from "@react-three/drei";
+
 
 
 const Home = () => {
@@ -13,13 +15,16 @@ const Home = () => {
   return (
     <>
     <Canvas>
+      
+<Sky distance={1000} sunPosition={[0, 1, 0]} inclination={2} azimuth={5.25}  />
+
             <ambientLight intensity={1} />
                     <CameraRig position={position} />
 
             <pointLight position={[10, 10, 10]} />
 
             <OrbitControls />
-          
+
         
 
       <Buildings />

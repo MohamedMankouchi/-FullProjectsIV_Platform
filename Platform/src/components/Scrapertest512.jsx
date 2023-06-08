@@ -10,7 +10,7 @@ export function Scrapertest512(props) {
   const { nodes, materials } = useGLTF('./models/Scrapertest512-transformed.glb')
   return (
     <group {...props} dispose={null}>
-      <group position={[0.7, -20.5, 0.6]}>
+      <group position={[0, -20, 0]}>
         <group position={[-0.6, 24.94, -7.4]} rotation={[-Math.PI, 0, Math.PI / 2]} scale={1.75}>
           <mesh geometry={nodes.KB3D_CBP_Billboard_O_Main.geometry} material={materials.KB3D_CBP_AtlasDGBannerA} />
           <mesh geometry={nodes.KB3D_CBP_Billboard_O_Main_1.geometry} material={materials.KB3D_CBP_SteelGalvanGray} />

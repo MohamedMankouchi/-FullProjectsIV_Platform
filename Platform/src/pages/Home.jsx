@@ -6,21 +6,25 @@ import { OrbitControls } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useState } from "react";
 import { Sky } from "@react-three/drei";
-import { HamburgerMenu } from "../components/HamburgerMenu";
+import {HamburgerMenu}  from "../components/HamburgerMenu";
 
 const Home = () => {
   const [position, setPosition] = useState([2, 1, 0]);
 
   return (
     <>
+
+    <HamburgerMenu/>
       <Canvas>
         <ambientLight intensity={1} />
         <CameraRig position={position} />
         <pointLight position={[10, 10, 10]} />
         <Sky distance={1000} sunPosition={[0, 1, 0]} inclination={2} azimuth={5.25}  />
         <OrbitControls />
+
         <Buildings />
       </Canvas>
+      
       <div className='knops'>
         <div className='button1'>
           <button onClick={() => setPosition([0, 0.5, 1])}>Info</button>
@@ -36,6 +40,7 @@ const Home = () => {
           <button onClick={() => setPosition([0, 1, 0])}>Showroom</button>
         </div>
       </div>
+      
     </>
   );
 };

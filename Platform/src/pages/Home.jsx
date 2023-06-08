@@ -12,7 +12,7 @@ import * as THREE from "three";
 import skyImg from "../assets/cubemap.png"
 
 const Home = () => {
-  const [position, setPosition] = useState([-8.6, -5, 55]);
+  const [position, setPosition] = useState([-8.6,0, 49]);
 
   return (
     <>

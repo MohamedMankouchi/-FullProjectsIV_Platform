@@ -1,11 +1,11 @@
 .knops {
-  display: flex;
+  display:row;
   flex-direction: row;
   justify-content: space-around;
     position:absolute;
     z-index: 0;
-    top: 30px;
-    left: 25%;
+    top: 40px;
+    left: 5%;
    text-align: center;
    top: 100px;
   }
@@ -15,5 +15,6 @@
     flex: 1;
     border: 1px solid none;
     border-radius: 15px;
+    top: 40px;
   }
   

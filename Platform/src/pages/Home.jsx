@@ -47,7 +47,7 @@ const Home = () => {
         </div>
 
         <div className='button4'>
-          <button onClick={() => setPosition([-15, 50, -15])}>Showroom</button>
+          <button onClick={() => setPosition([15, 50, 15])}>Showroom</button>
         </div>
       </div>
       

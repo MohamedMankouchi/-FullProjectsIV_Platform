@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import Countdown from "react-countdown";
+import { HamburgerMenu } from "../components/HamburgerMenu";
 
 export const Livestream = () => {
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
@@ -33,20 +34,23 @@ export const Livestream = () => {
     }
   };
   return (
-    <div className="wrapper">
-      <div className="container">
-        <h1>The show begins in...</h1>
-        <p>FINAL SHOW 2023</p>
-        <Countdown
-          renderer={renderer}
-          date={new Date("2023-06-23T19:00:00").getTime()}
-        />
-      </div>
-      <div className="media">
-        <h1>Find more on</h1>
-        <div className="media_buttons">
-          <button>Instagram</button>
-          <button>Showcase</button>
+    <div>
+        <HamburgerMenu />
+      <div className="wrapper">
+        <div className="container">
+          <h1>The show begins in...</h1>
+          <p>FINAL SHOW 2023</p>
+          <Countdown
+            renderer={renderer}
+            date={new Date("2023-06-23T19:00:00").getTime()}
+          />
+        </div>
+        <div className="media">
+          <h1>Find more on</h1>
+          <div className="media_buttons">
+            <button>Instagram</button>
+            <button>Showcase</button>
+          </div>
         </div>
       </div>
     </div>

@@ -1,12 +1,14 @@
 .knops {
-    display: flex;
+    display: table-row;
     position: absolute;
     z-index: 25;
-    gap: 10px;
-    top: 0;
+    top: 50px;
+    margin-left: 2%;
+    
   }
   
-  .buttons button {
+  .knops button {
     flex: 1;
+    margin-top: 20%;
   }
   

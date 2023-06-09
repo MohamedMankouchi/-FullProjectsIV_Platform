@@ -5,9 +5,14 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
-  font-family: pirulen, sans-serif;
 }
-
+@font-face {
+  font-family: MonoLisa;
+  src: url("./font/MonoLisa-Regular.ttf");
+}
+body {
+  font-family: "MonoLisa";
+}
 #root {
   width: 100%;
   height: 100%;
@@ -22,13 +27,6 @@ body {
 
 .container {
   text-align: center;
-}
-
-.media_buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 25px;
 }
 
 @media (min-width: 320px) {

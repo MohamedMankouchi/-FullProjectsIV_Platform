@@ -3,6 +3,8 @@ import "../App.css";
 import Countdown from "react-countdown";
 import { HamburgerMenu } from "../components/HamburgerMenu";
 import "../styling/livestream.css";
+import { Link } from "react-router-dom";
+import Instagram from "../images/instagram.svg";
 export const Livestream = () => {
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
@@ -48,8 +50,19 @@ export const Livestream = () => {
         <div className="media">
           <p>Be ready on Friday June 23th.</p>
           <div className="media_buttons">
-            <button>Instagram</button>
-            <button>Showcase</button>
+            <Link
+              to={
+                "https://www.eventbrite.com/e/tickets-final-show-2023-648852223467"
+              }
+              target="_blank"
+            >
+              {" "}
+              <button className="button-tickets">Get your tickets</button>
+            </Link>
+            <div className="instagram">
+              <p>Follow us on : </p>
+              <img src={Instagram} />
+            </div>
           </div>
         </div>
       </div>

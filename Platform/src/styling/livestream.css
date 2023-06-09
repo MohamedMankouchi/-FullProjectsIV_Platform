@@ -16,6 +16,33 @@ body {
   box-shadow: none;
 }
 
+.button-tickets {
+  font-family: "MonoLisa";
+  cursor: pointer;
+  margin-top: 25px;
+  font-size: 15px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  background-image: url("../images/button.svg");
+  background-position: center;
+  width: 250px;
+  height: 70px;
+}
+
+.media_buttons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  text-align: center;
+}
+
+.instagram {
+  /* display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center; */
+}
 @media (min-width: 1024px) {
   .headerLive ul {
     background-color: transparent;

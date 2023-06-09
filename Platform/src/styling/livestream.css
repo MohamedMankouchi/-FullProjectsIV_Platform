@@ -9,7 +9,7 @@ body {
   background-image: url("../images/BACK.jpg");
   background-position: center;
   color: white;
-  height: 100% !important;
+  min-height: 100% !important;
 }
 .headerLive {
   background-color: transparent;
@@ -17,7 +17,6 @@ body {
 }
 
 @media (min-width: 1024px) {
-
   .headerLive ul {
     background-color: transparent;
   }

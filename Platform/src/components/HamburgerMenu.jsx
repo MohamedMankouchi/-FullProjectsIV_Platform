@@ -4,12 +4,10 @@ import Logo from "../images/logo.png";
 import LogoWhite from "../images/logo-white.png";
 import LogoDesk from "../images/logo-desk.png";
 import LogoDeskWhite from "../images/logo-desk-white.png";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 export const HamburgerMenu = ({ className }) => {
-  console.log(className);
   const location = useLocation();
-  console.log(location.pathname);
 
   return (
     <header className={className == "headerLive" ? className : "header"}>
@@ -25,19 +23,19 @@ export const HamburgerMenu = ({ className }) => {
         </label>
         <ul className="menu">
           <li>
-            <a>HOME</a>
+            <Link to={"/home"}>HOME</Link>
           </li>
           <li>
-            <a href="#about">LIVESTREAM</a>
+            <Link to={"/livestream"}>LIVESTREAM</Link>
           </li>
           <li>
-            <a href="#careers">INFO</a>
+            <Link to="/info">INFO</Link>
           </li>
           <li>
-            <a href="#contact">TIMESCHEDULE</a>
+            <Link to="/schedule">TIMESCHEDULE</Link>
           </li>
           <li>
-            <a href="#contact">SHOWCASE</a>
+            <Link to="#contact">SHOWCASE</Link>
           </li>
         </ul>
       </div>

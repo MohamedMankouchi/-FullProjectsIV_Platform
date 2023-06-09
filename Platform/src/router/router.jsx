@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home";
 import App from "../App";
+import Info from "../pages/Info";
 import { Livestream } from "../pages/Livestream";
 
 const router = createBrowserRouter([
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/home",
     element: <Home />,
+  },
+  {
+    path: "/info",
+    element: <Info />,
   },
 ]);
 

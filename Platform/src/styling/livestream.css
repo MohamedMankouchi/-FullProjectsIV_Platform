@@ -4,6 +4,7 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
 }
 .outerwrapper {
   background-image: url("../images/BACK.jpg");
@@ -17,7 +18,6 @@ body {
 }
 
 @media (min-width: 1024px) {
-
   .headerLive ul {
     background-color: transparent;
   }

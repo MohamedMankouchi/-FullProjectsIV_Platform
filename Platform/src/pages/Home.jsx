@@ -1,23 +1,31 @@
-import React from "react";
+import React, { useRef, useState }  from "react";
 import "../styling/home.css";
 import { Buildings } from "../components/Buildings";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stars,Lightformer  } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
-import { useState } from "react";
 import { Sky } from "@react-three/drei";
 import {HamburgerMenu}  from "../components/HamburgerMenu";
 import { Scrapertest512 } from "../components/Scrapertest512";
 import * as THREE from "three";
 import skyImg from "../assets/skydome.jpg"
 
+
 const Home = () => {
   const [position, setPosition] = useState([-8.6, -5, 55]);
+
+    const mesh = useRef()
+  // Set up state for the hovered and active state
+  const [hovered, setHover] = useState(false)
+  const [active, setActive] = useState(false)
+
+
 
   return (
     <>
 <HamburgerMenu/>
       <Canvas>
+        <Sky sunPosition={[100, 20, 100]} />
         <ambientLight intensity={1} />
         <CameraRig position={position} />
         <pointLight color="blue" position={[10, 10, 10]} />
@@ -35,6 +43,18 @@ const Home = () => {
             side={THREE.BackSide}
           />
         </mesh>
+
+          <mesh
+      ref={mesh}
+      scale={active ? 1.5 : 20}
+      position={[5,5,5]}
+       onClick={() => setPosition([15, 50, 15])}
+      onPointerOver={(event) => setHover(true)}
+      onPointerOut={(event) => setHover(false)}>
+      <boxGeometry args={[1, 1, 1]} />
+      
+      <meshStandardMaterial color={hovered ? 'BLACK' : 'DARKGREY'} />
+    </mesh>
       </Canvas>
       
       <div className='knops'>
@@ -59,7 +79,7 @@ const Home = () => {
 
 function CameraRig({ position: [x, y, z] }) {
   useFrame((state) => {
-    //state.camera.position.lerp({ x, y, z }, 0.03, "easeInOut");
+    state.camera.position.lerp({ x, y, z }, 0.03, "easeInOut");
     state.camera.lookAt(0, 0, 0);
   });
 }

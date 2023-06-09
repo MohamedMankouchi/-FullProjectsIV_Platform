@@ -40,16 +40,13 @@ export const Livestream = () => {
       <div className="wrapper">
         <div className="container">
           <h1>The show begins in...</h1>
-          <p>FINAL SHOW 2023</p>
-          <p>Be ready on Friday June 23th.</p>
-
           <Countdown
             renderer={renderer}
             date={new Date("2023-06-23T19:00:00").getTime()}
           />
         </div>
         <div className="media">
-          <h1>Find more on</h1>
+          <p>Be ready on Friday June 23th.</p>
           <div className="media_buttons">
             <button>Instagram</button>
             <button>Showcase</button>

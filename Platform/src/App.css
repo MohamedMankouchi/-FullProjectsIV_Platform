@@ -33,9 +33,6 @@ body {
   .timer h1 {
     font-size: 35px;
   }
-  .container {
-    padding: 10px 15px;
-  }
 }
 
 @media (min-width: 768px) {

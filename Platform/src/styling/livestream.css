@@ -11,6 +11,10 @@ body {
   color: white;
   min-height: 100% !important;
 }
+
+.container h1 {
+  font-size: 25px;
+}
 .headerLive {
   background-color: transparent;
   box-shadow: none;
@@ -19,7 +23,6 @@ body {
 .button-tickets {
   font-family: "MonoLisa";
   cursor: pointer;
-  margin-top: 25px;
   font-size: 15px;
   border: none;
   background-color: transparent;
@@ -37,19 +40,25 @@ body {
   scale: 1.1;
 }
 
+.instagram_styling {
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.5s ease-in-out;
+}
+
+.instagram_styling:hover {
+  scale: 1.03;
+  background-image: url("../images/hover.svg");
+  transition: 0.5s ease-in-out;
+}
 .media_buttons {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   row-gap: 25px;
   text-align: center;
 }
 
-.instagram {
-  /* display: flex;
-  gap: 15px;
-  align-items: center;
-  justify-content: center; */
-}
 @media (min-width: 1024px) {
   .headerLive ul {
     background-color: transparent;

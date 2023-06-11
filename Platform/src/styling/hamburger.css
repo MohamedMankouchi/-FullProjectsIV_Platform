@@ -8,6 +8,9 @@
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   width: 100%;
   z-index: 99;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: normal;
 }
 .header ul,
 .headerLive ul {

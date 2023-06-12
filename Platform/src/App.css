@@ -15,12 +15,12 @@ body {
 }
 .loader {
   display: flex;
+  font-family: "MonoLisa" !important;
   flex-direction: column;
   gap: 20px;
 }
 .loader::after {
-  font-family: "MonoLisa";
-  content: "Shibuya loading";
+  content: "Loading...";
 }
 #root {
   width: 100%;

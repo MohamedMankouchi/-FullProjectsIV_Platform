@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-around;
   position: absolute;
+  background-color: white;
     z-index: 0;
     top: 40%;
   }

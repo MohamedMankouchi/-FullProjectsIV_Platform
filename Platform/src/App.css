@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Montserrat&family=Poppins:ital,wght@1,500&display=swap");
-
 html,
 body {
   padding: 0;
@@ -7,6 +6,7 @@ body {
   width: 100%;
   height: 100%;
 }
+
 @font-face {
   font-family: MonoLisa;
   src: url("./font/MonoLisa-Regular.ttf");

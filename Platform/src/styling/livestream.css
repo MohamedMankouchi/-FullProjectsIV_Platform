@@ -10,7 +10,7 @@ body {
   background-position: center;
   color: white;
   min-height: 100% !important;
-  font-family: "MonoLisa";
+  font-family: "monolisabook";
 }
 
 .container h1 {
@@ -22,7 +22,7 @@ body {
 }
 
 .button-tickets {
-  font-family: "MonoLisa";
+  font-family: "monolisabook";
   cursor: pointer;
   font-size: 15px;
   border: none;

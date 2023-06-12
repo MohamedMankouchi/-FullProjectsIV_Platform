@@ -13,9 +13,17 @@ body {
   font-family: Helvetica;
   src: url("./font/Helvetica.ttf");
 }
+
+@font-face {
+  font-family: "monolisabook";
+  src: url(".font/monolisa-regular-webfont.woff2") format("woff2"),
+    url("./font/monolisa-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 .loader {
   display: flex;
-  font-family: "MonoLisa" !important;
+  font-family: "monolisabook" !important;
   flex-direction: column;
   gap: 20px;
 }

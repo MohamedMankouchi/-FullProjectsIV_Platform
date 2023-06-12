@@ -10,7 +10,7 @@
 
 .infowrapper h1,
 .infowrapper h2 {
-  font-family: "Monolisa";
+  font-family: "monolisabook";
 }
 @media (max-width: 767px) {
   .info {

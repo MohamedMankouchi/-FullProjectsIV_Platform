@@ -18,11 +18,9 @@ export function Scrapertest512(props) {
       <group position={[0, -20, 0]}> 
 
 
-
-
         <group position={[-0.6, 24.94, -7.9]} rotation={[-Math.PI, 0,3.15]} scale={1.75}>
           <Html castShadow receiveShadow occlude="blending" transform>
-            <iframe title="embed" width={250} height={120} src="https://theqream.com/" />
+            <iframe title="embed" width={250} height={120} src="https://cdn.discordapp.com/attachments/983660197144854598/1117719543255662643/aliali2.gif" />
           </Html>
         </group>
         
@@ -98,7 +96,7 @@ export function Scrapertest512(props) {
      <group rotation={[0,-7.9,0]} position={[-7.87, 27.15, 2.41]}>
           
           <Html castShadow receiveShadow occlude="blending" transform>
-          <iframe title="embed" width={200} height={800} src="https://jesse-zhou.com/" />
+          <iframe title="embed" width={200} height={800} src="https://cdn.discordapp.com/attachments/983660197144854598/1117719543255662643/aliali2.gif" />
         </Html>
         </group>
 

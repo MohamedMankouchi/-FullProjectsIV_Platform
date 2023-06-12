@@ -11,13 +11,20 @@ import * as THREE from "three";
 import skyImg from "../assets/skydome.jpg";
 import { Loader } from "../components/Loader";
 
+
 const Home = () => {
   const [position, setPosition] = useState([-8.6, -5, 55]);
 
-  const mesh = useRef();
+    const mesh = useRef()
+        const mesh2 = useRef()
+
   // Set up state for the hovered and active state
-  const [hovered, setHover] = useState(false);
-  const [active, setActive] = useState(false);
+  const [hovered, setHover] = useState(false)
+  const [active, setActive] = useState(false)
+
+    const [hovered2, setHover2] = useState(false)
+  const [active2, setActive2] = useState(false)
+
 
   const [loader, setLoader] = useState(true);
 
@@ -60,24 +67,34 @@ const Home = () => {
             />
           </mesh>
 
-          <mesh
-            ref={mesh}
-            scale={active ? 1.5 : 20}
-            position={[5, 5, 5]}
-            onClick={() => setPosition([15, 50, 15])}
-            onPointerOver={(event) => setHover(true)}
-            onPointerOut={(event) => setHover(false)}
-          >
-            <boxGeometry args={[1, 1, 1]} />
+    <mesh
+      ref={mesh}
+      scale={active ? 1.5 : 10}
+      position={[-20,5,5]}
+       onClick={() => setPosition([15, 50, 15])}
+      onPointerOver={(event) => setHover(true)}
+      onPointerOut={(event) => setHover(false)}>
+      <boxGeometry args={[1, 1, 1]} />
+      <meshStandardMaterial color={hovered ? 'BLACK' : 'DARKGREY'} />
+    </mesh>
 
-            <meshStandardMaterial color={hovered ? "BLACK" : "DARKGREY"} />
-          </mesh>
-        </Canvas>
+
+   <mesh
+      ref={mesh2}
+      scale={active ? 1.5 : 10}
+      position={[-20,20,5]}
+       onClick={() => setPosition([-30,12, 0])}
+      onPointerOver={(event) => setHover2(true)}
+      onPointerOut={(event) => setHover2(false)}>
+      <boxGeometry args={[1, 1, 1]} />
+      <meshStandardMaterial color={hovered2 ? 'BLACK' : 'DARKGREY'} />
+    </mesh>
+      </Canvas>
       )}
-
-      <div className="knops">
-        <div className="button1">
-          <button onClick={() => setPosition([-30, 12, 0])}>Info</button>
+      
+      {/* <div className='knops'>
+        <div className='button1'>
+          <button onClick={() => setPosition([-30,12, 0])}>Info</button>
         </div>
         <div className="button2">
           <button onClick={() => setPosition([0, 2, -20])}>Timetable</button>
@@ -89,7 +106,7 @@ const Home = () => {
         <div className="button4">
           <button onClick={() => setPosition([15, 50, 15])}>Showroom</button>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

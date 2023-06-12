@@ -31,10 +31,11 @@ const Home = () => {
         <Loader />
       ) : (
         <Canvas>
-          <Html>
-                <ButtonComponent setPosition={setPosition} />
 
+          <Html position={[0, 0, 0]}  className="l">
+            <ButtonComponent setPosition={setPosition} />
           </Html>
+
           <ambientLight intensity={1} />
           <CameraRig position={position} />
           <pointLight color="blue" position={[10, 10, 10]} />

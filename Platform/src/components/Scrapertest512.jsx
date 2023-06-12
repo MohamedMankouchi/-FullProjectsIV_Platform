@@ -95,10 +95,10 @@ export function Scrapertest512(props) {
 
      <group rotation={[0,-7.9,0]} position={[-7.87, 27.15, 2.41]}>
           
-          <Html className='kk' castShadow receiveShadow occlude="blending" transform>
+        <Html className='kk' castShadow receiveShadow occlude="blending" transform>
           <iframe title="embed" width={200} height={800} src="https://cdn.discordapp.com/attachments/983660197144854598/1117719543255662643/aliali2.gif" />
         </Html>
-        </group>
+      </group>
 
         <group position={[-8.52, 27.15, 2.41]}>
         

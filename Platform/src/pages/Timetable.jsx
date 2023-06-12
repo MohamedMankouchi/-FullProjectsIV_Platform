@@ -9,7 +9,9 @@ export const Timetable = () => {
      <div className='timetable'>
           <HamburgerMenu/>
 
-   <h1>timetable</h1>
+   <div className='timetable2'>
+
+   </div>
    </div>
   )
 }

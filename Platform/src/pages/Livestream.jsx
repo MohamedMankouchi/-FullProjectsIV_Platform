@@ -61,7 +61,15 @@ export const Livestream = () => {
             </Link>
             <div className="instagram">
               <p>Follow us on : </p>
-              <img src={Instagram} />
+              <div className="instagram_container">
+                <Link
+                  to={"https://www.instagram.com/multimedia.ehb/"}
+                  target="_blank"
+                >
+                  {" "}
+                  <img className="instagram_styling" src={Instagram} />
+                </Link>
+              </div>
             </div>
           </div>
         </div>

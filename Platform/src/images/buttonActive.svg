@@ -6,7 +6,7 @@
   </defs>
   <g id="Component_1_1" data-name="Component 1 – 1">
     <g id="Group_617" data-name="Group 617" transform="translate(1.374 1.374)" clip-path="url(#clip-path)">
-      <path id="Path_1029" data-name="Path 1029" d="M328.931,77.539H56.494L35.56,59.793H.75V.75H280.374l20.933,23.094h27.624Z" transform="translate(0.623 0.624)" fill="transparent" stroke="#FFF" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_1029" data-name="Path 1029" d="M328.931,77.539H56.494L35.56,59.793H.75V.75H280.374l20.933,23.094h27.624Z" transform="translate(0.623 0.624)" fill="#A020F0" stroke="#A020F0" stroke-miterlimit="10" stroke-width="2"/>
     </g>
   </g>
 </svg>

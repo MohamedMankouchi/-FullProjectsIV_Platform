@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./../styling/hamburger.css";
 import Logo from "../images/logo.png";
 import LogoWhite from "../images/logo-white.png";
 import LogoDesk from "../images/logo-desk.png";
 import LogoDeskWhite from "../images/logo-desk-white.png";
-import { useLocation, Link } from "react-router-dom";
+import { useLocation, Link, NavLink } from "react-router-dom";
 
 export const HamburgerMenu = ({ className }) => {
   const location = useLocation();
-
+  const ref = useRef();
+  console.log(window.innerWidth);
   return (
     <header className={className == "headerLive" ? className : "header"}>
       <div className="mobile-header">
@@ -23,19 +24,45 @@ export const HamburgerMenu = ({ className }) => {
         </label>
         <ul className="menu">
           <li>
-            <Link to={"/home"}>HOME</Link>
+            <NavLink
+              ref={ref}
+              to={"/home"}
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              HOME
+            </NavLink>
           </li>
           <li>
-            <Link to={"/livestream"}>LIVESTREAM</Link>
+            <NavLink
+              className={({ isActive }) => (isActive ? "active" : "")}
+              to={"/livestream"}
+            >
+              LIVESTREAM
+            </NavLink>
           </li>
           <li>
-            <Link to="/info">INFO</Link>
+            <NavLink
+              className={({ isActive }) => (isActive ? "active" : "")}
+              to="/info"
+            >
+              INFO
+            </NavLink>
           </li>
           <li>
-            <Link to="/schedule">TIMESCHEDULE</Link>
+            <NavLink
+              className={({ isActive }) => (isActive ? "active" : "")}
+              to="/schedule"
+            >
+              TIMESCHEDULE
+            </NavLink>
           </li>
           <li>
-            <Link to="#contact">SHOWCASE</Link>
+            <NavLink
+              className={({ isActive }) => (isActive ? "active" : "")}
+              to="/showcase"
+            >
+              SHOWCASE
+            </NavLink>
           </li>
         </ul>
       </div>
@@ -47,19 +74,45 @@ export const HamburgerMenu = ({ className }) => {
         )}
         <ul className="list-nav">
           <li>
-            <a>HOME</a>
+            <NavLink
+              ref={ref}
+              to={"/home"}
+              className={({ isActive }) => (isActive ? "activeDesk" : "")}
+            >
+              HOME
+            </NavLink>
           </li>
           <li>
-            <a href="#about">LIVESTREAM</a>
+            <NavLink
+              className={({ isActive }) => (isActive ? "activeDesk" : "")}
+              to={"/livestream"}
+            >
+              LIVESTREAM
+            </NavLink>
           </li>
           <li>
-            <a href="#careers">INFO</a>
+            <NavLink
+              className={({ isActive }) => (isActive ? "activeDesk" : "")}
+              to="/info"
+            >
+              INFO
+            </NavLink>
           </li>
           <li>
-            <a href="#contact">TIMESCHEDULE</a>
+            <NavLink
+              className={({ isActive }) => (isActive ? "activeDesk" : "")}
+              to="/schedule"
+            >
+              TIMESCHEDULE
+            </NavLink>
           </li>
           <li>
-            <a href="#contact">SHOWCASE</a>
+            <NavLink
+              className={({ isActive }) => (isActive ? "activeDesk" : "")}
+              to="/showcase"
+            >
+              SHOWCASE
+            </NavLink>
           </li>
         </ul>
       </div>

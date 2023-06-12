@@ -6,10 +6,15 @@ body {
   height: 100%;
 }
 .outerwrapper {
-  background-image: url("../images/BACK.jpg");
+  background-image: url("../images/neon-city-buildings-4k-on-1920x1080.jpg");
   background-position: center;
   color: white;
   min-height: 100% !important;
+  font-family: "MonoLisa";
+}
+
+.container h1 {
+  font-size: 25px;
 }
 .headerLive {
   background-color: transparent;
@@ -19,7 +24,6 @@ body {
 .button-tickets {
   font-family: "MonoLisa";
   cursor: pointer;
-  margin-top: 25px;
   font-size: 15px;
   border: none;
   background-color: transparent;
@@ -28,21 +32,34 @@ body {
   background-position: center;
   width: 250px;
   height: 70px;
+  transition: 0.5s ease-in-out;
 }
 
+.button-tickets:hover {
+  background-image: url("../images/buttonHover.svg");
+  transition: 0.5s ease-in-out;
+  scale: 1.1;
+}
+
+.instagram_styling {
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.5s ease-in-out;
+}
+
+.instagram_styling:hover {
+  scale: 1.03;
+  background-image: url("../images/hover.svg");
+  transition: 0.5s ease-in-out;
+}
 .media_buttons {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   row-gap: 25px;
   text-align: center;
 }
 
-.instagram {
-  /* display: flex;
-  gap: 15px;
-  align-items: center;
-  justify-content: center; */
-}
 @media (min-width: 1024px) {
   .headerLive ul {
     background-color: transparent;
@@ -58,13 +75,6 @@ body {
     padding: 0;
     font-size: 12px;
     letter-spacing: 3px;
-  }
-  .headerLive ul {
-    margin-right: 20px;
-    height: 60px;
-    padding-left: 25px;
-    padding-right: 26px;
-    padding-top: 5px;
   }
 
   .headerLive .logo {

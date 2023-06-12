@@ -4,10 +4,14 @@
 }
 .header,
 .headerLive {
+  font-family: "MonoLisa";
   background-color: #fff;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   width: 100%;
   z-index: 99;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: normal;
 }
 .header ul,
 .headerLive ul {
@@ -16,17 +20,33 @@
   list-style: none;
   overflow: hidden;
   background-color: #232323;
+  display: none; /*REMOVE WHEN NAV IS DONE*/
+}
+
+.active {
+  background-image: url("../images/buttonActive.svg") !important;
+}
+
+.activeDesk {
+  background-image: url("../images/smallActive.svg") !important;
 }
 
 .headerLive ul {
-  display: none; /*REMOVE WHEN NAV IS DONE*/
+  display: none;
+  /*REMOVE WHEN NAV IS DONE*/
 }
-.header li a,
-.headerLive li a {
-  display: block;
-  padding: 20px 20px;
-  text-decoration: none;
+
+.headerLive a,
+.header a {
+  display: grid;
+  justify-content: center;
+  background-image: url("../images/button.svg");
+  height: 70px;
+  width: 250px;
+  align-items: center;
+  margin: 15px 20px;
   color: white;
+  text-decoration: none;
 }
 
 .span {
@@ -47,6 +67,8 @@
   clear: both;
   max-height: 0;
   transition: max-height 0.5s ease-out;
+  display: grid;
+  justify-content: flex-end;
 }
 
 /* menu icon */
@@ -59,7 +81,8 @@
   padding: 28px 20px;
   position: relative;
   user-select: none;
-  display: none; /*REMOVE WHEN NAV IS DONE*/
+  display: none;
+  /*REMOVE WHEN NAV IS DONE*/
 }
 
 .header .menu-icon .navicon,
@@ -123,7 +146,10 @@
 
 .header .menu-btn:checked ~ .menu,
 .headerLive .menu-btn:checked ~ .menu {
+  margin-top: 30px;
   max-height: 100vh;
+  display: grid;
+  justify-content: flex-end;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon,
@@ -151,6 +177,12 @@
 /* 48em = 768px */
 
 @media (min-width: 1024px) {
+  .headerLive a,
+  .header a {
+    background-image: url("../images/buttonsmall.svg");
+    width: 150px;
+    height: 40px;
+  }
   .header {
     box-shadow: none;
   }
@@ -163,32 +195,15 @@
 
   .desk-header {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding-top: 25px;
   }
 
-  .header li a {
-    padding: 0;
-    font-size: 12px;
-    letter-spacing: 3px;
-  }
-  .header ul {
-    display: none /*REMOVE WHEN NAV IS DONE*/;
-    margin-right: 20px;
-    height: 60px;
-    padding-left: 25px;
-    padding-right: 26px;
-    padding-top: 5px;
-  }
   .list-nav {
-    background-image: url("./../images/border.svg");
-    background-size: cover;
-    border: none;
     display: flex;
     align-items: center;
-    margin-right: 50px;
     gap: 25px;
-    background-color: #232323;
   }
 }

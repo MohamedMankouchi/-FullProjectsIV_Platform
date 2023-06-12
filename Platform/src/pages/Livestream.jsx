@@ -5,6 +5,7 @@ import { HamburgerMenu } from "../components/HamburgerMenu";
 import "../styling/livestream.css";
 import { Link } from "react-router-dom";
 import Instagram from "../images/instagram.svg";
+import { Video } from "../components/Video";
 export const Livestream = () => {
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
@@ -39,7 +40,8 @@ export const Livestream = () => {
   return (
     <div className="outerwrapper">
       <HamburgerMenu className={"headerLive"} />
-      <div className="wrapper">
+      <Video />
+      {/* <div className="wrapper">
         <div className="container">
           <h1>The show begins in...</h1>
           <Countdown
@@ -73,7 +75,7 @@ export const Livestream = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

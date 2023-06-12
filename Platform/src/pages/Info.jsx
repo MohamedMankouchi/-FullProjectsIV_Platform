@@ -31,7 +31,7 @@ export const Info = () => {
 </div>
 <div className='info4'>
 <h2>EXPO</h2>
-<p>Welkom bij de Final Show expositie! Hier vind je verschillende projecten van afstuderende studenten in alle vier categorieën: Web & App, Smart Technology, Motion en Extended Reality. Volg de wegwijzers richting de parking van campus Kaai.
+<p>Welkom bij de Final Show expositie! Hier vindt je verschillende projecten van afstuderende studenten in alle vier categorieën: Web & App, Smart Technology, Motion en Extended Reality. Volg de wegwijzers richting de parking van campus Kaai.
 
 Geraak je niet op de campus, maar wil je toch de eindwerken bekijken? Dan hebben we goed nieuws, want alle eindwerken zijn ook online te bekijken in onze showroom!</p>
 <h2>WANNEER?</h2>

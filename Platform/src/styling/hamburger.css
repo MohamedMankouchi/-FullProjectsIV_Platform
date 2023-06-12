@@ -30,6 +30,7 @@
 }
 
 .headerLive ul {
+  display: none;
   /*REMOVE WHEN NAV IS DONE*/
 }
 
@@ -52,7 +53,7 @@
 .header .logo,
 .headerLive .logo {
   display: block;
-  float: left;
+  /* float: left; */
   padding: 15px 20px;
   width: 55px;
 }
@@ -78,6 +79,7 @@
   padding: 28px 20px;
   position: relative;
   user-select: none;
+  display: none;
   /*REMOVE WHEN NAV IS DONE*/
 }
 

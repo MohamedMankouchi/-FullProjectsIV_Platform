@@ -11,13 +11,10 @@ import * as THREE from "three";
 import skyImg from "../assets/skydome.jpg";
 import { Loader } from "../components/Loader";
 
+
 const Home = () => {
   const [position, setPosition] = useState([-8.6, -5, 55]);
 
-  const mesh = useRef();
-  // Set up state for the hovered and active state
-  const [hovered, setHover] = useState(false);
-  const [active, setActive] = useState(false);
 
   const [loader, setLoader] = useState(true);
 
@@ -60,24 +57,12 @@ const Home = () => {
             />
           </mesh>
 
-          {/* <mesh
-            ref={mesh}
-            scale={active ? 1.5 : 20}
-            position={[5, 5, 5]}
-            onClick={() => setPosition([15, 50, 15])}
-            onPointerOver={(event) => setHover(true)}
-            onPointerOut={(event) => setHover(false)}
-          >
-            <boxGeometry args={[1, 1, 1]} />
-
-            <meshStandardMaterial color={hovered ? "BLACK" : "DARKGREY"} />
-          </mesh> */}
-        </Canvas>
+      </Canvas>
       )}
-
-      <div className="knops">
-        <div className="button1">
-          <button onClick={() => setPosition([-30, 12, 0])}>Info</button>
+      
+       <div className='knops'>
+        <div className='button1'>
+          <button onClick={() => setPosition([-30,12, 0])}>Info</button>
         </div>
         <div className="button2">
           <button onClick={() => setPosition([0, 2, -20])}>Timetable</button>
@@ -89,7 +74,7 @@ const Home = () => {
         <div className="button4">
           <button onClick={() => setPosition([15, 50, 15])}>Showroom</button>
         </div>
-      </div>
+      </div> 
     </>
   );
 };

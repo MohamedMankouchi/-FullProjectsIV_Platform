@@ -10,6 +10,7 @@ body {
   background-position: center;
   color: white;
   min-height: 100% !important;
+  font-family: "MonoLisa";
 }
 
 .container h1 {

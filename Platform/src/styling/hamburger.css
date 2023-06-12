@@ -4,6 +4,7 @@
 }
 .header,
 .headerLive {
+  font-family: "MonoLisa";
   background-color: #fff;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   width: 100%;
@@ -19,6 +20,7 @@
   list-style: none;
   overflow: hidden;
   background-color: #232323;
+  display: none; /*REMOVE WHEN NAV IS DONE*/
 }
 
 .active {

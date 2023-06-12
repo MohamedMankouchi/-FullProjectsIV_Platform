@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  position: absolute;
-    z-index: 0;
+  position: relative;
+    z-index: 20;
     top: 40%;
   }
   
@@ -21,14 +21,21 @@
     font-weight: 900;
     text-align: left;
     width: 150px; 
+    z-index: 30;
+    
   }
 
 .knops button:hover {
   background-color: #fc8a8a90;
 }
 
-.kk{
-  z-index: -5;
-}
+.kk {
+    position: absolute;
+  z-index: 0;
+  }
+
+  canvas{
+    z-index: -2;
+  }
 
 

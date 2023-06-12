@@ -60,7 +60,7 @@ const Home = () => {
             />
           </mesh>
 
-          <mesh
+          {/* <mesh
             ref={mesh}
             scale={active ? 1.5 : 20}
             position={[5, 5, 5]}
@@ -71,7 +71,7 @@ const Home = () => {
             <boxGeometry args={[1, 1, 1]} />
 
             <meshStandardMaterial color={hovered ? "BLACK" : "DARKGREY"} />
-          </mesh>
+          </mesh> */}
         </Canvas>
       )}
 

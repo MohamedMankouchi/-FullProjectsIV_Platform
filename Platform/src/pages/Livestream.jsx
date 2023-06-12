@@ -5,6 +5,7 @@ import { HamburgerMenu } from "../components/HamburgerMenu";
 import "../styling/livestream.css";
 import { Link } from "react-router-dom";
 import Instagram from "../images/instagram.svg";
+import Tiktok from "../images/icons8-tiktok.svg";
 import { Video } from "../components/Video";
 export const Livestream = () => {
   const [stream, setStream] = useState(false);
@@ -66,7 +67,7 @@ export const Livestream = () => {
                 <button className="button-tickets">Get your tickets</button>
               </Link>
               <div className="instagram">
-                <p>Follow us on : </p>
+                <p>Follow us on </p>
                 <div className="instagram_container">
                   <Link
                     to={"https://www.instagram.com/multimedia.ehb/"}
@@ -74,6 +75,14 @@ export const Livestream = () => {
                   >
                     {" "}
                     <img className="instagram_styling" src={Instagram} />
+                  </Link>
+
+                  <Link
+                    to={"https://www.tiktok.com/@multimedia.ehb"}
+                    target="_blank"
+                  >
+                    {" "}
+                    <img className="instagram_styling" src={Tiktok} />
                   </Link>
                 </div>
               </div>

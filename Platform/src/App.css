@@ -13,7 +13,15 @@ body {
   font-family: Helvetica;
   src: url("./font/Helvetica.ttf");
 }
-
+.loader {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.loader::after {
+  font-family: "MonoLisa";
+  content: "Shibuya loading";
+}
 #root {
   width: 100%;
   height: 100%;

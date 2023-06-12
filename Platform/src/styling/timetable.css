@@ -1,0 +1,11 @@
+
+.timetable {
+    background-image: url("../images/timetableback.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    font-family: "monolisabook";
+}
+

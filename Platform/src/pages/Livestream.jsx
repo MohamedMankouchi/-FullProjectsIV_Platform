@@ -40,8 +40,8 @@ export const Livestream = () => {
   return (
     <div className="outerwrapper">
       <HamburgerMenu className={"headerLive"} />
-      <Video />
-      {/* <div className="wrapper">
+      {/* <Video /> */}
+      <div className="wrapper">
         <div className="container">
           <h1>The show begins in...</h1>
           <Countdown
@@ -75,7 +75,7 @@ export const Livestream = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

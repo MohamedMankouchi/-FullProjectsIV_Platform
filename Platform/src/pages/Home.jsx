@@ -43,7 +43,7 @@ const Home = () => {
             side={THREE.BackSide}
           />
         </mesh>
-
+{/* 
           <mesh
       ref={mesh}
       scale={active ? 1.5 : 20}
@@ -54,7 +54,7 @@ const Home = () => {
       <boxGeometry args={[1, 1, 1]} />
       
       <meshStandardMaterial color={hovered ? 'BLACK' : 'DARKGREY'} />
-    </mesh>
+    </mesh> */}
       </Canvas>
       
       <div className='knops'>

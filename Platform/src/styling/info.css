@@ -3,74 +3,80 @@
 } */
 
 
+.infowrapper p,
+.infowrapper li  {
+  font-family: "Helvetica";
+}
+
+.infowrapper h1,
+.infowrapper h2 {
+  font-family: "Monolisa";
+}
 @media (max-width: 767px) {
-    .info {
-      text-align: left;
-      padding: 20px;
-    }
-    
-    .info2 {
-      text-align: center;
-      background-color: rgb(200, 180, 180);
-      padding: 20px;
-    }
-    .info2 p {
-      text-align: left;
-    }
-
-    .info2 .btekst {
-     text-align: center;
-    }
-
-
-    .info3 {
-      text-align: center;
-      padding: 20px;
-    }
-    
-    .info3 p{
-        text-align: left;
-    }
-
-    .info3 .btekst {
-        text-align: center;
-       }
-
-    .info4 {
-      text-align: center;
-      padding: 20px;
-    }
-    .any-questions {
-        text-align: center;
-        margin-top: 40px;
-        padding: 20px;
-      }
-      
-      .any-questions h2 {
-        font-size: 24px;
-        padding: 20px;
-      }
-      
-      .any-questions ul {
-        list-style: none;
-        padding: 20;
-        margin: 20px 0;
-        text-align: left;
-      }
-      
-      .any-questions li {
-        font-size: 18px;
-        margin-bottom: 10px;
-        padding: 20px;
-      }
-      
+  .info {
+    text-align: left;
+    padding: 20px;
   }
-  
+
   .info2 {
+    text-align: center;
     background-color: rgb(200, 180, 180);
+    padding: 20px;
+  }
+  .info2 p {
+    text-align: left;
+  }
+
+  .info2 .btekst {
+    text-align: center;
   }
 
   .info3 {
     text-align: center;
+    padding: 20px;
   }
 
+  .info3 p {
+    text-align: left;
+  }
+
+  .info3 .btekst {
+    text-align: center;
+  }
+
+  .info4 {
+    text-align: center;
+    padding: 20px;
+  }
+  .any-questions {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+  }
+
+  .any-questions h2 {
+    font-size: 24px;
+    padding: 20px;
+  }
+
+  .any-questions ul {
+    list-style: none;
+    padding: 20;
+    margin: 20px 0;
+    text-align: left;
+  }
+
+  .any-questions li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 20px;
+  }
+}
+
+.info2 {
+  background-color: rgb(200, 180, 180);
+}
+
+.info3 {
+  text-align: center;
+}

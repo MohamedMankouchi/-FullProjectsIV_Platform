@@ -106,7 +106,7 @@ body {
 .layers::before,
 .layers::after {
   content: attr(data-text);
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;

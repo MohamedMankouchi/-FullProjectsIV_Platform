@@ -9,31 +9,81 @@
     
 }
 
-.timetable2{
+.timetable-cover{
     background-image: url("../images/Group 781.svg");
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
-    min-height: 100% !important;
-    
+    border: 2px solid red;  
+    height: 272.28px;
+}
+
+
+
+.timetable-info{
+    position: relative;
+    top: 30%;
+    left: 10%;
+        border: 2px solid red;
+    height: 150px;
+    width: 120px;
+    overflow-y: scroll;
+}
+
+@media (min-width: 450px) {
+    .timetable-info {
+        left: 13%;
+    }
+}
+
+@media (min-width: 500px) {
+    .timetable-info {
+        left: 20%;
+    }
+}
+
+@media (min-width: 600px) {
+    .timetable-info {
+        left: 23%;
+    }
+}
+
+@media (min-width: 650px) {
+    .timetable-info {
+        left: 26%;
+    }
+}   
+
+@media (min-width: 700px) {
+    .timetable-info {
+        left: 29%;
+    }
 }
 
 @media (min-width: 800px) {
 
-    .timetable2 {
-            background-image: url("../images/Group 780.svg");    
+    .timetable-cover {
+            background-image: url("../images/Group 780.svg");   
+                        height: 600.28px;
         }
-                .timetable {
-                    background-image: url("../images/ipad-bg.png");
-        
-        
-                }
+    .timetable {
+        background-image: url("../images/ipad-bg.png");   
+    }
+
+        .timetable-info {
+            position: relative;
+            top: 30%;
+            left: 18%;
+            border: 2px solid red;
+            height: 320px;
+            width: 300px;
+            overflow-y: scroll;
+        }
 
 }
 
 @media (min-width: 1400px) {
-
-    .timetable2 {
+    .timetable-cover {
         background-image: url("../images/Group 780.svg");
     }
 

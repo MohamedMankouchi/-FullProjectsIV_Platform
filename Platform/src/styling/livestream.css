@@ -103,20 +103,14 @@ body {
   filter: drop-shadow(0 1px 3px);
 }
 
-.day,
-.hour,
-.min,
-.sec {
+.timer {
   max-width: 100%;
 }
 
 .layers::before,
 .layers::after {
   content: attr(data-text);
-  position: relative;
-  left: 0;
-  right: 0;
-  top: 0;
+  position: absolute;
   width: 110%;
   z-index: -1;
 }

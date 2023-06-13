@@ -95,6 +95,7 @@ body {
 
 .glitch_title {
   line-height: 1;
+  display: inline-block;
   color: #fff;
   z-index: 2;
   letter-spacing: 2px;

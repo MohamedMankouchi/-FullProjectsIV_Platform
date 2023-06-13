@@ -52,7 +52,7 @@ const Home = () => {
 
           <pointLight color="purple" position={[-10, 0, 10]} intensity={1.5} />
 
-          <Scrapertest512 />
+          <Scrapertest512 />  
           <mesh>
             <sphereGeometry args={[400, 60, 40]} />
             <meshBasicMaterial

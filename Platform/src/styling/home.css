@@ -1,5 +1,25 @@
 
+.buttonshowcase2{
+  font-family: "monolisabook";
+cursor: pointer;
+font-size: 15px;
+border: none;
+background-color: transparent;
+color: white;
+background-image: url("../images/button.svg");
+background-position: center;
+width: 250px;
+height: 70px;
+transition: 0.5s ease-in-out;
+scale: 0.7;
 
+}
+.buttonshowcase2:hover {
+  background-image: url("../images/buttonHover.svg");
+  transition: 0.5s ease-in-out;
+  scale: 0.7;
+  width: 250px;
+}
 .button1 {
   font-family: "monolisabook";
   cursor: pointer;

@@ -7,11 +7,16 @@ import poster1 from '../images/poster1.png'
 
 export const Timetable = () => {
   return (
+    
      <div className='timetable'>
           <HamburgerMenu/>
 
    <div className='timetable-cover'>
+    <div className='tb-poster'>
+      <img src={poster1} alt="" />
+    </div>
 <div className='timetable-info'>
+
 
   <h3>Vrijdag 23 juni</h3>
   <p>17:00 Opening deuren </p>

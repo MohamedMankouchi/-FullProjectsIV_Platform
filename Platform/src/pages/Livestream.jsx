@@ -10,34 +10,30 @@ import { Video } from "../components/Video";
 export const Livestream = () => {
   const [stream, setStream] = useState(false);
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
-    if (completed) {
-      setStream(true);
-    } else {
-      return (
-        <div className="timer">
-          <div className="day">
-            <h1>
-              {days} <span className="span">Days</span>
-            </h1>
-          </div>
-          <div className="hour">
-            <h1>
-              {hours} <span className="span">Hours</span>{" "}
-            </h1>
-          </div>
-          <div className="min">
-            <h1>
-              {minutes} <span className="span">Minutes</span>{" "}
-            </h1>
-          </div>
-          <div className="sec">
-            <h1>
-              {seconds} <span className="span">Seconds</span>
-            </h1>
-          </div>
+    return (
+      <div className="timer">
+        <div className="day">
+          <h1>
+            {days} <span className="span">Days</span>
+          </h1>
         </div>
-      );
-    }
+        <div className="hour">
+          <h1>
+            {hours} <span className="span">Hours</span>{" "}
+          </h1>
+        </div>
+        <div className="min">
+          <h1>
+            {minutes} <span className="span">Minutes</span>{" "}
+          </h1>
+        </div>
+        <div className="sec">
+          <h1>
+            {seconds} <span className="span">Seconds</span>
+          </h1>
+        </div>
+      </div>
+    );
   };
   return (
     <div className="outerwrapper">
@@ -52,6 +48,7 @@ export const Livestream = () => {
             <Countdown
               renderer={renderer}
               date={new Date("2023-06-23T19:00:00").getTime()}
+              onComplete={() => setStream(true)}
             />
           </div>
           <div className="media">

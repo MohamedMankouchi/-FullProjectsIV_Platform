@@ -13,22 +13,31 @@ export const Livestream = () => {
     return (
       <div className="timer">
         <div className="day">
-          <h1>
+          <h1 className="glitch_title glitch layers" data-text={`${days}Days`}>
             {days} <span className="span">Days</span>
           </h1>
         </div>
         <div className="hour">
-          <h1>
+          <h1
+            className="glitch_title glitch layers"
+            data-text={`${hours}Hours`}
+          >
             {hours} <span className="span">Hours</span>{" "}
           </h1>
         </div>
         <div className="min">
-          <h1>
+          <h1
+            className="glitch_title glitch layers"
+            data-text={`${minutes}Minutes`}
+          >
             {minutes} <span className="span">Minutes</span>{" "}
           </h1>
         </div>
         <div className="sec">
-          <h1>
+          <h1
+            className="glitch_title glitch layers"
+            data-text={`${seconds}Seconds`}
+          >
             {seconds} <span className="span">Seconds</span>
           </h1>
         </div>

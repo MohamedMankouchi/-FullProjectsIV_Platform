@@ -9,6 +9,7 @@ import skyImg from "../assets/skydome.jpg";
 import { Loader } from "../components/Loader";
 import ButtonComponent from "../components/ButtonComponent";
 import { Html } from "@react-three/drei"; 
+import Mobilenav from "../components/MobileBtnComp";
 
 
 
@@ -36,6 +37,11 @@ const Home = () => {
             <ButtonComponent setPosition={setPosition} />
           </Html>
 
+          
+          <Html position={[0, 0, 0]}  className="l">
+            <Mobilenav setPosition={setPosition} />
+          </Html>
+
           <ambientLight intensity={1} />
           <CameraRig position={position} />
           <pointLight color="blue" position={[10, 10, 10]} />
@@ -52,7 +58,6 @@ const Home = () => {
 
           <pointLight color="purple" position={[-10, 0, 10]} intensity={1.5} />
 
-          <Scrapertest512 />  
           <mesh>
             <sphereGeometry args={[400, 60, 40]} />
             <meshBasicMaterial

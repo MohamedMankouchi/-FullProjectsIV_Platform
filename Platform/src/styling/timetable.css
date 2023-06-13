@@ -6,83 +6,72 @@
     height: 100vh;
     color: white;
     font-family: "monolisabook";
-    
 }
 
 .timetable-cover{
-    background-image: url("../images/Group 781.svg");
+    background-image: url("../images/Group 784.svg");
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
-    border: 2px solid red;  
-    height: 272.28px;
+    /* border: 2px solid rgb(255, 0, 0);    */
+    height: 602.28px;
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.timetable p{
+    color: rgb(255, 138, 255);
+}
 
 
 .timetable-info{
     position: relative;
-    top: 30%;
-    left: 10%;
-        border: 2px solid red;
-    height: 150px;
-    width: 120px;
+    /* border: 2px solid red;  */
+    height: 400px;
+    width: 200px;
     overflow-y: scroll;
+
 }
 
-@media (min-width: 450px) {
-    .timetable-info {
-        left: 13%;
-    }
+span.time {
+    color: white;
 }
 
-@media (min-width: 500px) {
-    .timetable-info {
-        left: 20%;
-    }
-}
-
-@media (min-width: 600px) {
-    .timetable-info {
-        left: 23%;
-    }
-}
-
-@media (min-width: 650px) {
-    .timetable-info {
-        left: 26%;
-    }
-}   
-
-@media (min-width: 700px) {
-    .timetable-info {
-        left: 29%;
-    }
+.tb-poster{
+    display: none;
 }
 
 @media (min-width: 800px) {
 
     .timetable-cover {
             background-image: url("../images/Group 780.svg");   
-                        height: 600.28px;
+            height: 600.28px;
         }
     .timetable {
         background-image: url("../images/ipad-bg.png");   
     }
 
         .timetable-info {
-            position: relative;
-            top: 30%;
-            left: 18%;
-            border: 2px solid red;
+
+            margin-top: 6%;
+            /* border: 2px solid red; */
             height: 320px;
-            width: 300px;
+            width: 600px;
             overflow-y: scroll;
         }
 
+
+
 }
 
-@media (min-width: 1400px) {
+
+
+@media (min-width: 1100px) {
     .timetable-cover {
         background-image: url("../images/Group 780.svg");
     }
@@ -90,7 +79,15 @@
     .timetable {
         background-image: url("../images/BG-DEKSTOP.png");
 
-
     }
 
+          .timetable-info {
+          }
+
+
+}
+
+@media (min-width: 1600px) {
+    .timetable-info {
+    }
 }

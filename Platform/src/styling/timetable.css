@@ -29,14 +29,22 @@
 }
 
 
-.timetable-info{
-    position: relative;
-    /* border: 2px solid red;  */
-    height: 400px;
-    width: 200px;
-    overflow-y: scroll;
+.timetable-info::-webkit-scrollbar {
+   
+    border-radius: 20px;
+    border: 2px solid white;
 
 }
+.timetable-info::-webkit-scrollbar-thumb {
+   background-color: white;
+   padding: 5px;
+    border-radius: 20px;
+    border: 2px solid white;
+    width: 2px;
+    
+}
+
+
 
 span.time {
     color: white;

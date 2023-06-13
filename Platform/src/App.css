@@ -27,6 +27,7 @@ body {
   font-family: "monolisabook" !important;
   flex-direction: column;
   gap: 20px;
+  
 }
 .loader::after {
   content: "Loading...";

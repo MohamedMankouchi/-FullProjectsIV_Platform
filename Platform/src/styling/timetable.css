@@ -1,101 +1,81 @@
 .timetable {
-    background-image: url("../images/ipad-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    color: white;
-    font-family: "monolisabook";
+  background-image: url("../images/ipad-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: white;
+  font-family: "monolisabook";
 }
 
-.timetable-cover{
-    background-image: url("../images/Group 784.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: cover;
-    /* border: 2px solid rgb(255, 0, 0);    */
-    height: 602.28px;
-    position:relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.timetable-cover {
+  background-image: url("../images/Group 784.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  /* border: 2px solid rgb(255, 0, 0);    */
+  height: 602.28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.timetable p{
-    color: rgb(255, 138, 255);
+.timetable p {
+  color: rgb(255, 138, 255);
 }
-
 
 .timetable-info::-webkit-scrollbar {
-   
-    border-radius: 20px;
-    border: 2px solid white;
-
+  border-radius: 20px;
+  border: 2px solid white;
 }
 .timetable-info::-webkit-scrollbar-thumb {
-   background-color: white;
-   padding: 5px;
-    border-radius: 20px;
-    border: 2px solid white;
-    width: 2px;
-    
+  background-color: white;
+  padding: 5px;
+  border-radius: 20px;
+  border: 2px solid white;
+  width: 2px;
 }
-
-
 
 span.time {
-    color: white;
+  color: white;
 }
 
-.tb-poster{
-    display: none;
+.tb-poster {
+  display: none;
 }
 
 @media (min-width: 800px) {
+  .timetable-cover {
+    background-image: url("../images/Group 780.svg");
+    height: 600.28px;
+  }
+  .timetable {
+    background-image: url("../images/ipad-bg.png");
+  }
 
-    .timetable-cover {
-            background-image: url("../images/Group 780.svg");   
-            height: 600.28px;
-        }
-    .timetable {
-        background-image: url("../images/ipad-bg.png");   
-    }
-
-        .timetable-info {
-
-            margin-top: 6%;
-            /* border: 2px solid red; */
-            height: 320px;
-            width: 600px;
-            overflow-y: scroll;
-        }
-
-
-
+  .timetable-info {
+    margin-top: 6%;
+    /* border: 2px solid red; */
+    height: 320px;
+    width: 600px;
+    overflow-y: scroll;
+  }
 }
 
-
-
 @media (min-width: 1100px) {
-    .timetable-cover {
-        background-image: url("../images/Group 780.svg");
-    }
+  .timetable-cover {
+    background-image: url("../images/Group 780.svg");
+  }
 
-    .timetable {
-        background-image: url("../images/BG-DEKSTOP.png");
+  .timetable {
+    background-image: url("../images/BG-DEKSTOP.png");
+  }
 
-    }
-
-          .timetable-info {
-          }
-
-
+  .timetable-info {
+  }
 }
 
 @media (min-width: 1600px) {
-    .timetable-info {
-    }
+  .timetable-info {
+  }
 }

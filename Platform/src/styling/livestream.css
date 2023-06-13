@@ -6,7 +6,7 @@ body {
   height: 100%;
 }
 .outerwrapper {
-  background-image: url("../images/neon-city-buildings-4k-on-1920x1080.jpg");
+  background-image: url("../images/timetableback.png");
   background-position: center;
   color: white;
   min-height: 100% !important;
@@ -81,5 +81,13 @@ body {
 
   .headerLive .logo {
     width: 300px;
+  }
+
+  .container h1 {
+    font-size: 38px;
+  }
+
+  .container p {
+    font-size: 18px;
   }
 }

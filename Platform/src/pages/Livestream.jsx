@@ -70,7 +70,6 @@ export const Livestream = () => {
                     to={"https://www.instagram.com/multimedia.ehb/"}
                     target="_blank"
                   >
-                    {" "}
                     <img className="instagram_styling" src={Instagram} />
                   </Link>
 
@@ -78,7 +77,6 @@ export const Livestream = () => {
                     to={"https://www.tiktok.com/@multimedia.ehb"}
                     target="_blank"
                   >
-                    {" "}
                     <img className="instagram_styling" src={Tiktok} />
                   </Link>
                 </div>

@@ -102,9 +102,19 @@ body {
   /* Bright things in dark environments usually cast that light, giving off a glow */
   filter: drop-shadow(0 1px 3px);
 }
+.day,
+.hour,
+.min,
+.sec {
+  position: relative;
+  max-width: 100%;
+  min-height: 100%;
+  border: 2px solid red;
+}
 
 .timer {
   max-width: 100%;
+  position: relative;
 }
 
 .layers::before,

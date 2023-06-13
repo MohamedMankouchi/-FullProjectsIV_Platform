@@ -101,7 +101,7 @@ export const HamburgerMenu = ({ className }) => {
           <li>
             <NavLink
               className={({ isActive }) => (isActive ? "activeDesk" : "")}
-              to="/schedule"
+              to="/timetable"
             >
               TIMESCHEDULE
             </NavLink>

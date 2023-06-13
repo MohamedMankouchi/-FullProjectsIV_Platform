@@ -3,6 +3,10 @@ import Home from "../pages/Home";
 import App from "../App";
 import Info from "../pages/Info";
 import { Livestream } from "../pages/Livestream";
+import {Timetable}  from "../pages/Timetable";
+import BillboardShowroom  from "../components/BillboardShowroom";
+
+
 
 const router = createBrowserRouter([
   {
@@ -20,6 +24,14 @@ const router = createBrowserRouter([
   {
     path: "/info",
     element: <Info />,
+  },
+    {
+    path: "/timetable",
+    element: <Timetable />,
+  },
+    {
+    path: "/billboardshowroom",
+    element: <BillboardShowroom />,
   },
 ]);
 

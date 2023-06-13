@@ -32,7 +32,7 @@ const Home = () => {
       ) : (
         <Canvas>
 
-          <Html>
+          <Html position={[0, 0, 0]}  className="l">
             <ButtonComponent setPosition={setPosition} />
           </Html>
 

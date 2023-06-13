@@ -1,0 +1,46 @@
+.timetable {
+    background-image: url("../images/ipad-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    font-family: "monolisabook";
+    
+}
+
+.timetable2{
+    background-image: url("../images/Group 781.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    min-height: 100% !important;
+    
+}
+
+@media (min-width: 800px) {
+
+    .timetable2 {
+            background-image: url("../images/Group 780.svg");    
+        }
+                .timetable {
+                    background-image: url("../images/ipad-bg.png");
+        
+        
+                }
+
+}
+
+@media (min-width: 1400px) {
+
+    .timetable2 {
+        background-image: url("../images/Group 780.svg");
+    }
+
+    .timetable {
+        background-image: url("../images/BG-DEKSTOP.png");
+
+
+    }
+
+}

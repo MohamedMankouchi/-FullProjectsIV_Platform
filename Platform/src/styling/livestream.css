@@ -107,7 +107,7 @@ body {
 .layers::after {
   content: attr(data-text);
   position: absolute;
-  width: 110%;
+  width: 105%;
   z-index: -1;
 }
 

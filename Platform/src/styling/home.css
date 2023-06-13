@@ -1,78 +1,262 @@
 
-.buttonshowcase2{
-  font-family: "monolisabook";
-cursor: pointer;
-font-size: 15px;
-border: none;
-background-color: transparent;
-color: white;
-background-image: url("../images/button.svg");
-background-position: center;
-width: 250px;
-height: 70px;
-transition: 0.5s ease-in-out;
-scale: 0.7;
+    .buttonshowcase2 {
+      display: none;
+    }
 
+
+        .menu-toggler {
+          position: absolute;
+          display: block;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 40px;
+          height: 40px;
+          z-index: 2;
+          opacity: 0;
+          cursor: pointer;
+        }
+    
+.menu-toggler:hover+label,
+.menu-toggler:hover+label:before,
+.menu-toggler:hover+label:after {
+  background: white;
 }
-.buttonshowcase2:hover {
-  background-image: url("../images/buttonHover.svg");
-  transition: 0.5s ease-in-out;
-  scale: 0.7;
-  width: 250px;
+        .menu-toggler:checked+label {
+          background: transparent;
+        }
+    
+.menu-toggler:checked+label:before,
+.menu-toggler:checked+label:after {
+  top: 0;
+  width: 40px;
+  transform-origin: 50% 50%;
 }
-.button1 {
-  font-family: "monolisabook";
-  cursor: pointer;
-  font-size: 15px;
+    
+        .menu-toggler:checked+label:before {
+          transform: rotate(45deg) translateY(-15px) translateX(-15px);
+        }
+    
+        .menu-toggler:checked+label:after {
+          transform: rotate(-45deg);
+        }
+    
+        .menu-toggler:checked~ul .menu-item {
+          opacity: 1;
+        }
+    
+        .menu-toggler:checked~ul .menu-item:nth-child(1) {
+          transform: rotate(240deg) translate(-110px);
+        }
+    
+        .menu-toggler:checked~ul .menu-item:nth-child(2) {
+          transform: rotate(180deg) translateX(-110px);
+        }
+    
+        .menu-toggler:checked~ul .menu-item:nth-child(3) {
+          transform: rotate(120deg) translateX(-110px);
+        }
+    
+        .menu-toggler:checked~ul .menu-item a {
+          pointer-events: auto;
+        }
+    
+        .menu-toggler+label {
+          width: 40px;
+          height: 5px;
+          display: block;
+          z-index: 1;
+          border-radius: 2.5px;
+          background: rgba(230, 239, 250, 0.9);
+          transition: transform 0.5s top 0.5s;
+          position: absolute;
+          display: block;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+    
+        .menu-toggler+label:before,
+        .menu-toggler+label:after {
+          width: 40px;
+          height: 5px;
+          display: block;
+          z-index: 1;
+          border-radius: 2.5px;
+          background: rgba(255, 255, 255, 0.7);
+          transition: transform 0.5s top 0.5s;
+          content: "";
+          position: absolute;
+          display: block;
+          left: 0;
+        }
+    
+        .menu-toggler+label:before {
+          top: 10px;
+        }
+    
+        .menu-toggler+label:after {
+          top: -10px;
+        }
+    
+        .menu-item:nth-child(1) a {
+          transform: rotate(0deg);
+        }
+    
+        .menu-item:nth-child(2) a {
+          transform: rotate(-60deg);
+        }
+    
+        .menu-item:nth-child(3) a {
+          transform: rotate(-120deg);
+        }
+    
+
+    
+        .menu-item {
+          position: absolute;
+          display: block;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 80px;
+          height: 80px;
+          opacity: 0;
+          transition: 0.5s;
+        }
+    
+        .menu-item a {
+          display: block;
+          width: inherit;
+          height: inherit;
+          line-height: 80px;
+          color: rgba(255, 255, 255, 0.7);
+          background: rgba(230, 230, 250, 0.7);
+          border-radius: 50%;
+          text-align: center;
+          text-decoration: none;
+          font-size: 40px;
+          pointer-events: none;
+          transition: 0.2s;
+        }
+    
+        .menu-item a:hover {
+          box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+          color: white;
+          background: rgba(255, 255, 255, 0.3);
+          font-size: 44.44px
+        }
+
+/* .mobile-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-btn button {
+  padding: 10px 10px;
+  background-color: #f2f2f2;
   border: none;
-  background-color: transparent;
-  color: white;
-  background-image: url("../images/button.svg");
-  background-position: center;
-  width: 250px;
-  height: 70px;
-  transition: 0.5s ease-in-out;
+  border-radius: 100px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.button1:hover {
-  background-image: url("../images/buttonHover.svg");
-  transition: 0.5s ease-in-out;
-  scale: 1.1;
+.mobile-btn button img {
+  width: 50px;
+  height: 50px;
 }
 
-.button1:hover {
-  background-color: #ffffff90;
+.mobile-btn button:hover {
+  background-color: #e0e0e0;
 }
 
+.mobile-home-btn {
+  color: #ff0000;
+}
+
+.mobile-home-btn:hover {
+  background-color: #1976d2;
+}
+ */
 
 
-.l{
-    position: sticky;
+@media (min-width: 800px) {
+  .mobilebtn{
+    display: none;
+  }
+  .buttonshowcase2 {
+      font-family: "monolisabook";
+      cursor: pointer;
+      font-size: 15px;
+      border: none;
+      background-color: transparent;
+      color: white;
+      background-image: url("../images/button.svg");
+      background-position: center;
+      width: 250px;
+      height: 70px;
+      transition: 0.5s ease-in-out;
+      scale: 0.7;
+      display: block;
+  
+  
+    }
+  
+    .buttonshowcase2:hover {
+      background-image: url("../images/buttonHover.svg");
+      transition: 0.5s ease-in-out;
+      scale: 0.7;
+      width: 250px;
+    }
+  
+    .button1 {
+      font-family: "monolisabook";
+      cursor: pointer;
+      font-size: 15px;
+      border: none;
+      background-color: transparent;
+      color: white;
+      background-image: url("../images/button.svg");
+      background-position: center;
+      width: 250px;
+      height: 70px;
+      transition: 0.5s ease-in-out;
+    }
+  
+    .button1:hover {
+      background-image: url("../images/buttonHover.svg");
+      transition: 0.5s ease-in-out;
+      scale: 1.1;
+    }
+  
+    .button1:hover {
+      background-color: #ffffff90;
+    }
+  
+  
+  
+    .l {
+      position: sticky;
       top: -70px;
       left: 0;
       z-index: 100;
       margin-left: -200px;
+  
+    }
 
 }
 
 /*aanpassen voor elke screensize*/
 
-@media (min-width: 412px) {
-.l {
-
-    margin-left: -215px;
-
-  }
-}
-@media (min-width: 720px) {
-  .l {
-
-    margin-left: -425px;
-
-  }
-}
-
-@media (min-width: 820px) {
+@media (min-width: 800px) {
   .l {
 
     margin-left: -425px;

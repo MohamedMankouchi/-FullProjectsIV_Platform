@@ -1,6 +1,6 @@
-/* body{
-  background-color: purple;
-} */
+body{
+ background-color: #000033;
+}
 
 
 .infowrapper p,
@@ -9,24 +9,43 @@
 }
 
 .infowrapper h1,
-.infowrapper h2 {
+.infowrapper h2,
+.infowrapper h3
+{
   font-family: "monolisabook";
 }
 @media (max-width: 767px) {
   .info {
     text-align: left;
     padding: 20px;
+    color: #FF1199;
   }
+
+  .info p{
+    text-align: left;
+    
+    color: white;
+  }
+
 
   .info2 {
     text-align: center;
-    background-color: rgb(200, 180, 180);
+   z-index: 2;
     padding: 20px;
+    color: white
   }
+  
   .info2 p {
     text-align: left;
+    color: white;
+   
   }
-
+ 
+  .info2 h3 {
+    text-align: center;
+    color: white;
+   font-size: 18px;
+  }
   .info2 .btekst {
     text-align: center;
   }
@@ -34,10 +53,12 @@
   .info3 {
     text-align: center;
     padding: 20px;
+    color: #FF1199;
   }
 
   .info3 p {
     text-align: left;
+    color: white;
   }
 
   .info3 .btekst {
@@ -47,7 +68,35 @@
   .info4 {
     text-align: center;
     padding: 20px;
+    color: #FF1199;
   }
+  .info4 p{
+    color: white;
+    text-align: left;
+  }
+
+  .info4 h3{
+    text-align: center;
+    padding: 20px;
+    color: #FF1199;
+    font-size: 18px;
+  }
+
+  .info4 .btekst {
+    text-align: center;
+  }
+.info5 h2{
+  text-align: center;
+  padding: 20px;
+}
+
+.info5 p{
+  padding: 20px;
+  text-align: left;
+}
+
+
+
   .any-questions {
     text-align: center;
     margin-top: 40px;
@@ -57,6 +106,7 @@
   .any-questions h2 {
     font-size: 24px;
     padding: 20px;
+    color: #FF1199;
   }
 
   .any-questions ul {
@@ -70,13 +120,41 @@
     font-size: 18px;
     margin-bottom: 10px;
     padding: 20px;
+    color: white;
+    
   }
+
 }
 
 .info2 {
-  background-color: rgb(200, 180, 180);
-}
+  background-color: #ff119835;
 
+  color: white;
+}
+.info5 {
+  background-color: #ff119835;
+
+  color: white;
+}
 .info3 {
   text-align: center;
+}
+.buttonshowcase{
+  font-family: "monolisabook";
+cursor: pointer;
+font-size: 15px;
+border: none;
+background-color: transparent;
+color: white;
+background-image: url("../images/button.svg");
+background-position: center;
+width: 250px;
+height: 70px;
+transition: 0.5s ease-in-out;
+}
+.buttonshowcase:hover {
+  background-image: url("../images/buttonHover.svg");
+  transition: 0.5s ease-in-out;
+  scale: 1.1;
+  width: 250px;
 }

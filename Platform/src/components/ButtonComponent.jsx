@@ -3,10 +3,8 @@ import "../styling/home.css";
 
 const ButtonComponent = ({ onButtonClick }) => {
   const handleInfoButtonClick = () => {
-    onButtonClick([0, 2, -50]);
-    setTimeout(() => {
+
       onButtonClick([-30, 12, 0]);
-    }, 500);
   };
 
   const handleTimetableButtonClick = () => {
@@ -14,10 +12,7 @@ const ButtonComponent = ({ onButtonClick }) => {
   };
 
   const handleLiveShowButtonClick = () => {
-    onButtonClick([0, 2, -50]);
-    setTimeout(() => {
       onButtonClick([30, 15, 5]);
-    }, 500);
   };
 
   const handleShowroomButtonClick = () => {

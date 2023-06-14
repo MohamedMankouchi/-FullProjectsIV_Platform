@@ -55,7 +55,8 @@ const Home = () => {
             fade
             speed={3.5}
           />
-<Scrapertest512 />
+          {/* <Scrapertest512 /> */}
+
           <pointLight color="purple" position={[-10, 0, 10]} intensity={1.5} />
 
           <mesh>

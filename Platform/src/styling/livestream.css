@@ -19,6 +19,10 @@ body {
   font-size: 25px;
   margin-bottom: 16px;
 }
+
+.container > h1 {
+  font-family: "pirulen", sans-serif;
+}
 .headerLive {
   background-color: transparent;
   box-shadow: none;

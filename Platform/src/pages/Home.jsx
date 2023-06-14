@@ -44,7 +44,7 @@ const Home = () => {
           </Html>
 
           <Html position={[0, 0, 0]} className="l">
-            <Mobilenav setPosition={setPosition} />
+            <Mobilenav onButtonClick={handleButtonClick} />
           </Html>
 
           <ambientLight intensity={1} />

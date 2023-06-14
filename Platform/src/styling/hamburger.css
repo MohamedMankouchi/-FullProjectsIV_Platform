@@ -77,7 +77,7 @@
 .headerLive .menu-icon {
   cursor: pointer;
   display: inline-block;
-  
+
   padding: 28px 20px;
   position: relative;
   user-select: none;
@@ -190,7 +190,7 @@
     display: none;
   }
   .header .logo {
-    width: 300px;
+    width: 300px !important;
   }
 
   .desk-header {

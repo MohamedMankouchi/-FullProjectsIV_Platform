@@ -120,11 +120,38 @@ p.wanneer_span {
 }
 
 .opleiding {
-  padding-bottom: 35px;
+  padding-bottom: 50px;
 }
 
+.faq > h2 {
+  text-align: center;
+  font-family: "monolisabook";
+  margin-bottom: 25px;
+}
+.faq {
+  padding: 15px 20px;
+  padding-bottom: 50px;
+}
+.accordion-header {
+  font-family: "Helvetica" !important;
+}
 @media (min-width: 768px) {
   .container_info {
     width: 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container_info {
+    width: 25%;
+  }
+  .infoContainer {
+    justify-content: space-around;
+  }
+
+  .container_info img {
+    width: 40px;
+    top: -5%;
+    padding: 10px;
   }
 }

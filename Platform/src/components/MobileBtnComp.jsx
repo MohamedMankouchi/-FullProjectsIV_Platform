@@ -51,7 +51,7 @@ const Mobilenav = ({ setPosition }) => {
           </li>
 
                     <li className="menu-item">
-            <a className="fab fa-earlybirds" onClick={() => setPosition([15, 50, 15])}>
+            <a className="fab fa-earlybirds" onClick={() => setPosition([15, 40, 15])}>
                             <div className="image-blend">
                 <img src={timetable} alt="" />
               </div>

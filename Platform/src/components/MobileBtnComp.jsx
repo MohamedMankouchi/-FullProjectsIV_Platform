@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "../styling/home.css";
 import showAllImage from '../icon/plus-icon.png';
+import livestream from'../icon/livestreamicon.png';
+import info from'../icon/infoicon.png';
+import timetable from'../icon/logoicon.png';
+
 
 const Mobilenav = ({ setPosition }) => {
   const [showMenu, setShowMenu] = useState(false);
@@ -26,14 +30,14 @@ const Mobilenav = ({ setPosition }) => {
  <li className="menu-item">
             <a className="fas fa-cat" onClick={() => setPosition([-30, 12, 0])}>
               <div className="image-blend">
-                <img src={showAllImage} alt="" />
+                <img src={info} alt="" />
               </div>
             </a>
           </li>
           <li className="menu-item">
             <a className="fas fa-cookie-bite" onClick={() => setPosition([0, 15, -30])}>
                             <div className="image-blend">
-                <img src={showAllImage} alt="" />
+                <img src={livestream} alt="" />
               </div>
             </a>
           </li>
@@ -49,7 +53,7 @@ const Mobilenav = ({ setPosition }) => {
                     <li className="menu-item">
             <a className="fab fa-earlybirds" onClick={() => setPosition([15, 50, 15])}>
                             <div className="image-blend">
-                <img src={showAllImage} alt="" />
+                <img src={timetable} alt="" />
               </div>
                </a>
           </li>

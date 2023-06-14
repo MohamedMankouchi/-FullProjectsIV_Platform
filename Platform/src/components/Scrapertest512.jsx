@@ -130,11 +130,23 @@ export function Scrapertest512(props) {
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardL_1.geometry} material={materials.KB3D_CBP_SteelOld} />
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardL_2.geometry} material={materials.KB3D_CBP_SteelPanelWhiteD} />
         </group>
+
+
+        
         <group position={[-0.44, 0.08, 0.59]}>
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_Sidewalk.geometry} material={materials.KB3D_CBP_ConcretePaintYellow} />
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_Sidewalk_1.geometry} material={materials.KB3D_CBP_StreetTilesC} />
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_Sidewalk_2.geometry} material={materials.KB3D_CBP_StreetTilesGrayC} />
         </group>
+
+          
+        <group scale={10} position={[-0.44, -0.6, 0.59]}>
+          <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_Sidewalk.geometry} material={materials.KB3D_CBP_ConcretePaintYellow} />
+          <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_Sidewalk_1.geometry} material={materials.KB3D_CBP_StreetTilesC} />
+          <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_Sidewalk_2.geometry} material={materials.KB3D_CBP_StreetTilesGrayC} />
+        </group>
+        
+        
         <group position={[7.94, 12.28, 4.42]}>
           
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardI.geometry} material={materials.KB3D_CBP_AtlasDGBannerB} />
@@ -182,6 +194,8 @@ export function Scrapertest512(props) {
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardE_2.geometry} material={materials.KB3D_CBP_SteelOld} />
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardE_3.geometry} material={materials.KB3D_CBP_SteelPanelWhiteD} />
         </group>
+
+        
         <group position={[6.22, 7.23, -1.44]}>
    
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardD.geometry} material={materials.KB3D_CBP_AtlasDGBannerB} />
@@ -206,6 +220,23 @@ export function Scrapertest512(props) {
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardA_3.geometry} material={materials.KB3D_CBP_SteelPanelWhiteD} />
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardA_4.geometry} material={materials.KB3D_CBP_WireTrim} />
         </group>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
         <group position={[-3.89, 50.71, 3.87]}>
           
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_AntennaB.geometry} material={materials.KB3D_CBP_LightsC} />

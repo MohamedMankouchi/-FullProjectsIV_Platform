@@ -32,12 +32,14 @@
                   display: flex;
                   justify-content: center;
                   align-items: center;
+                  padding: 10px;
                 }
         
                 .image-blend img {
-                  width: 100%;
                   height: 100%;
-                  object-fit: contain;
+                  width: 100%;
+                  object-fit: cover;
+                  
                 }
     
 .menu-toggler:hover+label,
@@ -166,7 +168,8 @@
           height: inherit;
           line-height: 80px;
           color: rgba(255, 255, 255, 0.7);
-          background: rgba(230, 230, 250, 0.7);
+          /* background: rgba(230, 230, 250, 0.7); */
+          border: 2px solid white;
           border-radius: 50%;
           text-align: center;
           text-decoration: none;

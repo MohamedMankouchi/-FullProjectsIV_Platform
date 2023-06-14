@@ -6,6 +6,10 @@
   font-family: "monolisabook";
 }
 
+.neon_img {
+  display: none;
+}
+
 .infowrapper {
   background-color: #000033;
   color: white;
@@ -153,5 +157,35 @@ p.wanneer_span {
     width: 40px;
     top: -5%;
     padding: 10px;
+  }
+
+  .infowrapper h1 {
+    font-size: 38px;
+  }
+  .infowrapper h2 {
+    font-size: 30px;
+  }
+
+  .infowrapper p {
+    font-size: 18px;
+  }
+
+  .info {
+    display: flex;
+    gap: 15px;
+    text-align: left;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .info_fs {
+    width: 600px;
+  }
+  .info img {
+    width: 450px;
+  }
+
+  .neon_img {
+    display: block;
   }
 }

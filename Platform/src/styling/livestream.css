@@ -120,8 +120,7 @@ body {
     font-size: 18px;
   }
   .wrapper {
-    transform: translateY(20px);
-    margin: 20px;
+    padding: 0;
   }
 }
 

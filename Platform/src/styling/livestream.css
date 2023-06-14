@@ -76,9 +76,6 @@ body {
     position: relative;
   }
 
-  .wrapper {
-    border: 2px solid red;
-  }
   .headerLive,
   .wrapper {
     position: relative;

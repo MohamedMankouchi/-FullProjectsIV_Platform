@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "../styling/home.css";
 import showAllImage from '../icon/plus-icon.png';
+import livestream from'../icon/livestreamicon.png';
+import info from'../icon/infoicon.png';
+import timetable from'../icon/logoicon.png';
+
 
 const Mobilenav = ({ setPosition }) => {
   const [showMenu, setShowMenu] = useState(false);
@@ -12,24 +16,48 @@ const Mobilenav = ({ setPosition }) => {
   return (
     <div className="mobilebtn">
       <nav className={`menu ${showMenu ? 'show' : ''}`}>
-        <input
-          checked={showMenu}
-          className="menu-toggler"
-          type="checkbox"
-          onChange={handleToggleMenu}
-        />
-        <label htmlFor="menu-toggler">
-        </label>
+<input
+  checked={showMenu}
+  className="menu-toggler"
+  type="checkbox"
+  onChange={handleToggleMenu}
+/>
+<label htmlFor="menu-toggler" className="plus-icon">
+  +
+</label>
+
         <ul>
-          <li className="menu-item">
-            <a className="fas fa-cat" onClick={() => setPosition([-30, 12, 0])}>inf0</a>
+ <li className="menu-item">
+            <a className="fas fa-cat" onClick={() => setPosition([-30, 12, 0])}>
+              <div className="image-blend">
+                <img src={info} alt="" />
+              </div>
+            </a>
           </li>
           <li className="menu-item">
-            <a className="fas fa-cookie-bite" onClick={() => setPosition([0, 2, -20])}>Time</a>
+            <a className="fas fa-cookie-bite" onClick={() => setPosition([0, 15, -30])}>
+                            <div className="image-blend">
+                <img src={livestream} alt="" />
+              </div>
+            </a>
           </li>
           <li className="menu-item">
-            <a className="fab fa-earlybirds" onClick={() => setPosition([30, 15, 5])}>Live </a>
+            <a className="fab fa-earlybirds" onClick={() => setPosition([30, 15, 5])}>
+                            <div className="image-blend">
+                {/* <img src={showAllImage} alt="" /> */}
+                live
+              </div>
+               </a>
           </li>
+
+                    <li className="menu-item">
+            <a className="fab fa-earlybirds" onClick={() => setPosition([15, 50, 15])}>
+                            <div className="image-blend">
+                <img src={timetable} alt="" />
+              </div>
+               </a>
+          </li>
+
         </ul>
       </nav>
     </div>

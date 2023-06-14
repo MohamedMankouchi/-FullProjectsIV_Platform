@@ -5,7 +5,7 @@ import { OrbitControls, Stars, Lightformer } from "@react-three/drei";
 import { HamburgerMenu } from "../components/HamburgerMenu";
 import { Scrapertest512 } from "../components/Scrapertest512";
 import * as THREE from "three";
-import skyImg from "../assets/skydome.jpg";
+import skyImg from "../images/skyboxes.jpg";
 import { Loader } from "../components/Loader";
 import ButtonComponent from "../components/ButtonComponent";
 import { Html } from "@react-three/drei"; 
@@ -46,7 +46,7 @@ const Home = () => {
           <CameraRig position={position} />
           <pointLight color="blue" position={[10, 10, 10]} />
           <OrbitControls />
-          <Stars
+          {/* <Stars
             radius={100}
             depth={30}
             count={5000}
@@ -54,7 +54,8 @@ const Home = () => {
             saturation={0}
             fade
             speed={3.5}
-          />
+          /> */}
+          <Scrapertest512 />
 
           <pointLight color="purple" position={[-10, 0, 10]} intensity={1.5} />
 

@@ -6,6 +6,9 @@ Command: npx gltfjsx@6.1.4 Scrapertest512.glb --transform
 import React, { useRef, useState } from 'react'
 import { useGLTF, Html} from '@react-three/drei'
 import '../styling/home.css';
+import livestream from '../images/livestreamhome.jpg'
+import info from '../images/infohome.jpg'
+
 
 
 
@@ -18,11 +21,16 @@ export function Scrapertest512(props) {
       <group position={[0, -20, 0]}> 
 
 
-        <group position={[-0.6, 24.94, -7.9]} rotation={[-Math.PI, 0,3.15]} scale={1.75}>
-          <Html className='kk' castShadow receiveShadow occlude="blending" transform>
-            <iframe title="embed" width={250} height={120} src="https://cdn.discordapp.com/attachments/983660197144854598/1117719543255662643/aliali2.gif" />
-          </Html>
-        </group>
+<group position={[-0.6, 24.94, -7.9]} rotation={[-Math.PI, 0, 3.15]} scale={1.75}>
+  <Html className='kk' castShadow receiveShadow occlude="blending" transform>
+    <a href="/timetable">
+      <button style={{ width: '250px', height: '120px' }}>
+        <img src="https://cdn.discordapp.com/attachments/983660197144854598/1117719543255662643/aliali2.gif" alt="embed" />
+      </button>
+    </a>
+  </Html>
+</group>
+
         
         <group position={[-0.6, 24.94, -7.4]} rotation={[-Math.PI, 0, Math.PI / 2]} scale={1.75}>
           <mesh geometry={nodes.KB3D_CBP_Billboard_O_Main.geometry} material={materials.KB3D_CBP_AtlasDGBannerA} />
@@ -93,12 +101,21 @@ export function Scrapertest512(props) {
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardN_1.geometry} material={materials.KB3D_CBP_SteelPanelWhiteD} />
         </group>
 
-     <group rotation={[0,-7.9,0]} position={[-7.87, 27.15, 2.41]}>
-          
-        <Html className='kk' castShadow receiveShadow occlude="blending" transform>
-          <iframe title="embed" width={200} height={800} src="https://cdn.discordapp.com/attachments/983660197144854598/1117719543255662643/aliali2.gif" />
-        </Html>
-      </group>
+<group rotation={[0, -7.9, 0]} position={[-7.87, 27.15, 2.41]}>
+  <Html className='kk' castShadow receiveShadow occlude="blending" transform>
+    <a href="/">
+      <button style={{ width: '200px', height: '760px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <img src={livestream} style={{  maxHeight: '100%' }} alt="embed" />
+      </button>
+    </a>
+  </Html>
+</group>
+
+
+
+
+
+
 
         <group position={[-8.52, 27.15, 2.41]}>
         
@@ -113,11 +130,23 @@ export function Scrapertest512(props) {
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardL_1.geometry} material={materials.KB3D_CBP_SteelOld} />
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardL_2.geometry} material={materials.KB3D_CBP_SteelPanelWhiteD} />
         </group>
+
+
+        
         <group position={[-0.44, 0.08, 0.59]}>
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_Sidewalk.geometry} material={materials.KB3D_CBP_ConcretePaintYellow} />
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_Sidewalk_1.geometry} material={materials.KB3D_CBP_StreetTilesC} />
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_Sidewalk_2.geometry} material={materials.KB3D_CBP_StreetTilesGrayC} />
         </group>
+
+          
+        <group scale={10} position={[-0.44, -0.6, 0.59]}>
+          <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_Sidewalk.geometry} material={materials.KB3D_CBP_ConcretePaintYellow} />
+          <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_Sidewalk_1.geometry} material={materials.KB3D_CBP_StreetTilesC} />
+          <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_Sidewalk_2.geometry} material={materials.KB3D_CBP_StreetTilesGrayC} />
+        </group>
+        
+        
         <group position={[7.94, 12.28, 4.42]}>
           
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardI.geometry} material={materials.KB3D_CBP_AtlasDGBannerB} />
@@ -132,11 +161,18 @@ export function Scrapertest512(props) {
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardH_2.geometry} material={materials.KB3D_CBP_SteelPanelWhiteD} />
         </group>
 
-        <group position={[7.42, 28.9, 0.52]} rotation={[0, 1.5,0]} scale={4.9}>
-          <Html className='kk' castShadow receiveShadow occlude="blending" transform>
-            <iframe title="embed" width={55} height={145} src="https://theqream.com/" />
-          </Html>
-        </group>
+
+        <group position={[6.80, 28.9, 0.52]} rotation={[0, 1.56,0]} scale={4.9}>
+  <Html className='kk' castShadow receiveShadow occlude="blending" transform>
+    <a href="/info">
+      <button style={{ width: '60px', height: '155px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <img src={info} style={{  maxHeight: '100%' }} alt="embed" />
+      </button>
+    </a>
+  </Html>
+</group>
+
+
           <group position={[6.42, 28.9, 0.52]}>
             
             <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardG.geometry} material={materials.KB3D_CBP_AtlasDGBannerA} />
@@ -158,6 +194,8 @@ export function Scrapertest512(props) {
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardE_2.geometry} material={materials.KB3D_CBP_SteelOld} />
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardE_3.geometry} material={materials.KB3D_CBP_SteelPanelWhiteD} />
         </group>
+
+        
         <group position={[6.22, 7.23, -1.44]}>
    
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardD.geometry} material={materials.KB3D_CBP_AtlasDGBannerB} />
@@ -182,6 +220,23 @@ export function Scrapertest512(props) {
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardA_3.geometry} material={materials.KB3D_CBP_SteelPanelWhiteD} />
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardA_4.geometry} material={materials.KB3D_CBP_WireTrim} />
         </group>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
         <group position={[-3.89, 50.71, 3.87]}>
           
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_AntennaB.geometry} material={materials.KB3D_CBP_LightsC} />

@@ -13,13 +13,12 @@ body {
   font-family: "monolisabook";
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .container h1 {
   font-size: 25px;
   margin-bottom: 16px;
-  font-family: "pirulen", sans-serif; 
+  font-family: "pirulen", sans-serif;
 }
 .headerLive {
   background-color: transparent;
@@ -89,7 +88,7 @@ body {
   }
 
   .container h1 {
-    font-size: 38px;
+    font-size: 30px;
   }
 
   .container p {

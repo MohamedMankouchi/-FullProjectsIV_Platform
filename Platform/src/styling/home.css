@@ -3,6 +3,14 @@
       display: none;
     }
 
+    .mobilebtn{
+
+      position: sticky;
+        left: 0;
+        z-index: 100;
+        margin-left: -300px;
+    }
+
 
         .menu-toggler {
           position: relative;
@@ -18,7 +26,19 @@
           cursor: pointer;
 
         }
+                .image-blend {
+                  background-image: url('../icon/plus-icon.png');
+                  background-blend-mode: overlay;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
         
+                .image-blend img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                }
     
 .menu-toggler:hover+label,
 .menu-toggler:hover+label:before,
@@ -49,15 +69,19 @@
         }
     
         .menu-toggler:checked~ul .menu-item:nth-child(1) {
-          transform: rotate(240deg) translate(-110px);
+          transform: rotate(270deg) translate(-110px);
         }
     
         .menu-toggler:checked~ul .menu-item:nth-child(2) {
-          transform: rotate(180deg) translateX(-110px);
+          transform: rotate(210deg) translateX(-110px);
         }
     
         .menu-toggler:checked~ul .menu-item:nth-child(3) {
-          transform: rotate(120deg) translateX(-110px);
+          transform: rotate(150deg) translateX(-110px);
+        }
+
+        .menu-toggler:checked~ul .menu-item:nth-child(4) {
+          transform: rotate(90deg) translateX(-110px);
         }
     
         .menu-toggler:checked~ul .menu-item a {
@@ -105,15 +129,19 @@
         }
     
         .menu-item:nth-child(1) a {
-          transform: rotate(0deg);
+          transform: rotate(-270deg);
         }
     
         .menu-item:nth-child(2) a {
-          transform: rotate(-60deg);
+          transform: rotate(-210deg);
         }
     
         .menu-item:nth-child(3) a {
-          transform: rotate(-120deg);
+          transform: rotate(-150deg);
+        }
+
+        .menu-item:nth-child(4) a {
+          transform: rotate(-90deg);
         }
     
 
@@ -207,8 +235,7 @@
       transition: 0.5s ease-in-out;
       scale: 0.7;
       display: block;
-  
-  
+
     }
   
     .buttonshowcase2:hover {

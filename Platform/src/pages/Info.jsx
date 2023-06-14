@@ -6,20 +6,27 @@ import Logo from "../images/logo-icon.svg";
 import Icon from "../images/icon.svg";
 import Live from "../images/live-icon.svg";
 import { Faq } from "../components/Faq";
-
+import Neon from "../images/neon.svg";
 export const Info = () => {
   return (
     <div className="infowrapper">
       <HamburgerMenu />
       <div className="info">
-        <h1>Praktische info</h1>
-        <p className="info_text">
-          Gepassioneerd door die steeds veranderende geconnecteerde wereld? Ben
-          jij een digitale maker van de toekomst? Of ben je gewoon benieuwd naar
-          wat onze studenten Multimedia & Creatieve Technologie verwezenlijkt
-          hebben? Dan ben je hier op het juiste adres!
-        </p>
+        <div className="info_fs">
+          <h1>Praktische info</h1>
+          <p className="info_text">
+            Gepassioneerd door die steeds veranderende geconnecteerde wereld?
+            Ben jij een digitale maker van de toekomst? Of ben je gewoon
+            benieuwd naar wat onze studenten Multimedia & Creatieve Technologie
+            verwezenlijkt hebben? Dan ben je hier op het juiste adres!
+          </p>
+        </div>
+
+        <div className="neon_img">
+          <img src={Neon} alt="" />
+        </div>
       </div>
+
       <div className="infoContainer">
         <div className="container_info">
           <img src={Icon} />

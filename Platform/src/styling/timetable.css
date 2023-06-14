@@ -54,7 +54,6 @@ span.time {
 
   .timetable-info {
     margin-top: 6%;
-    /* border: 2px solid red; */
     height: 320px;
     width: 600px;
     overflow-y: scroll;

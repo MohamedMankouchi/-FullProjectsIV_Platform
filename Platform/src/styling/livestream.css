@@ -121,7 +121,7 @@ body {
   }
   .wrapper {
     transform: translateY(20px);
-    padding: 72px;
+    margin: 20px;
   }
 }
 

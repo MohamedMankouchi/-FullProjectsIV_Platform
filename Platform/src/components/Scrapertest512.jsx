@@ -18,11 +18,16 @@ export function Scrapertest512(props) {
       <group position={[0, -20, 0]}> 
 
 
-        <group position={[-0.6, 24.94, -7.9]} rotation={[-Math.PI, 0,3.15]} scale={1.75}>
-          <Html className='kk' castShadow receiveShadow occlude="blending" transform>
-            <iframe title="embed" width={250} height={120} src="https://cdn.discordapp.com/attachments/983660197144854598/1117719543255662643/aliali2.gif" />
-          </Html>
-        </group>
+<group position={[-0.6, 24.94, -7.9]} rotation={[-Math.PI, 0, 3.15]} scale={1.75}>
+  <Html className='kk' castShadow receiveShadow occlude="blending" transform>
+    <a href="/info">
+      <button style={{ width: '250px', height: '120px' }}>
+        <img src="https://cdn.discordapp.com/attachments/983660197144854598/1117719543255662643/aliali2.gif" alt="embed" />
+      </button>
+    </a>
+  </Html>
+</group>
+
         
         <group position={[-0.6, 24.94, -7.4]} rotation={[-Math.PI, 0, Math.PI / 2]} scale={1.75}>
           <mesh geometry={nodes.KB3D_CBP_Billboard_O_Main.geometry} material={materials.KB3D_CBP_AtlasDGBannerA} />
@@ -92,13 +97,20 @@ export function Scrapertest512(props) {
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardN.geometry} material={materials.KB3D_CBP_AtlasDGBannerA} />
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardN_1.geometry} material={materials.KB3D_CBP_SteelPanelWhiteD} />
         </group>
+<group rotation={[0, -7.9, 0]} position={[-7.87, 27.15, 2.41]}>
+  <Html className='kk' castShadow receiveShadow occlude="blending" transform>
+    <a href="/info">
+      <button style={{ width: '200px', height: '800px' }}>
+        <iframe title="embed" width={200} height={800} src="https://www.finalshow.be/" />
+      </button>
+    </a>
+  </Html>
+</group>
 
-     <group rotation={[0,-7.9,0]} position={[-7.87, 27.15, 2.41]}>
-          
-        <Html className='kk' castShadow receiveShadow occlude="blending" transform>
-          <iframe title="embed" width={200} height={800} src="https://cdn.discordapp.com/attachments/983660197144854598/1117719543255662643/aliali2.gif" />
-        </Html>
-      </group>
+
+
+
+
 
         <group position={[-8.52, 27.15, 2.41]}>
         

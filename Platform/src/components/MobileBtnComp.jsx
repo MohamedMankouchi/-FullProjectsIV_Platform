@@ -12,14 +12,16 @@ const Mobilenav = ({ setPosition }) => {
   return (
     <div className="mobilebtn">
       <nav className={`menu ${showMenu ? 'show' : ''}`}>
-        <input
-          checked={showMenu}
-          className="menu-toggler"
-          type="checkbox"
-          onChange={handleToggleMenu}
-        />
-        <label htmlFor="menu-toggler">
-        </label>
+<input
+  checked={showMenu}
+  className="menu-toggler"
+  type="checkbox"
+  onChange={handleToggleMenu}
+/>
+<label htmlFor="menu-toggler" className="plus-icon">
+  +
+</label>
+
         <ul>
           <li className="menu-item">
             <a className="fas fa-cat" onClick={() => setPosition([-30, 12, 0])}>inf0</a>

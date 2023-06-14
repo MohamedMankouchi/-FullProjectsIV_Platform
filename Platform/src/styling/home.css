@@ -5,11 +5,10 @@
 
 
         .menu-toggler {
-          position: absolute;
+          position: relative;
           display: block;
           top: 0;
           bottom: 0;
-          right: 0;
           left: 0;
           margin: auto;
           width: 40px;
@@ -17,7 +16,9 @@
           z-index: 2;
           opacity: 0;
           cursor: pointer;
+
         }
+        
     
 .menu-toggler:hover+label,
 .menu-toggler:hover+label:before,

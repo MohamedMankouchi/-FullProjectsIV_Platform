@@ -23,15 +23,37 @@ const Mobilenav = ({ setPosition }) => {
 </label>
 
         <ul>
-          <li className="menu-item">
-            <a className="fas fa-cat" onClick={() => setPosition([-30, 12, 0])}>inf0</a>
+ <li className="menu-item">
+            <a className="fas fa-cat" onClick={() => setPosition([-30, 12, 0])}>
+              <div className="image-blend">
+                <img src={showAllImage} alt="" />
+              </div>
+            </a>
           </li>
           <li className="menu-item">
-            <a className="fas fa-cookie-bite" onClick={() => setPosition([0, 2, -20])}>Time</a>
+            <a className="fas fa-cookie-bite" onClick={() => setPosition([0, 15, -30])}>
+                            <div className="image-blend">
+                <img src={showAllImage} alt="" />
+              </div>
+            </a>
           </li>
           <li className="menu-item">
-            <a className="fab fa-earlybirds" onClick={() => setPosition([30, 15, 5])}>Live </a>
+            <a className="fab fa-earlybirds" onClick={() => setPosition([30, 15, 5])}>
+                            <div className="image-blend">
+                {/* <img src={showAllImage} alt="" /> */}
+                live
+              </div>
+               </a>
           </li>
+
+                    <li className="menu-item">
+            <a className="fab fa-earlybirds" onClick={() => setPosition([15, 50, 15])}>
+                            <div className="image-blend">
+                <img src={showAllImage} alt="" />
+              </div>
+               </a>
+          </li>
+
         </ul>
       </nav>
     </div>

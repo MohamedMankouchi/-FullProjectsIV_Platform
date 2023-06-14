@@ -1,21 +1,57 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "../styling/home.css";
 
+const ButtonComponent = ({ onButtonClick }) => {
+  const handleInfoButtonClick = () => {
+    onButtonClick([0, 2, -50]);
+    setTimeout(() => {
+      onButtonClick([-30, 12, 0]);
+    }, 500);
+  };
 
-const ButtonComponent = ({ setPosition }) => {
+  const handleTimetableButtonClick = () => {
+    onButtonClick([0, 2, -20]);
+  };
+
+  const handleLiveShowButtonClick = () => {
+    onButtonClick([0, 2, -50]);
+    setTimeout(() => {
+      onButtonClick([30, 15, 5]);
+    }, 500);
+  };
+
+  const handleShowroomButtonClick = () => {
+    onButtonClick([15, 50, 15]);
+  };
+
   return (
     <div className="knops">
-     
-        <button className="buttonshowcase2"onClick={() => setPosition([-30, 12, 0])}>Info</button>
-      
+      <button className="buttonshowcase2" onClick={handleInfoButtonClick}>
+        Info
+      </button>
       <div className="button2">
-        <button className="buttonshowcase2" onClick={() => setPosition([0, 2, -20])}>Timetable</button>
+        <button
+          className="buttonshowcase2"
+          onClick={handleTimetableButtonClick}
+        >
+          Timetable
+        </button>
       </div>
       <div className="button3">
-        <button className="buttonshowcase2" onClick={() => setPosition([30, 15, 5])}>Live Show</button>
+        <button
+          className="buttonshowcase2"
+          onClick={handleLiveShowButtonClick}
+        >
+          Live Show
+        </button>
       </div>
       <div className="button4">
-        <button className="buttonshowcase2" onClick={() => setPosition([15, 50, 15])}>Showroom</button>
+        <button
+          className="buttonshowcase2"
+          onClick={handleShowroomButtonClick}
+        >
+          Showroom
+        </button>
       </div>
     </div>
   );

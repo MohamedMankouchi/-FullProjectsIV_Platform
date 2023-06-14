@@ -11,6 +11,9 @@ body {
   color: white;
   min-height: 100% !important;
   font-family: "monolisabook";
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .container h1 {

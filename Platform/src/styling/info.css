@@ -1,147 +1,130 @@
-.infowrapper p {
-  font-family: "helveticaregular";
+.infowrapper h1 {
+  font-family: "pirulen", sans-serif;
+  font-size: 25px;
 }
-
-.infowrapper h1,
-.infowrapper h2,
-.infowrapper h3 {
+.infowrapper h2 {
   font-family: "monolisabook";
 }
-@media (max-width: 767px) {
-  .info {
-    text-align: left;
-    padding: 20px;
-    color: #ff1199;
-  }
 
-  .info p {
-    text-align: left;
-
-    color: white;
-  }
-
-  .info2 {
-    text-align: center;
-    z-index: 2;
-    padding: 20px;
-    color: white;
-  }
-
-  .info2 p {
-    text-align: left;
-    color: white;
-  }
-
-  .info2 h3 {
-    text-align: center;
-    color: white;
-    font-size: 18px;
-  }
-  .info2 .btekst {
-    text-align: center;
-  }
-
-  .info3 {
-    text-align: center;
-    padding: 20px;
-    color: #ff1199;
-  }
-
-  .info3 p {
-    text-align: left;
-    color: white;
-  }
-
-  .info3 .btekst {
-    text-align: center;
-  }
-
-  .info4 {
-    text-align: center;
-    padding: 20px;
-    color: #ff1199;
-  }
-  .info4 p {
-    color: white;
-    text-align: left;
-  }
-
-  .info4 h3 {
-    text-align: center;
-    padding: 20px;
-    color: #ff1199;
-    font-size: 18px;
-  }
-
-  .info4 .btekst {
-    text-align: center;
-  }
-  .info5 h2 {
-    text-align: center;
-    padding: 20px;
-  }
-
-  .info5 p {
-    padding: 20px;
-    text-align: left;
-  }
-
-  .any-questions {
-    text-align: center;
-    margin-top: 40px;
-    padding: 20px;
-  }
-
-  .any-questions h2 {
-    font-size: 24px;
-    padding: 20px;
-    color: #ff1199;
-  }
-
-  .any-questions ul {
-    list-style: none;
-    padding: 20;
-    margin: 20px 0;
-    text-align: left;
-  }
-
-  .any-questions li {
-    font-size: 18px;
-    margin-bottom: 10px;
-    padding: 20px;
-    color: white;
-  }
-}
-
-.info2 {
-  background-color: #ff119835;
-
+.infowrapper {
+  background-color: #000033;
   color: white;
 }
-.info5 {
-  background-color: #ff119835;
 
-  color: white;
+.infowrapper p {
+  font-family: "Helvetica";
 }
-.info3 {
+.info p {
+  margin-top: 45px;
+  line-height: 1.6;
+}
+
+.info {
   text-align: center;
+  padding: 15px 20px;
 }
-.buttonshowcase {
+
+p.info_text {
+  text-align: left;
+}
+
+.infoContainer {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  overflow-y: visible;
+  margin: 15px;
+}
+
+.infoContainer h2 {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.container_info {
+  position: relative;
+  background-color: #2d005b;
+  border-radius: 5px;
+  padding: 15px 20px;
+  flex: none;
+  width: 60%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container_info img {
+  position: absolute;
+  background-color: #000033;
+  border-radius: 50%;
+  padding: 10px;
+  top: -3%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container_info p {
+  line-height: 1.6;
+}
+p.wanneer_span {
+  text-align: left;
+  color: #ff1199;
+  font-family: "monolisabook";
+}
+
+.btn_redirect {
   font-family: "monolisabook";
   cursor: pointer;
   font-size: 15px;
   border: none;
   background-color: transparent;
   color: white;
-  background-image: url("../images/button.svg");
+  background-image: url("../images/buttonsmall.svg");
   background-position: center;
-  width: 250px;
-  height: 70px;
+  width: 150px;
+  height: 40px;
   transition: 0.5s ease-in-out;
 }
-.buttonshowcase:hover {
-  background-image: url("../images/buttonHover.svg");
-  transition: 0.5s ease-in-out;
-  scale: 1.1;
-  width: 250px;
+
+.btn_container {
+  text-align: center;
+}
+
+.location,
+.opleiding {
+  margin-top: 50px;
+  font-family: "Helvetica";
+}
+
+.location h2,
+.opleiding h2 {
+  text-align: center;
+}
+
+.location ul,
+.opleiding ul {
+  line-height: 1.6;
+  list-style-type: square;
+  color: white;
+}
+
+.location li,
+.opleiding li {
+  padding: 5px 15px;
+  margin-top: 10px;
+}
+
+.linkto {
+  color: #00f9ff;
+}
+
+.opleiding {
+  padding-bottom: 35px;
+}
+
+@media (min-width: 768px) {
+  .container_info {
+    width: 40%;
+  }
 }

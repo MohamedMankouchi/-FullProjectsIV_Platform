@@ -6,8 +6,31 @@ import Logo from "../images/logo-icon.svg";
 import Icon from "../images/icon.svg";
 import Live from "../images/live-icon.svg";
 import { Faq } from "../components/Faq";
+import { motion } from "framer-motion";
 import Neon from "../images/neon.svg";
 export const Info = () => {
+  const container = {
+    hidden: { opacity: 1, scale: 1 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { y: 50, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+      },
+    },
+  };
   return (
     <div className="infowrapper">
       <HamburgerMenu />
@@ -51,8 +74,14 @@ export const Info = () => {
         </div>
       </div>
 
-      <div className="infoContainer">
-        <div className="container_info">
+      <motion.div
+        variants={container}
+        whileInView="visible"
+        initial="hidden"
+        className="infoContainer"
+        viewport={{ once: true, amount: 0.7 }}
+      >
+        <motion.div variants={item} className="container_info">
           <img src={Icon} />
           <div>
             <h2>Infodag</h2>
@@ -78,9 +107,9 @@ export const Info = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="container_info">
+        <motion.div variants={item} className="container_info">
           <img src={Live} />
           <div>
             <h2>Livestream</h2>
@@ -103,9 +132,9 @@ export const Info = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="container_info">
+        <motion.div variants={item} className="container_info">
           <img src={Logo} />
           <div>
             <h2>Expo</h2>
@@ -126,8 +155,8 @@ export const Info = () => {
               </Link>
             </div>{" "}
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       <div className="location">
         <h2>Waar je moet zijn</h2>

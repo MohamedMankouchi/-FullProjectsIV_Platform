@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
-  /* border: 2px solid rgb(255, 0, 0);    */
+  margin-top: 30px;
   height: 602.28px;
   display: flex;
   justify-content: center;
@@ -28,6 +28,7 @@
   border-radius: 20px;
   border: 2px solid white;
 }
+
 .timetable-info::-webkit-scrollbar-thumb {
   background-color: white;
   padding: 5px;
@@ -46,23 +47,27 @@ span.time {
 @media (min-width: 800px) {
   .timetable-cover {
     background-image: url("../images/Group 780.svg");
-    height: 600.28px;
+    height: 550px;
+    margin-top: 10%;
   }
+
   .timetable {
     background-image: url("../images/ipad-bg.png");
   }
 
   .timetable-info {
-    margin-top: 6%;
+    margin-top: 5%;
     height: 320px;
-    width: 600px;
-    overflow-y: scroll;
+    width: 668px;
   }
 }
 
 @media (min-width: 1100px) {
   .timetable-cover {
-    background-image: url("../images/Group 780.svg");
+    background-image: url("../images/Group 801.svg");
+    height: 650px;
+    width: 1000px;
+    margin: 6% auto;
   }
 
   .timetable {
@@ -70,10 +75,10 @@ span.time {
   }
 
   .timetable-info {
+    width: 750px;
   }
 }
 
 @media (min-width: 1600px) {
-  .timetable-info {
-  }
+  .timetable-info {}
 }

@@ -57,7 +57,7 @@ span.time {
 
   .timetable-info {
     margin-top: 5%;
-    height: 320px;
+    height: max-content;
     width: 668px;
   }
 }
@@ -80,5 +80,6 @@ span.time {
 }
 
 @media (min-width: 1600px) {
-  .timetable-info {}
+  .timetable-info {
+  }
 }

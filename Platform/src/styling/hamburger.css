@@ -185,11 +185,13 @@
     background-image: url("../images/buttonsmall.svg");
     width: 150px;
     height: 40px;
+    transition: 0.3s ease-in-out;
   }
 
   .headerLive a:hover,
   .header a:hover {
     background-image: url("../images/buttonsmallHover.svg");
+    transition: 0.3s ease-in-out;
     width: 150px;
     height: 40px;
   }

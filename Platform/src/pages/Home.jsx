@@ -38,7 +38,7 @@ const Home = () => {
         <Loader />
       ) : (
         <Canvas
-          camera={{ position: [10, -40, 20] }} // Set new default camera position here
+          camera={{ position: [10, 0, 20] }} // Set new default camera position here
         >
           <Html position={[0, 0, 0]} className="l">
             <ButtonComponent onButtonClick={handleButtonClick} />
@@ -56,7 +56,7 @@ const Home = () => {
           <OrbitControls 
           minDistance={20}   
           minPolarAngle={Math.PI / 4}
-          maxPolarAngle={Math.PI / 1.8}
+          maxPolarAngle={Math.PI / 2.3}
           maxDistance={70} />
    
           <Scrapertest512 />

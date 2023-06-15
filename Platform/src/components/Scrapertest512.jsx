@@ -18,7 +18,7 @@ export function Scrapertest512(props) {
 
   return (
     <group {...props} dispose={null}>
-      <group position={[0, -10, 0]}> 
+      <group position={[0, -20, 0]}> 
 
 
 <group position={[-0.6, 24.94, -7.9]} rotation={[-Math.PI, 0, 3.15]} scale={1.75}>

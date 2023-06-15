@@ -45,7 +45,7 @@ export const HamburgerMenu = ({ className }) => {
               className={({ isActive }) => (isActive ? "active" : "")}
               to="/timetable"
             >
-              TIMESCHEDULE
+              TIMETABLE
             </NavLink>
           </li>
           <li>
@@ -90,7 +90,7 @@ export const HamburgerMenu = ({ className }) => {
               className={({ isActive }) => (isActive ? "activeDesk" : "")}
               to="/timetable"
             >
-              TIMESCHEDULE
+              TIMETABLE
             </NavLink>
           </li>
           <li>

@@ -20,7 +20,7 @@
 .infowrapper p {
   font-family: "Helvetica";
   padding: 0px 15px;
- 
+
 }
 
 .info p {
@@ -183,9 +183,11 @@ p.wanneer_span {
   cursor: pointer;
   margin-bottom: 20px;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  transition: max-height 0.5s ease;
   max-height: 40px;
   border-bottom: 2px solid white;
+  font-family: Helvetica;
+  line-height: 1.6;
   /* Hoogte van de gesloten toestand */
 }
 
@@ -196,7 +198,7 @@ p.wanneer_span {
 .faqItem .arrow {
   float: right;
   margin-left: 10px;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .faqItem.active_faq {

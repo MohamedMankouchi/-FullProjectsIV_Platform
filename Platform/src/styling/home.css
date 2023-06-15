@@ -190,6 +190,7 @@
 .menu-toggler+label:before {
   top: 10px;
 }
+}
 
 .menu-toggler+label:after {
   top: -10px;

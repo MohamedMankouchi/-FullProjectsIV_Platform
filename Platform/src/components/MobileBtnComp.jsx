@@ -15,7 +15,7 @@ const Mobilenav = ({ onButtonClick }) => {
   };
 
   const handleTimetableButtonClick = () => {
-    onButtonClick([0, 2, -20]);
+    onButtonClick([20, 2, 20]);
     setShowMenu(false);
   };
 

@@ -1,19 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styling/home.css";
 import showAllImage from '../icon/plus-icon.png';
 
 const Mobilenav = ({ setPosition }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   const handleToggleMenu = () => {
-    setIsOpen(!isOpen);
+    setShowMenu(!showMenu);
   };
 
   return (
     <div className="mobilebtn">
-      <nav className={`menu ${isOpen ? 'show' : ''}`}>
+      <nav className={`menu ${showMenu ? 'show' : ''}`}>
         <input
-          checked={isOpen}
+          checked={showMenu}
           className="menu-toggler"
           type="checkbox"
           onChange={handleToggleMenu}
@@ -22,13 +22,13 @@ const Mobilenav = ({ setPosition }) => {
         </label>
         <ul>
           <li className="menu-item">
-            <a className="fas fa-cat" onClick={() => {setPosition([-30, 12, 0]); setIsOpen(false);}}>info</a>
+            <a className="fas fa-cat" onClick={() => setPosition([-30, 12, 0])}>inf0</a>
           </li>
           <li className="menu-item">
-            <a className="fas fa-cookie-bite" onClick={() => {setPosition([0, 2, -20]); setIsOpen(false);}}>Time</a>
+            <a className="fas fa-cookie-bite" onClick={() => setPosition([0, 2, -20])}>Time</a>
           </li>
           <li className="menu-item">
-            <a className="fab fa-earlybirds" onClick={() => {setPosition([30, 15, 5]); setIsOpen(false);}}>Live</a>
+            <a className="fab fa-earlybirds" onClick={() => setPosition([30, 15, 5])}>Live </a>
           </li>
         </ul>
       </nav>
@@ -37,3 +37,39 @@ const Mobilenav = ({ setPosition }) => {
 };
 
 export default Mobilenav;
+
+
+
+/*    <div className="mobile-btn">
+        
+      {/* <div>
+        <button onClick={handleShowAll}>
+          {showButtons ? <img src={showAllImage} alt="Show All" /> : <img src={showAllImage} alt="Show All" />}
+        </button>
+      </div>
+
+      {showButtons && (
+        <>
+          <div>
+            <button className="mobile-home-btn" onClick={() => setPosition([-30, 12, 0])}>Info</button>
+          </div>
+
+          <div>
+            <button className="mobile-home-btn" onClick={() => setPosition([0, 2, -20])}>Timetable</button>
+          </div>
+
+          <div>
+            <button className="mobile-home-btn" onClick={() => setPosition([30, 15, 5])}>Live Show</button>
+          </div>
+
+          <div>
+            <button className="mobile-home-btn" onClick={() => setPosition([15, 50, 15])}>Showroom</button>
+          </div>
+        </>
+      )} 
+
+      
+      
+    
+    </div>
+*/

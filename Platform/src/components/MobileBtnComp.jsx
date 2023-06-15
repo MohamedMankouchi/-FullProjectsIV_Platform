@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styling/home.css";
 import showAllImage from '../icon/plus-icon.png';
 import livestream from'../icon/livestreamicon.png';
@@ -82,3 +82,39 @@ const Mobilenav = ({ onButtonClick }) => {
 };
 
 export default Mobilenav;
+
+
+
+/*    <div className="mobile-btn">
+        
+      {/* <div>
+        <button onClick={handleShowAll}>
+          {showButtons ? <img src={showAllImage} alt="Show All" /> : <img src={showAllImage} alt="Show All" />}
+        </button>
+      </div>
+
+      {showButtons && (
+        <>
+          <div>
+            <button className="mobile-home-btn" onClick={() => setPosition([-30, 12, 0])}>Info</button>
+          </div>
+
+          <div>
+            <button className="mobile-home-btn" onClick={() => setPosition([0, 2, -20])}>Timetable</button>
+          </div>
+
+          <div>
+            <button className="mobile-home-btn" onClick={() => setPosition([30, 15, 5])}>Live Show</button>
+          </div>
+
+          <div>
+            <button className="mobile-home-btn" onClick={() => setPosition([15, 50, 15])}>Showroom</button>
+          </div>
+        </>
+      )} 
+
+      
+      
+    
+    </div>
+*/

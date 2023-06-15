@@ -2,6 +2,7 @@
   font-family: "pirulen", sans-serif;
   font-size: 25px;
 }
+
 .infowrapper h2 {
   font-family: "monolisabook";
 }
@@ -17,7 +18,9 @@
 
 .infowrapper p {
   font-family: "Helvetica";
+  padding: 0px 15px;
 }
+
 .info p {
   margin-top: 45px;
   line-height: 1.6;
@@ -56,6 +59,7 @@ p.info_text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 }
 
 .container_info img {
@@ -71,6 +75,7 @@ p.info_text {
 .container_info p {
   line-height: 1.6;
 }
+
 p.wanneer_span {
   text-align: left;
   color: #ff1199;
@@ -88,7 +93,13 @@ p.wanneer_span {
   background-position: center;
   width: 150px;
   height: 40px;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.btn_redirect:hover {
+  background-image: url("../images/buttonsmallHover.svg");
+  transition: 0.3s ease-in-out;
+
 }
 
 .btn_container {
@@ -97,8 +108,12 @@ p.wanneer_span {
 
 .location,
 .opleiding {
-  margin-top: 50px;
+  margin-top: 130px;
   font-family: "Helvetica";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .location h2,
@@ -121,24 +136,34 @@ p.wanneer_span {
 
 .linkto {
   color: #00f9ff;
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
+}
+
+.linkto:hover{
+  color: #ff1199;
+  transition: 0.4s ease-in-out;
 }
 
 .opleiding {
   padding-bottom: 50px;
 }
 
-.faq > h2 {
+.faq>h2 {
   text-align: center;
   font-family: "monolisabook";
   margin-bottom: 25px;
 }
+
 .faq {
   padding: 15px 20px;
   padding-bottom: 50px;
 }
+
 .accordion-header {
   font-family: "Helvetica" !important;
 }
+
 @media (min-width: 768px) {
   .container_info {
     width: 40%;
@@ -149,6 +174,7 @@ p.wanneer_span {
   .container_info {
     width: 25%;
   }
+
   .infoContainer {
     justify-content: space-around;
   }
@@ -162,12 +188,14 @@ p.wanneer_span {
   .infowrapper h1 {
     font-size: 38px;
   }
+
   .infowrapper h2 {
     font-size: 30px;
   }
 
   .infowrapper p {
     font-size: 18px;
+    
   }
 
   .info {
@@ -177,11 +205,13 @@ p.wanneer_span {
     align-items: center;
     justify-content: space-around;
     margin-top: 130px;
+    
   }
 
   .info_fs {
     width: 600px;
   }
+
   .info img {
     width: 450px;
   }
@@ -190,7 +220,65 @@ p.wanneer_span {
   .opleiding li {
     font-size: 18px;
   }
+
   .neon_img {
     display: block;
+  }
+
+  .neon_img svg {
+    animation: trill 5s linear infinite;
+    filter: drop-shadow(0 0 15px #7224BE);
+  }
+
+  #neon-path {
+    stroke-width: 6px;
+    stroke: #7224BE;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+    animation: neon-line 12s linear infinite;
+  }
+}
+
+
+
+
+
+
+@keyframes neon-line {
+  0% {
+    stroke-dashoffset: 2000;
+  }
+
+  50% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: -2000;
+  }
+}
+
+@keyframes trill {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+
+  25% {
+    transform: rotateX(5deg) rotateY(-15deg) rotateZ(-5deg);
+  }
+
+  50% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+
+  75% {
+    transform: rotateX(-5deg) rotateY(15deg) rotateZ(5deg);
+  }
+
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   }
 }

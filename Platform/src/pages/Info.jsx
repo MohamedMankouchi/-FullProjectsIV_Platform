@@ -24,15 +24,29 @@ export const Info = () => {
 
         <div className="neon_img">
           {/* <img src={Neon} alt="" /> */}
-          <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="554.126" height="382.588" viewBox="0 0 554.126 382.588">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            width="554.126"
+            height="382.588"
+            viewBox="0 0 554.126 382.588"
+          >
             <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_1247)">
-              <path id="Path_1247-2" data-name="Path 1247"
+              <path
+                id="Path_1247-2"
+                data-name="Path 1247"
                 d="M310.18,70.484l0,.031-.029-.015-112,166.72L124.4,183.012l114.755-64.974,6.588-43.881L86.154,166.592l-.68.393-6.531,31.926L210.112,301.663l1.311,1.053L326.376,128.444l98.414,56.23L287.808,255.127l-.851.437L280.4,307.8,485.209,205.583l.98-.488,2.19-40.04L350.494,91.879l.051-.079L319.64,75.5Z"
-                fill="#fff" />
+                fill="#fff"
+              />
             </g>
-            <path id="neon-path"
+            <path
+              id="neon-path"
               d="M310.18,70.484l0,.031-.029-.015-112,166.72L124.4,183.012l114.755-64.974,6.588-43.881L86.154,166.592l-.68.393-6.531,31.926L210.112,301.663l1.311,1.053L326.376,128.444l98.414,56.23L287.808,255.127l-.851.437L280.4,307.8,485.209,205.583l.98-.488,2.19-40.04L350.494,91.879l.051-.079L319.64,75.5Z"
-              fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              fill="none"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
           </svg>
         </div>
       </div>
@@ -107,7 +121,7 @@ export const Info = () => {
               Zaterdag 24 juni van 10u tot 15u
             </p>
             <div className="btn_container">
-              <Link to={""}>
+              <Link to={"https://fp4-showcase.be/"} target="_blank">
                 <button className="btn_redirect">Showcase</button>
               </Link>
             </div>{" "}
@@ -137,7 +151,7 @@ export const Info = () => {
               className="linkto"
               target="_blank"
             >
-            plan
+              plan
             </a>{" "}
             of{" "}
             <a
@@ -186,7 +200,6 @@ export const Info = () => {
             de opleiding.
           </li>
         </ul>
-
       </div>
       <Faq />
     </div>

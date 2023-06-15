@@ -166,7 +166,7 @@ p.wanneer_span {
 
 /* FAQ */
 .faqContainer {
-  width: 50%;
+  width: 85%;
   margin: auto;
   padding-bottom: 30px;
 }
@@ -225,6 +225,10 @@ p.wanneer_span {
 }
 
 @media (min-width: 1024px) {
+  .faqContainer {
+    width: 50%;
+  }
+
   .container_info {
     width: 25%;
   }

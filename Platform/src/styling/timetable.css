@@ -56,7 +56,7 @@ span.time {
   }
 
   .timetable-info {
-    margin-top: 5%;
+    margin-top: 2%;
     height: 320px;
     width: 668px;
   }
@@ -65,7 +65,7 @@ span.time {
 @media (min-width: 1100px) {
   .timetable-cover {
     background-image: url("../images/Group 801.svg");
-    height: 650px;
+    height: 724px;
     width: 1000px;
     margin: 6% auto;
   }

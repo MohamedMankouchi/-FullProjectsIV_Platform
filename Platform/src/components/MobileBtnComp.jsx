@@ -60,7 +60,7 @@ const Mobilenav = ({ onButtonClick }) => {
           <li className="menu-item">
             <a className="fab fa-earlybirds" onClick={handleLiveShowButtonClick}>
               <div className="image-blend">
-                <img src={showcase} alt="" />
+                <img src={info} alt="" />
               </div>
             </a>
           </li>

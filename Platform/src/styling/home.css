@@ -3,11 +3,43 @@
 }
 
 .mobilebtn {
-  position: sticky;
-  left: 0;
+  position: fixed;
+  left: 90%;
   z-index: 100;
-  margin-left: -300px;
+  margin-left: -100px;
+  
 }
+
+@media (min-width: 400px) {
+.mobilebtn {
+    margin-left: -150px;
+  }
+}
+
+@media (min-width: 450px) {
+  .mobilebtn {
+    margin-left: -200px;
+  }
+}
+
+@media (min-width: 500px) {
+  .mobilebtn {
+    margin-left: -230px;
+  }
+}
+
+@media (min-width: 550px) {
+  .mobilebtn {
+    margin-left: -270px;
+  }
+}
+
+@media (min-width: 600px) {
+  .mobilebtn {
+    margin-left: -310px;
+  }
+}
+
 
 .menu-toggler {
   position: relative;
@@ -21,6 +53,13 @@
   z-index: 2;
   opacity: 0;
   cursor: pointer;
+
+}
+
+.menucanvas {
+  border: 2px solid red;
+  position: fixed;
+  top: 0;
 }
 .image-blend {
   background-image: url("../icon/plus-icon.png");

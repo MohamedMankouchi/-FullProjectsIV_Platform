@@ -33,17 +33,18 @@ const Home = () => {
   return (
     <>
       <HamburgerMenu />
-      {loader ? (
+      {/* {loader ? (
         <Loader />
-      ) : (
+      ) : ( */}
         <Canvas
-          camera={{ position: [0, 0, 50] }} // Set new default camera position here
+          camera={{ position: [-10, -40, 20] }} // Set new default camera position here
         >
           <Html position={[0, 0, 0]} className="l">
             <ButtonComponent onButtonClick={handleButtonClick} />
           </Html>
 
-          <Html position={[0, 0, 0]} className="l">
+          <Html 
+           className="menu">
             <Mobilenav onButtonClick={handleButtonClick} />
           </Html>
 
@@ -52,10 +53,10 @@ const Home = () => {
           {cameraRigEnabled && <CameraRig position={position} />} {/* Conditionally render CameraRig */}
           <pointLight color="blue" position={[10, 10, 10]} />
           <OrbitControls 
-          minDistance={30}   
+          minDistance={20}   
           minPolarAngle={Math.PI / 4}
-          maxPolarAngle={Math.PI / 2}
-          maxDistance={80} />
+          maxPolarAngle={Math.PI / 1.8}
+          maxDistance={70} />
    
           <Scrapertest512 />
 
@@ -69,7 +70,7 @@ const Home = () => {
             />
           </mesh>
         </Canvas>
-      )}
+      {/* )} */}
     </>
   );
 };

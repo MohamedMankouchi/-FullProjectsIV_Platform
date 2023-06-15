@@ -170,9 +170,6 @@ p.wanneer_span {
     font-size: 18px;
   }
 
-  .infowrapper li {
-    font-size: 18px;
-  }
   .info {
     display: flex;
     gap: 15px;
@@ -189,6 +186,10 @@ p.wanneer_span {
     width: 450px;
   }
 
+  .location li,
+  .opleiding li {
+    font-size: 18px;
+  }
   .neon_img {
     display: block;
   }

@@ -51,7 +51,8 @@ export const HamburgerMenu = ({ className }) => {
           <li>
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "")}
-              to="/showcase"
+              to="https://fp4-showcase.be/"
+              target="_blank"
             >
               SHOWCASE
             </NavLink>
@@ -96,7 +97,8 @@ export const HamburgerMenu = ({ className }) => {
           <li>
             <NavLink
               className={({ isActive }) => (isActive ? "activeDesk" : "")}
-              to="/showcase"
+              to="https://fp4-showcase.be/"
+              target="_blank"
             >
               SHOWCASE
             </NavLink>

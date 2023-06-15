@@ -32,9 +32,8 @@ const Home = () => {
 
   return (
     <>
-    <div className="nav2">
+    <div className="nav"></div>
       <HamburgerMenu />
-      </div>
       {/* {loader ? (
         <Loader />
       ) : ( */}

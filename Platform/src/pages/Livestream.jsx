@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import Instagram from "../images/instagram.svg";
 import Tiktok from "../images/icons8-tiktok.svg";
 import { Video } from "../components/Video";
+import Circ from "../images/circ.mp4";
 export const Livestream = () => {
   const [stream, setStream] = useState(false);
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
@@ -14,7 +15,7 @@ export const Livestream = () => {
       <div className="timer">
         <div className="day">
           <h1 className="glitch_title glitch layers" data-text={`${days}Days`}>
-            {days} <span className="span">Days</span>
+            {days} <span className="span">d</span>
           </h1>
         </div>
         <div className="hour">
@@ -22,15 +23,12 @@ export const Livestream = () => {
             className="glitch_title glitch layers"
             data-text={`${hours}Hours`}
           >
-            {hours} <span className="span">Hours</span>{" "}
+            {hours} <span className="span">h</span>{" "}
           </h1>
         </div>
         <div className="min">
-          <h1
-            className="glitch_title glitch layers"
-            data-text={`${minutes}Minutes`}
-          >
-            {minutes} <span className="span">Minutes</span>{" "}
+          <h1 className="glitch_title glitch layers" data-text={`${minutes}m`}>
+            {minutes} <span className="span">m</span>{" "}
           </h1>
         </div>
         <div className="sec">
@@ -38,7 +36,7 @@ export const Livestream = () => {
             className="glitch_title glitch layers"
             data-text={`${seconds}Seconds`}
           >
-            {seconds} <span className="span">Seconds</span>
+            {seconds} <span className="span">s</span>
           </h1>
         </div>
       </div>
@@ -46,6 +44,9 @@ export const Livestream = () => {
   };
   return (
     <div className="outerwrapper">
+      <video autoPlay muted playsInline loop id="myVideo">
+        <source src={Circ} type="video/mp4" />
+      </video>
       <HamburgerMenu className={"headerLive"} />
 
       {stream ? (

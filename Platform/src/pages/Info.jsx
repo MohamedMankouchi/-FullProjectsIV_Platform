@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Logo from "../images/logo-icon.svg";
 import Icon from "../images/icon.svg";
 import Live from "../images/live-icon.svg";
-import { Faq1 } from "../components/Faq1";
+import { Faq } from "../components/Faq";
 import Neon from "../images/neon.svg";
 export const Info = () => {
   return (
@@ -188,7 +188,7 @@ export const Info = () => {
         </ul>
 
       </div>
-      <Faq1 />
+      <Faq />
     </div>
   );
 };

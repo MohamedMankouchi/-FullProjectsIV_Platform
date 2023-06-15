@@ -32,6 +32,8 @@ const Home = () => {
 
   return (
     <>
+    <div className="nav"></div>
+      <HamburgerMenu />
       {loader ? (
         <Loader />
       ) : (
@@ -70,8 +72,6 @@ const Home = () => {
           </mesh>
         </Canvas>
        )} 
-            <HamburgerMenu />
-
     </>
   );
 };

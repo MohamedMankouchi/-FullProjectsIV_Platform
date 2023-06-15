@@ -103,7 +103,7 @@ export function Scrapertest512(props) {
 
 <group rotation={[0, -7.9, 0]} position={[-7.87, 27.15, 2.41]}>
   <Html className='kk' castShadow receiveShadow occlude="blending" transform>
-    <a href="/">
+    <a href="/livestream">
       <button style={{ width: '200px', height: '760px', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor:'pointer' }}>
         <img src={livestream} style={{  maxHeight: '100%' }} alt="embed" />
       </button>

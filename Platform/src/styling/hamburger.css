@@ -67,7 +67,7 @@
   max-height: 0;
   transition: max-height 0.5s ease-out;
   display: grid;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 /* menu icon */
@@ -147,7 +147,7 @@
   margin-top: 30px;
   max-height: 100vh;
   display: grid;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon,

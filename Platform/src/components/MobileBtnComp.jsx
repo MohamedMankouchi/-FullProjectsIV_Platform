@@ -10,23 +10,27 @@ import timetable from'../icon/Icon ionic-md-time.png';
 const Mobilenav = ({ onButtonClick }) => {
   const [showMenu, setShowMenu] = useState(false);
 
-  const handleInfoButtonClick = () => {
-    onButtonClick([-30, 12, 0]);
+  //liveshow
+    const handleLiveShowButtonClick = () => {
+    onButtonClick([-30, 20, 0]);
     setShowMenu(false);
   };
 
-  const handleTimetableButtonClick = () => {
-    onButtonClick([20, 2, 20]);
-    setShowMenu(false);
-  };
-
-  const handleLiveShowButtonClick = () => {
+  //info
+      const handleInfoButtonClick = () => {
     onButtonClick([30, 15, 5]);
     setShowMenu(false);
   };
 
+//showcase
+  const handleTimetableButtonClick = () => {
+    onButtonClick([0, -10, 30]);
+    setShowMenu(false);
+  };
+
+  //livestream
   const handleShowroomButtonClick = () => {
-    onButtonClick([15, 50, 15]);
+    onButtonClick([0, -20, -20]);
     setShowMenu(false);
   };
 

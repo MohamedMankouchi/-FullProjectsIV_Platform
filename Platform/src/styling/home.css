@@ -45,6 +45,7 @@
 @media (min-width: 1000px) {
   .mobilebtn {
     margin-left: -500px;
+      scale: 1.3;
   }
 }
 

@@ -32,12 +32,13 @@ const Home = () => {
 
   return (
     <>
-      <HamburgerMenu />
+          <HamburgerMenu />
+
       {/* {loader ? (
         <Loader />
       ) : ( */}
         <Canvas
-          camera={{ position: [-10, -40, 20] }} // Set new default camera position here
+          camera={{ position: [0, -40, 20] }} // Set new default camera position here
         >
           <Html position={[0, 0, 0]} className="l">
             <ButtonComponent onButtonClick={handleButtonClick} />
@@ -71,6 +72,8 @@ const Home = () => {
           </mesh>
         </Canvas>
       {/* )} */}
+            <HamburgerMenu />
+
     </>
   );
 };

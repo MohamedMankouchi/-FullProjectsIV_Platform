@@ -25,6 +25,11 @@ body {
 .container > h1 {
   font-family: "pirulen", sans-serif;
 }
+
+.deskheader {
+  position: relative;
+  z-index: 500;
+}
 .headerLive {
   background-color: transparent;
   box-shadow: none;
@@ -79,7 +84,6 @@ body {
   .headerLive,
   .wrapper {
     position: relative;
-    z-index: 1;
   }
 
   #myVideo {
@@ -126,6 +130,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
   }
 }
 

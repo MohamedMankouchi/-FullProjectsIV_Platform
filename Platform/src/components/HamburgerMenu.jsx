@@ -7,17 +7,10 @@ import LogoDeskWhite from "../images/logo-desk-white.png";
 import { useLocation, Link, NavLink } from "react-router-dom";
 
 export const HamburgerMenu = ({ className }) => {
-  const location = useLocation();
-  const ref = useRef();
-  console.log(window.innerWidth);
   return (
     <header className={className == "headerLive" ? className : "header"}>
       <div className="mobile-header">
-        {location.pathname == "/livestream" || location.pathname == "/" ? (
-          <img src={LogoWhite} className="logo" />
-        ) : (
-          <img src={Logo} className="logo" />
-        )}{" "}
+        <img src={LogoWhite} className="logo" />
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label className="menu-icon" htmlFor="menu-btn">
           <span className="navicon"></span>
@@ -25,7 +18,6 @@ export const HamburgerMenu = ({ className }) => {
         <ul className="menu">
           <li>
             <NavLink
-              ref={ref}
               to={"/home"}
               className={({ isActive }) => (isActive ? "active" : "")}
             >
@@ -51,7 +43,7 @@ export const HamburgerMenu = ({ className }) => {
           <li>
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "")}
-              to="/schedule"
+              to="/timetable"
             >
               TIMESCHEDULE
             </NavLink>
@@ -67,15 +59,10 @@ export const HamburgerMenu = ({ className }) => {
         </ul>
       </div>
       <div className="desk-header">
-        {location.pathname == "/livestream" || location.pathname == "/" ? (
-          <img src={LogoDeskWhite} className="logo" />
-        ) : (
-          <img src={LogoDesk} className="logo" />
-        )}
+        <img src={LogoDeskWhite} className="logo" />
         <ul className="list-nav">
           <li>
             <NavLink
-              ref={ref}
               to={"/home"}
               className={({ isActive }) => (isActive ? "activeDesk" : "")}
             >

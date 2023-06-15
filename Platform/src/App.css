@@ -27,6 +27,8 @@ body {
   font-family: "monolisabook" !important;
   flex-direction: column;
   gap: 20px;
+  background-color: #000033;
+  color: white;
 }
 .loader::after {
   content: "Loading...";

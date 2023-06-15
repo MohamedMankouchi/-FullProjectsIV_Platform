@@ -1,6 +1,7 @@
 .infowrapper h1 {
   font-family: "pirulen", sans-serif;
   font-size: 25px;
+  margin-left: 15px;
 }
 
 .infowrapper h2 {
@@ -19,6 +20,7 @@
 .infowrapper p {
   font-family: "Helvetica";
   padding: 0px 15px;
+ 
 }
 
 .info p {

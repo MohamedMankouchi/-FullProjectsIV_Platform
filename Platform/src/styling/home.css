@@ -42,6 +42,12 @@
   }
 }
 
+@media (min-width: 1000px) {
+  .mobilebtn {
+    margin-left: -500px;
+  }
+}
+
 
 .menu-toggler {
   position: relative;
@@ -240,6 +246,7 @@
   font-size: 40px;
   pointer-events: none;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .menu-item:nth-child(4) img {
@@ -292,7 +299,6 @@
 
 @media (min-width: 800px) {
   .mobilebtn {
-    display: none;
   }
 
   .buttonshowcase2 {

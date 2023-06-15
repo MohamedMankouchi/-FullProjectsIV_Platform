@@ -43,9 +43,9 @@ const Home = () => {
           }} // Set new default camera position here
           fog={new THREE.Fog(0x000000, 10, 100)}
         >
-          <Html position={[0, 0, 0]} className="l">
+          {/* <Html position={[0, 0, 0]} className="l">
             <ButtonComponent onButtonClick={handleButtonClick} />
-          </Html>
+          </Html> */}
 
           <Html className="menu">
             <Mobilenav onButtonClick={handleButtonClick} />

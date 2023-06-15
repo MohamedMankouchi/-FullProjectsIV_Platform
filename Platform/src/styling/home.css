@@ -7,13 +7,13 @@
   left: 90%;
   z-index: 100;
   margin-left: -100px;
-  
+
 }
 
 
 
 @media (min-width: 400px) {
-.mobilebtn {
+  .mobilebtn {
     margin-left: -150px;
   }
 }
@@ -63,6 +63,7 @@
   position: fixed;
   top: 0;
 }
+
 .image-blend {
   background-image: url("../icon/plus-icon.png");
   background-blend-mode: overlay;
@@ -78,56 +79,57 @@
   object-fit: cover;
 }
 
-.menu-toggler:hover + label,
-.menu-toggler:hover + label:before,
-.menu-toggler:hover + label:after {
+.menu-toggler:hover+label,
+.menu-toggler:hover+label:before,
+.menu-toggler:hover+label:after {
   background: white;
 }
-.menu-toggler:checked + label {
+
+.menu-toggler:checked+label {
   background: transparent;
 }
 
-.menu-toggler:checked + label:before,
-.menu-toggler:checked + label:after {
+.menu-toggler:checked+label:before,
+.menu-toggler:checked+label:after {
   top: 0;
   width: 40px;
   transform-origin: 50% 50%;
 }
 
-.menu-toggler:checked + label:before {
+.menu-toggler:checked+label:before {
   transform: rotate(45deg) translateY(-15px) translateX(-15px);
 }
 
-.menu-toggler:checked + label:after {
+.menu-toggler:checked+label:after {
   transform: rotate(-45deg);
 }
 
-.menu-toggler:checked ~ ul .menu-item {
+.menu-toggler:checked~ul .menu-item {
   opacity: 1;
 }
 
 
-.menu-toggler:checked ~ ul .menu-item:nth-child(1) {
+.menu-toggler:checked~ul .menu-item:nth-child(1) {
   transform: rotate(270deg) translate(-110px);
 }
 
-.menu-toggler:checked ~ ul .menu-item:nth-child(2) {
+.menu-toggler:checked~ul .menu-item:nth-child(2) {
   transform: rotate(210deg) translateX(-110px);
 }
 
-.menu-toggler:checked ~ ul .menu-item:nth-child(3) {
+.menu-toggler:checked~ul .menu-item:nth-child(3) {
   transform: rotate(150deg) translateX(-110px);
 }
 
-.menu-toggler:checked ~ ul .menu-item:nth-child(4) {
+.menu-toggler:checked~ul .menu-item:nth-child(4) {
   transform: rotate(90deg) translateX(-110px);
 }
 
-.menu-toggler:checked ~ ul .menu-item a {
+.menu-toggler:checked~ul .menu-item a {
   pointer-events: auto;
 }
 
-.menu-toggler + label {
+.menu-toggler+label {
   width: 40px;
   height: 5px;
   display: block;
@@ -144,8 +146,8 @@
   margin: auto;
 }
 
-.menu-toggler + label:before,
-.menu-toggler + label:after {
+.menu-toggler+label:before,
+.menu-toggler+label:after {
   width: 40px;
   height: 5px;
   display: block;
@@ -159,11 +161,11 @@
   left: 0;
 }
 
-.menu-toggler + label:before {
+.menu-toggler+label:before {
   top: 10px;
 }
 
-.menu-toggler + label:after {
+.menu-toggler+label:after {
   top: -10px;
 }
 
@@ -214,6 +216,12 @@
   transition: 0.2s;
 }
 
+.menu-item:nth-child(4) img {
+  position: relative;
+  top: 50%;
+  transform: translateY(43%);
+}
+
 .menu-item a:hover {
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
   color: white;
@@ -260,6 +268,7 @@
   .mobilebtn {
     display: none;
   }
+
   .buttonshowcase2 {
     font-family: "monolisabook";
     cursor: pointer;
@@ -329,6 +338,7 @@
     margin-left: -470px;
   }
 }
+
 @media (min-width: 1100px) {
   .l {
     margin-left: -625px;

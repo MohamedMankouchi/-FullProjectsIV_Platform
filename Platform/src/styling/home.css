@@ -138,6 +138,7 @@
 
 
 .menu-toggler+label {
+  scale: 1.1;
   width: 40px;
   height: 5px;
   display: block;
@@ -155,18 +156,10 @@
   animation: glowAnimation 1s ease-in-out infinite alternate;
 }
 
-@keyframes glowAnimation {
-  0% {
-    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
-  }
-
-  100% {
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
-  }
-}
 
 .menu-toggler+label:before,
 .menu-toggler+label:after {
+    scale: 1.1;
   width: 40px;
   height: 5px;
   display: block;
@@ -180,6 +173,8 @@
   left: 0;
   animation: glowAnimation 1s ease-in-out infinite alternate;
 }
+
+
 
 @keyframes glowAnimation {
   0% {
@@ -249,7 +244,7 @@
   cursor: pointer;
 }
 
-.menu-item:nth-child(4) img {
+.menu-item:nth-child(1) img {
   position: relative;
   top: 50%;
   transform: translateY(43%);

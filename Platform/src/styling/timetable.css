@@ -46,8 +46,6 @@ span.time {
 
 @media (min-width: 800px) {
   .timetable-cover {
-    background-image: url("../images/Group 780.svg");
-    height: 550px;
     margin-top: 10%;
   }
 
@@ -57,25 +55,15 @@ span.time {
 
   .timetable-info {
     margin-top: 2%;
-    height: 320px;
-    width: 668px;
   }
 }
 
 @media (min-width: 1100px) {
   .timetable-cover {
-    background-image: url("../images/Group 801.svg");
-    height: 724px;
-    width: 1000px;
     margin: 6% auto;
   }
-
   .timetable {
     background-image: url("../images/BG-DEKSTOP.png");
-  }
-
-  .timetable-info {
-    width: 750px;
   }
 }
 

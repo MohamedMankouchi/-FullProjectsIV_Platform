@@ -2,6 +2,7 @@
 .desk-header {
   display: none;
 }
+
 .header,
 .headerLive {
   font-family: "monolisabook";
@@ -13,6 +14,7 @@
   letter-spacing: 3px;
   font-weight: normal;
 }
+
 .header ul,
 .headerLive ul {
   margin: 0;
@@ -51,6 +53,7 @@
 .span {
   font-size: 20px;
 }
+
 .header .logo,
 .headerLive .logo {
   display: block;
@@ -125,6 +128,7 @@
   transition: all 0.2s ease-out;
   width: 100%;
 }
+
 .header .menu-icon .navicon:before,
 .headerLive .menu-icon .navicon:before {
   top: 5px;
@@ -142,51 +146,62 @@
   display: none;
 }
 
-.header .menu-btn:checked ~ .menu,
-.headerLive .menu-btn:checked ~ .menu {
+.header .menu-btn:checked~.menu,
+.headerLive .menu-btn:checked~.menu {
   margin-top: 30px;
   max-height: 100vh;
   display: grid;
   justify-content: center;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon,
-.headerLive .menu-btn:checked ~ .menu-icon .navicon {
+.header .menu-btn:checked~.menu-icon .navicon,
+.headerLive .menu-btn:checked~.menu-icon .navicon {
   background: transparent;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:before,
-.headerLive .menu-btn:checked ~ .menu-icon .navicon:before {
+.header .menu-btn:checked~.menu-icon .navicon:before,
+.headerLive .menu-btn:checked~.menu-icon .navicon:before {
   transform: rotate(-45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:after,
-.headerLive .menu-btn:checked ~ .menu-icon .navicon:after {
+.header .menu-btn:checked~.menu-icon .navicon:after,
+.headerLive .menu-btn:checked~.menu-icon .navicon:after {
   transform: rotate(45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after,
-.headerLive .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.headerLive .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after,
+.headerLive .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.headerLive .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
 /* 48em = 768px */
 
 @media (min-width: 1024px) {
+
   .headerLive a,
   .header a {
     background-image: url("../images/buttonsmall.svg");
     width: 150px;
     height: 40px;
   }
+
+  .headerLive a:hover,
+  .header a:hover {
+    background-image: url("../images/buttonsmallHover.svg");
+    width: 150px;
+    height: 40px;
+  }
+
   .header {
     box-shadow: none;
   }
+
   .mobile-header {
     display: none;
   }
+
   .header .logo {
     width: 300px !important;
   }

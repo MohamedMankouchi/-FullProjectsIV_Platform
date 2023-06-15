@@ -18,7 +18,7 @@ export const HamburgerMenu = ({ className }) => {
         <ul className="menu">
           <li>
             <NavLink
-              to={"/home"}
+              to={"/"}
               className={({ isActive }) => (isActive ? "active" : "")}
             >
               HOME
@@ -63,7 +63,7 @@ export const HamburgerMenu = ({ className }) => {
         <ul className="list-nav">
           <li>
             <NavLink
-              to={"/home"}
+              to={"/"}
               className={({ isActive }) => (isActive ? "activeDesk" : "")}
             >
               HOME

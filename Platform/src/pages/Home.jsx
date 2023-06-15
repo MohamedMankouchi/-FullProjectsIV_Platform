@@ -32,11 +32,9 @@ const Home = () => {
 
   return (
     <>
-          <HamburgerMenu />
-
-      {/* {loader ? (
+      {loader ? (
         <Loader />
-      ) : ( */}
+      ) : (
         <Canvas
           camera={{ position: [0, -40, 20] }} // Set new default camera position here
         >
@@ -71,7 +69,7 @@ const Home = () => {
             />
           </mesh>
         </Canvas>
-      {/* )} */}
+       )} 
             <HamburgerMenu />
 
     </>

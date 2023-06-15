@@ -35,7 +35,12 @@ export const Info = () => {
     <div className="infowrapper">
       <HamburgerMenu />
       <div className="info">
-        <div className="info_fs">
+        <motion.div
+          initial={{ x: -350, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ type: "spring", delay: 0.5 }}
+          className="info_fs"
+        >
           <h1>Praktische info</h1>
           <p className="info_text">
             Gepassioneerd door die steeds veranderende geconnecteerde wereld?
@@ -43,9 +48,14 @@ export const Info = () => {
             benieuwd naar wat onze studenten Multimedia & Creatieve Technologie
             verwezenlijkt hebben? Dan ben je hier op het juiste adres!
           </p>
-        </div>
+        </motion.div>
 
-        <div className="neon_img">
+        <motion.div
+          initial={{ x: -450, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ type: "spring", delay: 1 }}
+          className="neon_img"
+        >
           {/* <img src={Neon} alt="" /> */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +81,7 @@ export const Info = () => {
               strokeLinejoin="round"
             />
           </svg>
-        </div>
+        </motion.div>
       </div>
 
       <motion.div

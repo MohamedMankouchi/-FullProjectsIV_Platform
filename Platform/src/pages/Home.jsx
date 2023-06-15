@@ -1,19 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../styling/home.css";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import {
-  OrbitControls,
-  Stars,
-  Lightformer,
-  PerspectiveCamera,
-} from "@react-three/drei";
+import { OrbitControls, Stars, Lightformer, PerspectiveCamera } from "@react-three/drei";
 import { HamburgerMenu } from "../components/HamburgerMenu";
 import { Scrapertest512 } from "../components/Scrapertest512";
 import * as THREE from "three";
 import skyImg from "../assets/backkk.jpg";
 import { Loader } from "../components/Loader";
 import ButtonComponent from "../components/ButtonComponent";
-import { Html } from "@react-three/drei";
+import { Html } from "@react-three/drei"; 
 import Mobilenav from "../components/MobileBtnComp";
 
 //for creating skybox: https://skybox.blockadelabs.com/
@@ -37,31 +32,37 @@ const Home = () => {
 
   return (
     <>
+    <div className="nav"></div>
       <HamburgerMenu />
       {loader ? (
         <Loader />
       ) : (
         <Canvas
-          camera={{ position: [-10, -40, 20] }} // Set new default camera position here
+          camera={{ position: [10, -40, 20] }} // Set new default camera position here
         >
           <Html position={[0, 0, 0]} className="l">
             <ButtonComponent onButtonClick={handleButtonClick} />
           </Html>
-          <Html className="menu">
+
+          <Html 
+           className="menu">
             <Mobilenav onButtonClick={handleButtonClick} />
           </Html>
+
           <ambientLight intensity={1} />
-          {cameraRigEnabled && <CameraRig position={position} />}{" "}
-          {/* Conditionally render CameraRig */}
+
+          {cameraRigEnabled && <CameraRig position={position} />} {/* Conditionally render CameraRig */}
           <pointLight color="blue" position={[10, 10, 10]} />
-          <OrbitControls
-            minDistance={20}
-            minPolarAngle={Math.PI / 4}
-            maxPolarAngle={Math.PI / 1.8}
-            maxDistance={70}
-          />
+          <OrbitControls 
+          minDistance={20}   
+          minPolarAngle={Math.PI / 4}
+          maxPolarAngle={Math.PI / 1.8}
+          maxDistance={70} />
+   
           <Scrapertest512 />
+
           <pointLight color="purple" position={[-10, 0, 10]} intensity={1.5} />
+
           <mesh>
             <sphereGeometry args={[400, 60, 40]} />
             <meshBasicMaterial
@@ -70,7 +71,7 @@ const Home = () => {
             />
           </mesh>
         </Canvas>
-      )}
+       )} 
     </>
   );
 };

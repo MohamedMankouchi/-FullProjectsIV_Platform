@@ -11,18 +11,22 @@ const Mobilenav = ({ onButtonClick }) => {
 
   const handleInfoButtonClick = () => {
     onButtonClick([-30, 12, 0]);
+    setShowMenu(false);
   };
 
   const handleTimetableButtonClick = () => {
     onButtonClick([0, 2, -20]);
+    setShowMenu(false);
   };
 
   const handleLiveShowButtonClick = () => {
     onButtonClick([30, 15, 5]);
+    setShowMenu(false);
   };
 
   const handleShowroomButtonClick = () => {
     onButtonClick([15, 50, 15]);
+    setShowMenu(false);
   };
 
   const handleToggleMenu = () => {
@@ -78,38 +82,3 @@ const Mobilenav = ({ onButtonClick }) => {
 };
 
 export default Mobilenav;
-
-
-/*    <div className="mobile-btn">
-        
-      {/* <div>
-        <button onClick={handleShowAll}>
-          {showButtons ? <img src={showAllImage} alt="Show All" /> : <img src={showAllImage} alt="Show All" />}
-        </button>
-      </div>
-
-      {showButtons && (
-        <>
-          <div>
-            <button className="mobile-home-btn" onClick={() => setPosition([-30, 12, 0])}>Info</button>
-          </div>
-
-          <div>
-            <button className="mobile-home-btn" onClick={() => setPosition([0, 2, -20])}>Timetable</button>
-          </div>
-
-          <div>
-            <button className="mobile-home-btn" onClick={() => setPosition([30, 15, 5])}>Live Show</button>
-          </div>
-
-          <div>
-            <button className="mobile-home-btn" onClick={() => setPosition([15, 50, 15])}>Showroom</button>
-          </div>
-        </>
-      )} 
-
-      
-      
-    
-    </div>
-*/

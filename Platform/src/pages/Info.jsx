@@ -131,13 +131,13 @@ export const Info = () => {
             >
               Google Maps
             </a>{" "}
-            of via de bereikbaarheidsfiches ({" "}
+            of via de bereikbaarheidsfiches (
             <a
               href="https://www.erasmushogeschool.be/sites/ehb/files/inline-files/Kaai-plan.pdf"
               className="linkto"
               target="_blank"
             >
-              plan
+            plan
             </a>{" "}
             of{" "}
             <a

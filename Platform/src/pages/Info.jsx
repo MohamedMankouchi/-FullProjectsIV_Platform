@@ -134,7 +134,7 @@ export const Info = () => {
           <div className="end">
             <p className="wanneer_span">WANNEER?</p>
             <p style={{ textAlign: "left" }}>
-              Zaterdag 24 juni van 10u tot 15u
+              Vrijdag 23 juni 19:00 uur
             </p>
             <div className="btn_container">
               <Link target="_blank" to={"https://www.finalshow.be/livestream"}>
@@ -157,8 +157,8 @@ export const Info = () => {
           <div className="end">
             <p className="wanneer_span">WANNEER?</p>
             <p style={{ textAlign: "left" }}>
-              Zaterdag 24 juni van 10u tot 15u
-            </p>
+            Vrijdag 23 juni van 17u10 tot 21u <br />
+            Zaterdag 24 juni van 10u30 tot 15</p>
             <div className="btn_container">
               <Link to={"https://fp4-showcase.be/"} target="_blank">
                 <button className="btn_redirect">Showcase</button>

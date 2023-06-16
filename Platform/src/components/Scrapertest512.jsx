@@ -6,8 +6,9 @@ Command: npx gltfjsx@6.1.4 Scrapertest512.glb --transform
 import React, { useRef, useState } from 'react'
 import { useGLTF, Html} from '@react-three/drei'
 import '../styling/home.css';
-import livestream from '../images/livestreamhome.jpg'
-import info from '../images/infohome.jpg'
+import livestream from '../images/livestream-billboard.png'
+import info from '../images/info-billboard.png'
+
 
 
 

@@ -193,76 +193,86 @@ export const Info = () => {
       </motion.div>
 
       <div className="location">
-        <h2>Waar je moet zijn</h2>
-        <ul>
-          <li>
-            Onze Final Show en de infodag gaan door op Kaai campus in
-            Anderlecht. Nijverheidskaai.
-          </li>
-          <li>
-            Vind de campus via{" "}
-            <a
-              href="https://www.google.be/maps/place/Erasmushogeschool+Brussel/@50.8419576,4.3209419,17z/data=!4m14!1m7!3m6!1s0x47c3c40f19faf0f9:0x4ef5b683135ecb1e!2sErasmushogeschool+Brussel!8m2!3d50.842239!4d4.322808!16zL20vMDMwNl83!3m5!1s0x47c3c40f19faf0f9:0x4ef5b683135ecb1e!8m2!3d50.842239!4d4.322808!16zL20vMDMwNl83?entry=ttu"
-              className="linkto"
-              target="_blank"
-            >
-              Google Maps
-            </a>{" "}
-            of via de bereikbaarheidsfiches (
-            <a
-              href="https://www.erasmushogeschool.be/sites/ehb/files/inline-files/Kaai-plan.pdf"
-              className="linkto"
-              target="_blank"
-            >
-              plan
-            </a>{" "}
-            of{" "}
-            <a
-              href="https://www.erasmushogeschool.be/sites/ehb/files/inline-files/Kaai-tekst.pdf"
-              className="linkto"
-              target="_blank"
-            >
-              tekst
-            </a>
-            ).
-          </li>
-        </ul>
+        <div className="location_text">
+          <h2>Waar je moet zijn</h2>
+          <ul>
+            <li>
+              Onze Final Show en de infodag gaan door op Kaai campus in
+              Anderlecht. Nijverheidskaai.
+            </li>
+            <li>
+              Vind de campus via{" "}
+              <a
+                href="https://www.google.be/maps/place/Erasmushogeschool+Brussel/@50.8419576,4.3209419,17z/data=!4m14!1m7!3m6!1s0x47c3c40f19faf0f9:0x4ef5b683135ecb1e!2sErasmushogeschool+Brussel!8m2!3d50.842239!4d4.322808!16zL20vMDMwNl83!3m5!1s0x47c3c40f19faf0f9:0x4ef5b683135ecb1e!8m2!3d50.842239!4d4.322808!16zL20vMDMwNl83?entry=ttu"
+                className="linkto"
+                target="_blank"
+              >
+                Google Maps
+              </a>{" "}
+              of via de bereikbaarheidsfiches (
+              <a
+                href="https://www.erasmushogeschool.be/sites/ehb/files/inline-files/Kaai-plan.pdf"
+                className="linkto"
+                target="_blank"
+              >
+                plan
+              </a>{" "}
+              of{" "}
+              <a
+                href="https://www.erasmushogeschool.be/sites/ehb/files/inline-files/Kaai-tekst.pdf"
+                className="linkto"
+                target="_blank"
+              >
+                tekst
+              </a>
+              ).
+            </li>
+          </ul>
+        </div>
+        <div className="map">
+        <iframe src="https://my.atlist.com/map/1d5eef2c-ad5d-44b3-8001-95b426bdc099?share=true" allow="geolocation 'self' https://my.atlist.com" 
+        width="100%" height="200px" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
       </div>
 
       <div className="opleiding">
-        <h2>Over de opleiding</h2>
-        <ul>
-          <li>
-            Wil je leren programmeren en ontwerpen om zelf je websites en apps
-            te maken?
-          </li>
-          <li>
-            Interesse in het maken van 3D games voor Virtual Reality of
-            Metaverse?
-          </li>
+      <div className="opleiding_text">
+          <h2>Over de opleiding</h2>
+          <ul>
+            <li>
+              Wil je leren programmeren en ontwerpen om zelf je websites en apps
+              te maken?
+            </li>
+            <li>
+              Interesse in het maken van 3D games voor Virtual Reality of
+              Metaverse?
+            </li>
 
-          <li>
-            Wil je kunnen vliegen en filmen met drones of een virtuele
-            filmstudio maken?
-          </li>
+            <li>
+              Wil je kunnen vliegen en filmen met drones of een virtuele
+              filmstudio maken?
+            </li>
 
-          <li>
-            Zou je graag Motion Graphics kunnen maken en videobeelden monteren
-            en bewerken?
-          </li>
+            <li>
+              Zou je graag Motion Graphics kunnen maken en videobeelden monteren
+              en bewerken?
+            </li>
 
-          <li>
-            Meer info{" "}
-            <a
-              href="https://www.erasmushogeschool.be/nl/opleidingen/multimedia-creatieve-technologie"
-              className="linkto"
-              target="_blank"
-            >
-              over
-            </a>{" "}
-            de opleiding.
-          </li>
-        </ul>
+            <li>
+              Meer info{" "}
+              <a
+                href="https://www.erasmushogeschool.be/nl/opleidingen/multimedia-creatieve-technologie"
+                className="linkto"
+                target="_blank"
+              >
+                over
+              </a>{" "}
+              de opleiding.
+            </li>
+          </ul>
+        </div>
+        <div className="bg_opleiding">
+        </div>
       </div>
       <Faq />
     </div>

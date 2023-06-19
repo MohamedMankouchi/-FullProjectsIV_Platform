@@ -25,7 +25,7 @@ export function Scrapertest512(props) {
 <group position={[-0.6, 24.94, -7.9]} rotation={[-Math.PI, 0, 3.15]} scale={1.75}>
   <Html className='kk' castShadow receiveShadow occlude="blending" transform>
     <a href="/timetable">
-      <button style={{ width: '250px', height: '120px', cursor:'pointer' }}>
+      <button style={{ width: '250px', height: '500px', cursor:'pointer' }}>
         <img src="https://cdn.discordapp.com/attachments/983660197144854598/1117719543255662643/aliali2.gif" alt="embed" />
       </button>
     </a>

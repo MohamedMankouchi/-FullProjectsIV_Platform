@@ -22,7 +22,7 @@ export const Info = () => {
   };
 
   const item = {
-    hidden: { y: 50, opacity: 0 },
+    hidden: { y: 50, opacity: 0.5 },
     visible: {
       y: 0,
       opacity: 1,

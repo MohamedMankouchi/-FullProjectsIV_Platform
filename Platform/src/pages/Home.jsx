@@ -18,6 +18,13 @@ const Home = () => {
   const [loader, setLoader] = useState(true);
   const [cameraRigEnabled, setCameraRigEnabled] = useState(false); // State variable to control CameraRig activation
 
+
+    const linePoints = [
+    [-5, 0, 0],
+    [5, 0, 0],
+  ];
+
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoader(false);
@@ -41,7 +48,6 @@ const Home = () => {
           camera={{
             position: [30, -20, 45],
           }} // Set new default camera position here
-          fog={new THREE.Fog(0x000000, 10, 100)}
         >
           {/* <Html position={[0, 0, 0]} className="l">
             <ButtonComponent onButtonClick={handleButtonClick} />
@@ -63,6 +69,8 @@ const Home = () => {
             maxDistance={50}
             enablePan={false}
           />
+
+          
 
           <Scrapertest512 />
 

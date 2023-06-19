@@ -38,6 +38,7 @@ const Mobilenav = ({ onButtonClick }) => {
     setShowMenu(!showMenu);
   };
 
+
   return (
     <div className="mobilebtn">
       <nav className={`menu ${showMenu ? 'show' : ''}`}>
@@ -53,7 +54,7 @@ const Mobilenav = ({ onButtonClick }) => {
 
         <ul>
           <li className="menu-item">
-            <a className="fas fa-cat" onClick={handleTimetableButtonClick}>
+            <a className="fas fa-cat" onClick={handleLiveShowButtonClick}>
               <div className="image-blend">
                 <img src={livestream} alt="" />
               </div>
@@ -61,7 +62,7 @@ const Mobilenav = ({ onButtonClick }) => {
           </li>
 
           <li className="menu-item">
-            <a className="fab fa-earlybirds" onClick={handleLiveShowButtonClick}>
+            <a className="fab fa-earlybirds" onClick={handleTimetableButtonClick}>
               <div className="image-blend">
                 <img src={timetable} alt="" />
               </div>

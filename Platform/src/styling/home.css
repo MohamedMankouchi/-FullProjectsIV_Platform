@@ -9,7 +9,7 @@
   padding: 10px 20px;
   font-size: 20px;
   border-radius: 5px;
-    animation: clickme 0.5s ease-in-out infinite alternate;
+   animation: clickme 0.5s ease-in-out infinite alternate;
   
 }
 
@@ -59,13 +59,13 @@ opacity: 100%;
 
 .mobilebtn {
   position: fixed;
-  left: 230px;
+  left: 1%;
   z-index: 100;
   margin-left: -100px;
-  top: 370px;
+  top: 280px;
   background-color: red;
   border: 1px solid red;
-  border-width: 60px;
+  border-width: 50px;
   border-radius: 100px;
   
 
@@ -191,25 +191,40 @@ opacity: 100%;
 
 
 .menu-toggler:checked~ul .menu-item:nth-child(1) {
-  transform: rotate(270deg) translate(-110px);
+  transform: rotate(170deg) translate(-110px);
 }
 
 .menu-toggler:checked~ul .menu-item:nth-child(2) {
-  transform: rotate(210deg) translateX(-110px);
+  transform: rotate(110deg) translateX(-120px);
 }
 
 .menu-toggler:checked~ul .menu-item:nth-child(3) {
-  transform: rotate(150deg) translateX(-110px);
+  transform: rotate(60deg) translateX(-130px) ;
 }
 
 .menu-toggler:checked~ul .menu-item:nth-child(4) {
-  transform: rotate(90deg) translateX(-110px);
+  transform: rotate(10deg) translateX(-145px);
 }
 
 .menu-toggler:checked~ul .menu-item a {
   pointer-events: auto;
 }
+/* icon draaien */
+.menu-item:nth-child(1) a {
+  transform: rotate(190deg);
+}
 
+.menu-item:nth-child(2) a {
+  transform: rotate(-110deg);
+}
+
+.menu-item:nth-child(3) a {
+  transform: rotate(-60deg);
+}
+
+.menu-item:nth-child(4) a {
+  transform: rotate(-10deg);
+}
 
 
 .menu-toggler+label {
@@ -270,21 +285,6 @@ opacity: 100%;
   top: -10px;
 }
 
-.menu-item:nth-child(1) a {
-  transform: rotate(-270deg);
-}
-
-.menu-item:nth-child(2) a {
-  transform: rotate(-210deg);
-}
-
-.menu-item:nth-child(3) a {
-  transform: rotate(-150deg);
-}
-
-.menu-item:nth-child(4) a {
-  transform: rotate(-90deg);
-}
 
 .menu-item {
   position: absolute;

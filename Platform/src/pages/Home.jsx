@@ -33,12 +33,7 @@ const Home = () => {
 
   return (
     <>
-    
       <div className="nav"></div>
-            <div >
-  
-            <Mobilenav onButtonClick={handleButtonClick} />
-            </div>
 
       {/*hamburger menu weg doen.*/}
       <HamburgerMenu />
@@ -50,14 +45,15 @@ const Home = () => {
             position: [30, -20, 45],
           }} // Set new default camera position here
         >
-          <Html position={[0, 0, 0]} className="l">
+  
 
-            <ButtonComponent onButtonClick={handleButtonClick} />
+
+          <Html  >
+            <div className="testmenu">
+  
+            <Mobilenav onButtonClick={handleButtonClick} />
+            </div>
           </Html>
-
-
-
-     
 
           <ambientLight intensity={1} />
 
@@ -72,13 +68,9 @@ const Home = () => {
             enablePan={false}
           />
 
-                <Float speed={5} floatIntensity={2} rotationIntensity={2}>
-        <Lightformer form="ring" color="red" intensity={1} scale={10} position={[-15, 4, -18]} target={[0, 0, 0]} />
-      </Float>
-
           
 
-          {/* <Scrapertest512 /> */}
+          <Scrapertest512 />
 
           <pointLight color="purple" position={[-10, 0, 10]} intensity={1.5} />
 

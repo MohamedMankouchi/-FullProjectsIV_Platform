@@ -10,14 +10,15 @@ import timetable from'../icon/Icon ionic-md-time.png';
 const Mobilenav = ({ onButtonClick }) => {
   const [showMenu, setShowMenu] = useState(false);
 
-  const handleInfoButtonClick = () => {
-    onButtonClick([30, 15, 5]);
+  //liveshow
+    const handleLiveShowButtonClick = () => {
+    onButtonClick([-30, 20, 0]);
     setShowMenu(false);
   };
 
-
-  const handleLiveShowButtonClick = () => {
-    onButtonClick([20, 2, 20]);
+  //info
+      const handleInfoButtonClick = () => {
+    onButtonClick([30, 15, 5]);
     setShowMenu(false);
   };
 
@@ -52,7 +53,7 @@ const Mobilenav = ({ onButtonClick }) => {
 
         <ul>
           <li className="menu-item">
-            <a className="fas fa-cat" onClick={handleLiveShowButtonClick}>
+            <a className="fas fa-cat" onClick={handleTimetableButtonClick}>
               <div className="image-blend">
                 <img src={livestream} alt="" />
               </div>
@@ -60,7 +61,7 @@ const Mobilenav = ({ onButtonClick }) => {
           </li>
 
           <li className="menu-item">
-            <a className="fab fa-earlybirds" onClick={handleTimetableButtonClick}>
+            <a className="fab fa-earlybirds" onClick={handleLiveShowButtonClick}>
               <div className="image-blend">
                 <img src={timetable} alt="" />
               </div>

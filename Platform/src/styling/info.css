@@ -17,6 +17,12 @@
   color: white;
 }
 
+.bgBanner {
+  background-image: url("../images/info_banner.png");
+  background-size: cover;
+  background-position: right;
+}
+
 .infowrapper p {
   font-family: "Helvetica";
   padding: 0px 15px;
@@ -61,17 +67,44 @@ p.info_text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(114, 36, 190, 0.98);
+  -moz-box-shadow: 0px 0px 10px 3px rgba(114, 36, 190, 0.98);
+  box-shadow: 0px 0px 10px 3px rgba(114, 36, 190, 0.98);
+
 }
 
-.container_info img {
+
+.icons_info_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000033;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+
+.icons_info_box img {
+  width: 30px;
+}
+
+.container_info:last-child img {
+  width: 40px;
+}
+
+/* .container_info img {
   position: absolute;
   background-color: #000033;
-  border-radius: 50%;
+  border-radius: 5px;
   padding: 10px;
   top: -3%;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 
 .container_info p {
   line-height: 1.6;
@@ -107,9 +140,20 @@ p.wanneer_span {
   padding: 20px;
 }
 
+.location {
+  background-image: url("../images/background_location.png");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+.location h2 {
+  margin: 0;
+}
+
 .location,
 .opleiding {
-  margin-top: 130px;
+  margin-top: 50px;
   font-family: "Helvetica";
   display: flex;
   justify-content: center;
@@ -221,24 +265,53 @@ p.wanneer_span {
   opacity: 1;
 }
 
+.info_title svg {
+  width: 70%;
+}
+
 /*  */
 @media (min-width: 768px) {
   .container_info {
     width: 40%;
   }
+
+  .info_title svg {
+    width: 50%;
+  }
 }
 
 @media (min-width: 1024px) {
+  .bgBanner {
+    height: 85vh;
+  }
+
+  .icons_info_box {
+    height: 70px;
+    width: 70px;
+  }
+
+  .container_info:last-child img {
+    width: 50px;
+  }
+
+  .info_title svg {
+    width: 80%;
+  }
+
   .faqContainer {
     width: 50%;
   }
 
   .container_info {
     width: 25%;
+    -webkit-box-shadow: 0px 0px 20px 6px rgba(114, 36, 190, 0.98);
+    -moz-box-shadow: 0px 0px 20px 6px rgba(114, 36, 190, 0.98);
+    box-shadow: 0px 0px 20px 6px rgba(114, 36, 190, 0.98);
   }
 
   .infoContainer {
     justify-content: space-around;
+    padding-bottom: 50px;
   }
 
   .container_info img {
@@ -286,7 +359,7 @@ p.wanneer_span {
   }
 
   .neon_img svg {
-    animation: trill 5s linear infinite; 
+    animation: trill 5s linear infinite;
     filter: drop-shadow(0 0 15px #7224be);
   }
 
@@ -299,6 +372,10 @@ p.wanneer_span {
     stroke-linejoin: round;
     filter: drop-shadow(0 0 10px rgb(255, 255, 255));
     animation: neon-line 12s linear infinite;
+  }
+  .location{
+    height: 65vh;
+    background-size: cover;
   }
 }
 

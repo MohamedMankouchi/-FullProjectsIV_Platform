@@ -34,6 +34,8 @@ const Home = () => {
   return (
     <>
       <div className="nav"></div>
+
+      {/*hamburger menu weg doen.*/}
       <HamburgerMenu />
       {loader ? (
         <Loader />
@@ -46,6 +48,7 @@ const Home = () => {
           {/* <Html position={[0, 0, 0]} className="l">
             <ButtonComponent onButtonClick={handleButtonClick} />
           </Html> */}
+
 
           <Html className="menu">
             <Mobilenav onButtonClick={handleButtonClick} />

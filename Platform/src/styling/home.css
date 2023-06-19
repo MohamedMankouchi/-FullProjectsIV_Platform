@@ -65,20 +65,38 @@ opacity: 100%;
 
 .mobilebtn {
   position: fixed;
-  left: 90%;
+  left: 230px;
   z-index: 100;
   margin-left: -100px;
+  top: 370px;
+  background-color: red;
+  border: 1px solid red;
+  border-width: 60px;
+  border-radius: 100px;
   
 
 }
 
-
+*{
+   
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
 
 @media (min-width: 400px) {
   .mobilebtn {
     margin-left: -150px;
   }
 }
+@media (min-height: 1900px) {
+  .mobilebtn {
+    top: 100px;
+  }
+}
+
 
 @media (min-width: 450px) {
   .mobilebtn {
@@ -115,7 +133,7 @@ opacity: 100%;
 .menu-toggler {
   position: relative;
   display: block;
-  top: 0;
+  top: 30%;
   bottom: 0;
   left: 0;
   margin: auto;
@@ -166,11 +184,11 @@ opacity: 100%;
 }
 
 .menu-toggler:checked+label:before {
-  transform: rotate(45deg) translateY(-10px) translateX(-7px);
+  transform: rotate(50deg) translateY(-10px) translateX(-7px);
 }
 
 .menu-toggler:checked+label:after {
-  transform: rotate(-55deg) translateY(-5px) translateX(11px);
+  transform: rotate(-50deg) translateY(-5px) translateX(11px);
 }
 
 .menu-toggler:checked~ul .menu-item {
@@ -355,8 +373,8 @@ opacity: 100%;
  */
 
 @media (min-width: 800px) {
-  .mobilebtn {
-  }
+  /* .mobilebtn {
+  } */
 
   .buttonshowcase2 {
     font-family: "monolisabook";

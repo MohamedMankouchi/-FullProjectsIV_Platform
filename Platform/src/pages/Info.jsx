@@ -8,6 +8,8 @@ import Live from "../images/live-icon.svg";
 import { Faq } from "../components/Faq";
 import { motion } from "framer-motion";
 import Neon from "../images/neon.svg";
+import banner from "../images/info_banner.png";
+
 export const Info = () => {
   const container = {
     hidden: { opacity: 1, scale: 1 },
@@ -72,7 +74,6 @@ export const Info = () => {
 
         </motion.div>
       </div>
-
       <motion.div
         variants={container}
         whileInView="visible"

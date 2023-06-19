@@ -34,9 +34,6 @@ export const Timetable = () => {
       <HamburgerMenu />
 
       <div className="timetable-cover">
-        <div className="tb-poster">
-          <img src={poster1} alt="" />
-        </div>
         <motion.div
           variants={container}
           initial="hidden"

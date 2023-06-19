@@ -6,13 +6,41 @@ import Logo from "../images/logo-icon.svg";
 import Icon from "../images/icon.svg";
 import Live from "../images/live-icon.svg";
 import { Faq } from "../components/Faq";
+import { motion } from "framer-motion";
 import Neon from "../images/neon.svg";
 export const Info = () => {
+  const container = {
+    hidden: { opacity: 1, scale: 1 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { y: 50, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+      },
+    },
+  };
   return (
     <div className="infowrapper">
       <HamburgerMenu />
       <div className="info">
-        <div className="info_fs">
+        <motion.div
+          initial={{ x: -350, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ type: "spring", delay: 0.5 }}
+          className="info_fs"
+        >
           <h1>Praktische info</h1>
           <p className="info_text">
             Gepassioneerd door die steeds veranderende geconnecteerde wereld?
@@ -20,9 +48,14 @@ export const Info = () => {
             benieuwd naar wat onze studenten Multimedia & Creatieve Technologie
             verwezenlijkt hebben? Dan ben je hier op het juiste adres!
           </p>
-        </div>
+        </motion.div>
 
-        <div className="neon_img">
+        <motion.div
+          initial={{ x: -450, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ type: "spring", delay: 1 }}
+          className="neon_img"
+        >
           {/* <img src={Neon} alt="" /> */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -48,11 +81,17 @@ export const Info = () => {
               strokeLinejoin="round"
             />
           </svg>
-        </div>
+        </motion.div>
       </div>
 
-      <div className="infoContainer">
-        <div className="container_info">
+      <motion.div
+        variants={container}
+        whileInView="visible"
+        initial="hidden"
+        className="infoContainer"
+        viewport={{ once: true, amount: 0.7 }}
+      >
+        <motion.div variants={item} className="container_info">
           <img src={Icon} />
           <div>
             <h2>Infodag</h2>
@@ -78,9 +117,9 @@ export const Info = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="container_info">
+        <motion.div variants={item} className="container_info">
           <img src={Live} />
           <div>
             <h2>Livestream</h2>
@@ -95,7 +134,7 @@ export const Info = () => {
           <div className="end">
             <p className="wanneer_span">WANNEER?</p>
             <p style={{ textAlign: "left" }}>
-              Zaterdag 24 juni van 10u tot 15u
+              Vrijdag 23 juni 19:00 uur
             </p>
             <div className="btn_container">
               <Link target="_blank" to={"https://www.finalshow.be/livestream"}>
@@ -103,9 +142,9 @@ export const Info = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="container_info">
+        <motion.div variants={item} className="container_info">
           <img src={Logo} />
           <div>
             <h2>Expo</h2>
@@ -118,16 +157,16 @@ export const Info = () => {
           <div className="end">
             <p className="wanneer_span">WANNEER?</p>
             <p style={{ textAlign: "left" }}>
-              Zaterdag 24 juni van 10u tot 15u
-            </p>
+            Vrijdag 23 juni van 17u10 tot 21u <br />
+            Zaterdag 24 juni van 10u30 tot 15</p>
             <div className="btn_container">
               <Link to={"https://fp4-showcase.be/"} target="_blank">
                 <button className="btn_redirect">Showcase</button>
               </Link>
             </div>{" "}
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       <div className="location">
         <h2>Waar je moet zijn</h2>

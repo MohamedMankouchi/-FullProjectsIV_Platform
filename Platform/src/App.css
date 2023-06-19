@@ -32,6 +32,7 @@ body {
 }
 .loader::after {
   content: "Loading...";
+  margin-top: 20px;
 }
 #root {
   width: 100%;

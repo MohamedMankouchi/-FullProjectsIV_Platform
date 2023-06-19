@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../styling/home.css";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { OrbitControls, Lightformer, PerspectiveCamera } from "@react-three/drei";
+import { OrbitControls, Float, Lightformer } from "@react-three/drei";
 import { HamburgerMenu } from "../components/HamburgerMenu";
 import { Scrapertest512 } from "../components/Scrapertest512";
 import * as THREE from "three";
@@ -33,7 +33,14 @@ const Home = () => {
 
   return (
     <>
+    
       <div className="nav"></div>
+            <div >
+  
+            <Mobilenav onButtonClick={handleButtonClick} />
+            </div>
+
+      {/*hamburger menu weg doen.*/}
       <HamburgerMenu />
       {loader ? (
         <Loader />
@@ -43,13 +50,14 @@ const Home = () => {
             position: [30, -20, 45],
           }} // Set new default camera position here
         >
-          {/* <Html position={[0, 0, 0]} className="l">
-            <ButtonComponent onButtonClick={handleButtonClick} />
-          </Html> */}
+          <Html position={[0, 0, 0]} className="l">
 
-          <Html className="menu">
-            <Mobilenav onButtonClick={handleButtonClick} />
+            <ButtonComponent onButtonClick={handleButtonClick} />
           </Html>
+
+
+
+     
 
           <ambientLight intensity={1} />
 
@@ -64,9 +72,13 @@ const Home = () => {
             enablePan={false}
           />
 
+                <Float speed={5} floatIntensity={2} rotationIntensity={2}>
+        <Lightformer form="ring" color="red" intensity={1} scale={10} position={[-15, 4, -18]} target={[0, 0, 0]} />
+      </Float>
+
           
 
-          <Scrapertest512 />
+          {/* <Scrapertest512 /> */}
 
           <pointLight color="purple" position={[-10, 0, 10]} intensity={1.5} />
 
@@ -95,3 +107,4 @@ function CameraRig({ position: [x, y, z] }) {
 }
 
 export default Home;
+

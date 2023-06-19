@@ -1,22 +1,19 @@
 import React from "react";
 import { Triangle } from "react-loader-spinner";
-
+import Logo from "../images/logo-white.png";
 export const Loader = () => {
   return (
     <div>
-      <Triangle
-        height="100"
-        width="100"
-        color="#A020F0"
-        ariaLabel="triangle-loading"
-        wrapperClass="loader"
-        wrapperStyle={{
+      <div
+        style={{
           justifyContent: "center",
           height: "100vh",
           alignItems: "center",
         }}
-        visible={true}
-      />
+        className="loader"
+      >
+        <img className="logo_loader" src={Logo} />
+      </div>
     </div>
   );
 };

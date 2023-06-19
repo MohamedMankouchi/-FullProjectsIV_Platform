@@ -22,7 +22,14 @@
   font-size: 20px;
   border-radius: 5px;
   animation: clicked 0.5s ease-in-out infinite alternate;
+
+
 }
+html {
+    user-drag: none;
+      /* Disable image dragging */
+      user-select: none;
+      /* Disable text selection */}
 
 @keyframes clickme {
   0% {
@@ -53,9 +60,25 @@
 
 .mobilebtn {
   position: fixed;
-  left: 90%;
+  left: 230px;
   z-index: 100;
   margin-left: -100px;
+  top: 370px;
+  background-color: red;
+  border: 1px solid red;
+  border-width: 60px;
+  border-radius: 100px;
+  
+
+}
+
+*{
+   
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 @media (min-width: 400px) {
@@ -63,6 +86,12 @@
     margin-left: -150px;
   }
 }
+@media (min-height: 1900px) {
+  .mobilebtn {
+    top: 100px;
+  }
+}
+
 
 @media (min-width: 450px) {
   .mobilebtn {
@@ -98,7 +127,7 @@
 .menu-toggler {
   position: relative;
   display: block;
-  top: 0;
+  top: 30%;
   bottom: 0;
   left: 0;
   margin: auto;
@@ -147,12 +176,12 @@
   transform-origin: 50% 50%;
 }
 
-.menu-toggler:checked + label:before {
-  transform: rotate(45deg) translateY(-10px) translateX(-7px);
+.menu-toggler:checked+label:before {
+  transform: rotate(50deg) translateY(-10px) translateX(-7px);
 }
 
-.menu-toggler:checked + label:after {
-  transform: rotate(-55deg) translateY(-5px) translateX(11px);
+.menu-toggler:checked+label:after {
+  transform: rotate(-50deg) translateY(-5px) translateX(11px);
 }
 
 .menu-toggler:checked ~ ul .menu-item {
@@ -328,8 +357,8 @@
  */
 
 @media (min-width: 800px) {
-  .mobilebtn {
-  }
+  /* .mobilebtn {
+  } */
 
   .buttonshowcase2 {
     font-family: "monolisabook";

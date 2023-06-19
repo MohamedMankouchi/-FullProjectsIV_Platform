@@ -19,12 +19,6 @@ const Home = () => {
   const [cameraRigEnabled, setCameraRigEnabled] = useState(false); // State variable to control CameraRig activation
 
 
-    const linePoints = [
-    [-5, 0, 0],
-    [5, 0, 0],
-  ];
-
-
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoader(false);

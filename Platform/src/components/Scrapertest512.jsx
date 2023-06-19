@@ -20,6 +20,19 @@ import clicked from "../icon/Group 805.svg"
 export function Scrapertest512(props) {
   const { nodes, materials } = useGLTF('./models/Scrapertest512-transformed.glb')
 
+  function handleMouseDown(event) {
+    event.preventDefault();
+  }
+
+  function handleMouseMove(event) {
+    event.preventDefault();
+  }
+
+  function handleMouseUp(event) {
+    event.preventDefault();
+  }
+
+
   return (
     <group {...props} dispose={null}>
       <group position={[0, -20, 0]}> 
@@ -29,7 +42,11 @@ export function Scrapertest512(props) {
   <Html className='kk' castShadow receiveShadow occlude="blending" transform>
     <a href="/timetable">
       <button className='imagebuilding'  style={{ width: '250px', height: '500px', cursor:'pointer' }}>
-        <img src="https://cdn.discordapp.com/attachments/983660197144854598/1117719543255662643/aliali2.gif" alt="embed" />
+        <img 
+               onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+        src="https://cdn.discordapp.com/attachments/983660197144854598/1117719543255662643/aliali2.gif" alt="embed" />
       </button>
     </a>  
         <img className='clicked' src={clicked} alt="" />
@@ -112,7 +129,12 @@ export function Scrapertest512(props) {
   <Html className='kk' castShadow receiveShadow occlude="blending" transform>
     <a href="/livestream">
       <button className='imagebuilding' style={{ width: '200px', height: '760px', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor:'pointer' }}>
-        <img  src={livestream} style={{  maxHeight: '100%' }} alt="embed" />
+        <img  src={livestream}
+               onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+        
+         style={{  maxHeight: '100%' }} alt="embed" />
       </button>
     </a>
     <img className='clicked' src={clicked} alt="" />
@@ -175,7 +197,11 @@ export function Scrapertest512(props) {
         <group position={[6.80, 28.9, 0.52]} rotation={[0, 1.56,0]} scale={4.9}>
   <Html className='kk' castShadow receiveShadow occlude="blending" transform>
     <a href="/info">
-      <button className='imagebuilding'  style={{ width: '60px', height: '155px', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor:'pointer' }}>
+      <button className='imagebuilding' 
+       style={{ width: '60px', height: '155px', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor:'pointer' }}
+               onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}>
         <img src={info} style={{  maxHeight: '100%' }} alt="embed" />
       </button>
     </a>

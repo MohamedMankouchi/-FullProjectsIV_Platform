@@ -24,7 +24,13 @@
   border-radius: 5px;
   animation: clicked 0.5s ease-in-out infinite alternate;
 
+
 }
+html {
+    user-drag: none;
+      /* Disable image dragging */
+      user-select: none;
+      /* Disable text selection */}
 
 @keyframes clickme {
   0% {

@@ -345,7 +345,7 @@ p.wanneer_span {
   .infoContainer {
     justify-content: space-around;
     padding-bottom: 50px;
-    margin-top: 30px;
+    margin-top: 0px;
   }
 
   .container_info img {

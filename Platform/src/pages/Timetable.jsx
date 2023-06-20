@@ -46,7 +46,7 @@ export const Timetable = () => {
           <motion.p variants={item}>18:45 Countdown</motion.p>
           <motion.p variants={item}>19:00 Livestream Final Show</motion.p>
           <motion.p variants={item}>20:15 Receptie / Expo</motion.p>
-          <motion.p variants={item}>21:00 Einde livestram</motion.p>
+          <motion.p variants={item}>21:00 Einde livestream</motion.p>
           <motion.h3 variants={item}>Zaterdag 24 juni</motion.h3>
           <motion.p variants={item}>10:00 Start infodag</motion.p>
           <motion.p variants={item}>10:30 Expo</motion.p>

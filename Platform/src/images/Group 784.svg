@@ -22,7 +22,7 @@
     <g transform="matrix(1, 0, 0, 1, 5.5, 117.54)" filter="url(#Path_1246)">
       <path id="Path_1246-2" data-name="Path 1246" d="M1501.468,2151.257h138.112l-.458,480.462-45.179,32.271H1281.579V2213.783l21.776-21.776h167.8Z" transform="translate(-1251.08 -2120.76)" fill="none" stroke="#fff" stroke-width="1"/>
     </g>
-    <text id="TIMETABLE" transform="translate(66 168.035)" fill="#fff" font-size="21" font-family='Pirulen, sans-serif'><tspan x="0" y="0">TIMETABLE</tspan></text>
+    <text id="TIMETABLE" transform="translate(66 168.035)" fill="#fff" font-size="21" font-family='pirulen, sans-serif'><tspan x="0" y="0">TIMETABLE</tspan></text>
     <g id="Group_496" data-name="Group 496" transform="translate(66 174.405)">
       <g id="Group_495" data-name="Group 495" transform="translate(0 0)">
         <g id="Group_494" data-name="Group 494" clip-path="url(#clip-path)">

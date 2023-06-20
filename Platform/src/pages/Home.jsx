@@ -11,6 +11,7 @@ import ButtonComponent from "../components/ButtonComponent";
 import { Html } from "@react-three/drei";
 import Mobilenav from "../components/MobileBtnComp";
 
+
 // for creating skybox: https://skybox.blockadelabs.com/
 
 const Home = () => {
@@ -33,14 +34,17 @@ const Home = () => {
 
   return (
     <>
+     
       <div className="nav"></div>
             <div className="testmenu">
   
             <Mobilenav onButtonClick={handleButtonClick} />
             </div>
-
+     
       {/*hamburger menu weg doen.*/}
-      <HamburgerMenu />
+      {/* <HamburgerMenu /> */}
+
+
       {loader ? (
         <Loader />
       ) : (

@@ -72,12 +72,16 @@ opacity: 100%;
 
 .testmenu {
   position: fixed;
-    top: 95%;
-    left: 95%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
-
+  bottom: -55px;
+  right: -55px;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+ 
   
+  /* border-width: 80px;
+  border-radius: 120%; */
+padding: 40px;
+border-top-left-radius: 60%;
 
 }
 
@@ -198,28 +202,51 @@ opacity: 100%;
 
 
 .menu-toggler:checked~ul .menu-item:nth-child(1) {
-  transform: rotate(270deg) translate(-110px);
+  transform: rotate(95deg) translate(-90px);
  
 }
 
 .menu-toggler:checked~ul .menu-item:nth-child(2) {
-  transform: rotate(210deg) translateX(-110px);
+  transform: rotate(50deg) translateX(-70px);
 }
 
 .menu-toggler:checked~ul .menu-item:nth-child(3) {
-  transform: rotate(150deg) translateX(-110px);
+  transform: rotate(5deg) translateX(-80px);
 }
 
 .menu-toggler:checked~ul .menu-item:nth-child(4) {
-  transform: rotate(90deg) translateX(-110px);
+  transform: rotate(-30deg) translateX(-100px);
   
 }
 
+/* Icon draaien */
+.menu-item:nth-child(1) a {
+  transform: rotate(-275deg);
+  width: 80%;
+  border: none;
+
+}
+
+.menu-item:nth-child(2) a {
+  transform: rotate(-50deg);
+  border: none;
+  width: 80%;
+}
+
+.menu-item:nth-child(3) a {
+  transform: rotate(-5deg);
+  border: none;
+  width: 80%;
+}
+
+.menu-item:nth-child(4) a {
+  transform: rotate(29deg);
+  width: 80%;
+  border: none;
+}
 .menu-toggler:checked~ul .menu-item a {
   pointer-events: auto;
 }
-
-
 
 .menu-toggler+label {
   scale: 1.1;
@@ -279,21 +306,7 @@ opacity: 100%;
   top: -10px;
 }
 
-.menu-item:nth-child(1) a {
-  transform: rotate(-270deg);
-}
 
-.menu-item:nth-child(2) a {
-  transform: rotate(-210deg);
-}
-
-.menu-item:nth-child(3) a {
-  transform: rotate(-150deg);
-}
-
-.menu-item:nth-child(4) a {
-  transform: rotate(-90deg);
-}
 
 .menu-item {
   position: absolute;

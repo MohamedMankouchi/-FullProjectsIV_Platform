@@ -184,7 +184,7 @@ export const Info = () => {
             Vrijdag 23 juni van 17:10 uur tot 21:00 uur <br />
             Zaterdag 24 juni van 10:00 uur tot 15:00 uur</p>
             <div className="btn_container">
-              <Link to={"https://fp4-showcase.be/"} target="_blank">
+              <Link to={"https://multimedia.brussels"} target="_blank">
                 <button className="btn_redirect">Showcase</button>
               </Link>
             </div>{" "}

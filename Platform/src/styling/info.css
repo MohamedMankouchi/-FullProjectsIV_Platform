@@ -264,6 +264,8 @@ p.wanneer_span {
 
 .faqItem h3 {
   margin: 0;
+  font-family: "monolisa";
+  font-size: 18px;
 }
 
 .faqItem .arrow {
@@ -284,6 +286,7 @@ p.wanneer_span {
   margin-top: 10px;
   opacity: 0;
   transition: opacity 0.5s ease;
+  font-size: 16px;
 }
 
 .faqItem.active_faq .answer {
@@ -450,7 +453,7 @@ p.wanneer_span {
   }
 
   .faqContainer {
-    width: 90%;
+    width: 50%;
   }
 }
 

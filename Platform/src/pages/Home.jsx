@@ -52,11 +52,10 @@ const Home = () => {
         >
   
 
-          <ambientLight intensity={1} />
 
           {cameraRigEnabled && <CameraRig position={position} />}{" "}
+
           {/* Conditionally render CameraRig */}
-          <pointLight color="blue" position={[10, 10, 10]} />
           <OrbitControls
             minDistance={20}
             minPolarAngle={Math.PI / 4}
@@ -65,14 +64,19 @@ const Home = () => {
             enablePan={false}
           />
 
-          
-
+          {/* building */}
           <Scrapertest512 />
 
-          <pointLight color="purple" position={[-10, 0, 10]} intensity={1.5} />
+          {/* light */}
+          <ambientLight  intensity={1} />
 
+          <pointLight color="purple" position={[-10, 0, -10]} intensity={2} />
+          <pointLight color="blue" position={[10, 10, 10]} />
+          <pointLight color="blue" intensity={2} position={[10, 0, -10]} />
+          <pointLight color="purple" position={[-10, 0, 10]} intensity={2} />
+
+          {/* background */}
           <mesh>
-            
             <sphereGeometry args={[400, 60, 40]} />
             <meshBasicMaterial
             
@@ -80,6 +84,7 @@ const Home = () => {
               side={THREE.BackSide}
             />
           </mesh>
+
         </Canvas>
       )}
     </>

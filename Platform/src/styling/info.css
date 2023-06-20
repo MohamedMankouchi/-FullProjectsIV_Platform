@@ -21,9 +21,9 @@
   background-image: url("../images/info_banner.png");
   background-size: cover;
   background-position: center;
-  -webkit-box-shadow: 0px 0px 10px 3px rgba(114, 36, 190, 0.98);
+  /* -webkit-box-shadow: 0px 0px 10px 3px rgba(114, 36, 190, 0.98);
   -moz-box-shadow: 0px 0px 10px 3px rgba(114, 36, 190, 0.98);
-  box-shadow: 0px 0px 10px 3px rgba(114, 36, 190, 0.98);
+  box-shadow: 0px 0px 10px 3px rgba(114, 36, 190, 0.98); */
 }
 
 .infowrapper p {
@@ -172,6 +172,7 @@ p.wanneer_span {
   background-repeat: no-repeat;
   background-size: cover;
   width: 90%;
+  opacity: 90%;
 }
 
 .location,

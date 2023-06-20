@@ -8,9 +8,14 @@ import { useLocation, Link, NavLink } from "react-router-dom";
 
 export const HamburgerMenu = ({ className }) => {
   return (
-    <header className={className == "headerLive" ? className : "header" }>
+    <header className={className == "headerLive" ? className : "header"}>
       <div className="mobile-header">
-        <img src={LogoWhite} className="logo" />
+        <a
+          href="https://www.finalshow.be/"
+          style={{ display: "block", background: "none", margin: 0, height: 0 }}
+        >
+          <img src={LogoWhite} className="logo" />
+        </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label className="menu-icon" htmlFor="menu-btn">
           <span className="navicon"></span>
@@ -60,7 +65,17 @@ export const HamburgerMenu = ({ className }) => {
         </ul>
       </div>
       <div className="desk-header">
-        <img src={LogoDeskWhite} className="logo" />
+        <a
+          href="https://www.finalshow.be/"
+          style={{
+            display: "inline-block",
+            background: "none",
+            marginTop: "0px",
+            marginLeft: "0px",
+            }}
+        >
+          <img src={LogoDeskWhite} className="logo" />
+        </a>
         <ul className="list-nav">
           <li>
             <NavLink

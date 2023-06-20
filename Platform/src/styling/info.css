@@ -172,6 +172,7 @@ p.wanneer_span {
   background-repeat: no-repeat;
   background-size: cover;
   width: 90%;
+  opacity: 90%;
 }
 
 .location,

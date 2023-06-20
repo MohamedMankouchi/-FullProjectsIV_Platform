@@ -6,7 +6,7 @@ Command: npx gltfjsx@6.1.4 Scrapertest512.glb --transform
 import React, { useRef, useState } from 'react'
 import { useGLTF, Html} from '@react-three/drei'
 import '../styling/home.css';
-import livestream from '../images/livestream-billboard.png'
+import livestream from '../assets/Bilboard2.gif'
 import info from '../images/info-billboard.png'
 import clickme from "../icon/clickme.svg"
 import clicked from "../icon/Group 805.svg"
@@ -166,6 +166,7 @@ export function Scrapertest512(props) {
 <group rotation={[0, -7.9, 0]} position={[-7.87, 27.15, 2.41]} >
   <Html className='kk' castShadow receiveShadow occlude="blending" transform>
     <a href="/livestream">
+
       <button className='imagebuilding' style={{ width: '200px', height: '760px', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor:'pointer' }}>
         <img  src={livestream}
                onMouseDown={handleMouseDown}

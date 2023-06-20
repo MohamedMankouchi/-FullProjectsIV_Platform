@@ -45,7 +45,7 @@ span.time {
 }
 
 svg {
-  font-family: "pirulen", sans-serif;
+  font-family: "pirulen", sans-serif !important;
 }
 @media (min-width: 800px) {
   .timetable-cover {

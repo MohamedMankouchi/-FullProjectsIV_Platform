@@ -34,26 +34,23 @@ const Home = () => {
   return (
     <>
       <div className="nav"></div>
+            <div className="testmenu">
+  
+            <Mobilenav onButtonClick={handleButtonClick} />
+            </div>
 
       {/*hamburger menu weg doen.*/}
       <HamburgerMenu />
       {loader ? (
         <Loader />
       ) : (
-        <Canvas
+        
+        <Canvas id="c"
           camera={{
             position: [30, -20, 45],
           }} // Set new default camera position here
         >
   
-
-
-          <Html  >
-            <div className="testmenu">
-  
-            <Mobilenav onButtonClick={handleButtonClick} />
-            </div>
-          </Html>
 
           <ambientLight intensity={1} />
 

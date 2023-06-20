@@ -8,7 +8,7 @@ import { useLocation, Link, NavLink } from "react-router-dom";
 
 export const HamburgerMenu = ({ className }) => {
   return (
-    <header className={className == "headerLive" ? className : "header"}>
+    <header className={className == "headerLive" ? className : "header" }>
       <div className="mobile-header">
         <img src={LogoWhite} className="logo" />
         <input className="menu-btn" type="checkbox" id="menu-btn" />
@@ -49,13 +49,13 @@ export const HamburgerMenu = ({ className }) => {
             </NavLink>
           </li>
           <li>
-            {/* <NavLink
+            <NavLink
               className={({ isActive }) => (isActive ? "active" : "")}
               to="https://fp4-showcase.be/"
               target="_blank"
             >
               SHOWCASE
-            </NavLink> */}
+            </NavLink>
           </li>
         </ul>
       </div>
@@ -95,13 +95,13 @@ export const HamburgerMenu = ({ className }) => {
             </NavLink>
           </li>
           <li>
-            {/* <NavLink
+            <NavLink
               className={({ isActive }) => (isActive ? "activeDesk" : "")}
               to="https://fp4-showcase.be/"
               target="_blank"
             >
               SHOWCASE
-            </NavLink> */}
+            </NavLink>
           </li>
         </ul>
       </div>

@@ -34,7 +34,11 @@
 }
 
 .headerLive ul {
-  /*REMOVE WHEN NAV IS DONE*/
+  background-color: transparent;
+}
+
+.headerLive ul {
+  background-color: transparent !important;
 }
 
 .headerLive a,

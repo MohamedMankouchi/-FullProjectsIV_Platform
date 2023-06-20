@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../styling/home.css";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { OrbitControls, Lightformer, PerspectiveCamera } from "@react-three/drei";
+import { OrbitControls, Float, Lightformer } from "@react-three/drei";
 import { HamburgerMenu } from "../components/HamburgerMenu";
 import { Scrapertest512 } from "../components/Scrapertest512";
 import * as THREE from "three";
@@ -45,13 +45,14 @@ const Home = () => {
             position: [30, -20, 45],
           }} // Set new default camera position here
         >
-          {/* <Html position={[0, 0, 0]} className="l">
-            <ButtonComponent onButtonClick={handleButtonClick} />
-          </Html> */}
+  
 
 
-          <Html className="menu">
+          <Html  >
+            <div className="testmenu">
+  
             <Mobilenav onButtonClick={handleButtonClick} />
+            </div>
           </Html>
 
           <ambientLight intensity={1} />
@@ -98,3 +99,4 @@ function CameraRig({ position: [x, y, z] }) {
 }
 
 export default Home;
+

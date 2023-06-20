@@ -41,6 +41,8 @@ export const Livestream = () => {
       <video autoPlay muted playsInline loop id="myVideo">
         <source src={Circ} type="video/mp4" />
       </video>
+
+      {/* komt in logo */}
       <HamburgerMenu className={"headerLive"} />
 
       {stream ? (

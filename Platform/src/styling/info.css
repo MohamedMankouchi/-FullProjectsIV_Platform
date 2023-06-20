@@ -251,25 +251,15 @@ p.wanneer_span {
   font-weight: 600;
 }
 
-/* .faqItem {
-  cursor: pointer;
-  margin-bottom: 20px;
-  overflow: hidden;
-  transition: max-height 0.5s ease;
-  max-height: 60px;
-  border-bottom: 2px solid white;
-  font-family: Helvetica;
-  line-height: 1.6;
-} */
 .faqItem {
   cursor: pointer;
-  /* margin-bottom: 10px; */
   overflow: hidden;
   transition: max-height 0.5s ease;
   max-height: 90px;
   border-bottom: 2px solid white;
   font-family: Helvetica;
   line-height: 1.6;
+  margin-bottom: 15px;
 }
 
 .faqItem h3 {

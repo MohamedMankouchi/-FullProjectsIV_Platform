@@ -1,6 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="419" height="573.732" viewBox="0 0 419 573.732">
   <defs>
-    <style type="text/css">@import url("https://use.typekit.net/lpa1ndp.css")</style>
+    <!-- <style type="text/css">@import url("https://use.typekit.net/lpa1ndp.css")</style> -->
+     <style type="text/css">
+      @import url("https://use.typekit.net/lpa1ndp.css");
+      #TIMETABLE {
+        font-family: 'Pirulen', sans-serif; 
+      }
+    </style>
     <filter id="Path_1246" x="0" y="0" width="419" height="573.732" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="10" result="blur"/>

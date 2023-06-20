@@ -44,8 +44,12 @@ span.time {
   display: none;
 }
 
+svg {
+  font-family: "pirulen", sans-serif;
+}
 @media (min-width: 800px) {
-  .timetable-cover {}
+  .timetable-cover {
+  }
 
   .timetable {
     background-image: url("../images/ipad-bg.png");
@@ -63,5 +67,6 @@ span.time {
 }
 
 @media (min-width: 1600px) {
-  .timetable-info {}
+  .timetable-info {
+  }
 }

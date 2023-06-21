@@ -11,7 +11,7 @@ export const Video = () => {
             <div className="overlaytwo"></div>
             <iframe
               className="frame"
-              src="https://www.youtube-nocookie.com/embed/kmRNWQGVoB4"
+              src="https://www.youtube.com/embed/7tNtU5XFwrU"
               title="YouTube video player"
               frameborder="0"
               allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -24,7 +24,7 @@ export const Video = () => {
             <iframe
               className="chat"
               height="300"
-              src="https://www.youtube.com/live\_chat?v=7UCOwu5wwKQ&amp;embed\_domain=stephensimon.xyz"
+              src="https://www.youtube.com/live_chat?v=7tNtU5XFwrU&embed_domain=finalshow.be"
             ></iframe>
           </div>
         </div>

@@ -38,11 +38,14 @@ export const Livestream = () => {
   };
   return (
     <div className="outerwrapper">
-      <video autoPlay muted playsInline loop id="myVideo">
-        <source src={Circ} type="video/mp4" />
-      </video>
+      {!stream ? (
+        <video autoPlay muted playsInline loop id="myVideo">
+          <source src={Circ} type="video/mp4" />
+        </video>
+      ) : (
+        ""
+      )}
 
-      {/* komt in logo */}
       <HamburgerMenu className={"headerLive"} />
 
       {stream ? (
@@ -53,12 +56,12 @@ export const Livestream = () => {
             <h1>The show begins in...</h1>
             <Countdown
               renderer={renderer}
-              date={new Date("2023-06-23T19:00:00").getTime()}
+              date={Date.now()}
               onComplete={() => setStream(true)}
             />
           </div>
           <div className="media">
-            <p>Be ready on Friday June 23th at 19h00.</p>
+            <p>Be ready on Friday June 23th.</p>
             <div className="media_buttons">
               <Link
                 to={

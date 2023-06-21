@@ -12,7 +12,7 @@ import clicked from "../icon/Group 805.svg"
 import poster from "../images/poster1.png"
 import timetable from "../assets/timetableee.gif"
 import livestream from '../assets/bilboard2.gif'
-
+import showcase from '../assets/square.gif'
 
 
 
@@ -290,12 +290,14 @@ export function Scrapertest512(props) {
                onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}>
-          showcase
+                        <img src={showcase} style={{  maxHeight: '100%' }} alt="embed" />
+
       </button>
+
     </a>
           <img                onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
-        onMouseUp={handleMouseUp} style={{width:'20px'}}  className='clickme' src={clickme} alt="" />
+        onMouseUp={handleMouseUp} style={{width:'50px'}}  className='clickme' src={clickme} alt="" />
                       <button style={{width:'20px'}} class="click-me-button-showcase"><span>showcase</span></button> 
 
 

@@ -14,10 +14,11 @@
   background-position: center;
   object-fit: cover;
   margin-top: 30px;
-  height: 602.28px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .timetable p {
@@ -52,7 +53,7 @@ svg {
   }
 
   .timetable {
-    background-image: url("../images/ipad-bg.png");
+    background-image: url("../images/BG-DEKSTOP.png");
   }
 
   .timetable-info {

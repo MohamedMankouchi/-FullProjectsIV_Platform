@@ -284,7 +284,7 @@ export function Scrapertest512(props) {
 
                 <group  rotation={[0, -1.56,0]} position={[-8, 6.45, -1]}>
                     <Html className='kk' castShadow receiveShadow occlude="blending" transform>
-    <a href="/showcase">
+    <a href="https://www.multimedia.brussels/">
       <button className='imagebuilding' 
        style={{ width: '300px', height: '300px', justifyContent: 'center', alignItems: 'center', cursor:'pointer' }}
                onMouseDown={handleMouseDown}

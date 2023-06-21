@@ -38,9 +38,14 @@ export const Livestream = () => {
   };
   return (
     <div className="outerwrapper">
-      <video autoPlay muted playsInline loop id="myVideo">
-        <source src={Circ} type="video/mp4" />
-      </video>
+      {!stream ? (
+        <video autoPlay muted playsInline loop id="myVideo">
+          <source src={Circ} type="video/mp4" />
+        </video>
+      ) : (
+        ""
+      )}
+
       <HamburgerMenu className={"headerLive"} />
 
       {stream ? (
@@ -51,7 +56,7 @@ export const Livestream = () => {
             <h1>The show begins in...</h1>
             <Countdown
               renderer={renderer}
-              date={new Date("2023-06-23T19:00:00").getTime()}
+              date={Date.now() + 5000}
               onComplete={() => setStream(true)}
             />
           </div>

@@ -52,10 +52,19 @@ const Mobilenav = ({ onButtonClick }) => {
         <label htmlFor="menu-toggler" className="plus-icon"></label>
 
         <ul>
+
+          {/* show */}
           <li className="menu-item">
             <a className="fas fa-cat" onClick={handleLiveShowButtonClick}>
               <div className="image-blend">
                 <img src={livestream} alt="" />
+              </div>
+            </a>
+          </li>
+                    <li className="menu-item">
+            <a className="fas fa-cookie-bite" onClick={handleInfoButtonClick}>
+              <div className="image-blend">
+                <img src={info} alt="" />
               </div>
             </a>
           </li>
@@ -66,24 +75,18 @@ const Mobilenav = ({ onButtonClick }) => {
               onClick={handleTimetableButtonClick}
             >
               <div className="image-blend">
-                <img src={timetable} alt="" />
+                <img src={showcase} alt="" />
               </div>
             </a>
           </li>
-          <li className="menu-item">
-            <a className="fas fa-cookie-bite" onClick={handleInfoButtonClick}>
-              <div className="image-blend">
-                <img src={info} alt="" />
-              </div>
-            </a>
-          </li>
+
           <li className="menu-item">
             <a
               className="fab fa-earlybirds"
               onClick={handleShowroomButtonClick}
             >
               <div className="image-blend">
-                <img src={showcase} alt="" />
+                <img src={timetable} alt="" />
               </div>
             </a>
           </li>

@@ -6,10 +6,11 @@ Command: npx gltfjsx@6.1.4 Scrapertest512.glb --transform
 import React, { useRef, useState } from 'react'
 import { useGLTF, Html} from '@react-three/drei'
 import '../styling/home.css';
-import livestream from '../images/livestream-billboard.png'
+import livestream from '../assets/Bilboard2.gif'
 import info from '../images/info-billboard.png'
 import clickme from "../icon/clickme.svg"
 import clicked from "../icon/Group 805.svg"
+import poster from "../images/poster1.png"
 
 
 
@@ -38,6 +39,9 @@ export function Scrapertest512(props) {
       <group position={[0, -20, 0]}> 
 
 
+      
+
+
 <group position={[-0.6, 24.94, -7.9]} rotation={[-Math.PI, 0, 3.15]} scale={1.75}>
   <Html className='kk' castShadow receiveShadow occlude="blending" transform>
     <a href="/timetable">
@@ -49,8 +53,10 @@ export function Scrapertest512(props) {
         src="https://cdn.discordapp.com/attachments/983660197144854598/1117719543255662643/aliali2.gif" alt="embed" />
       </button>
     </a>  
-        <img className='clicked' src={clicked} alt="" />
-          <img className='clickme' src={clickme} alt="" />
+        {/* <img className='clicked' src={clicked} alt="" />
+          <img style={{width:'50px'}}  className='clickme' src={clickme} alt="" />
+  <button class="click-me-button"><span>Click Me</span></button> */}
+
 
   </Html>
 </group>
@@ -74,6 +80,38 @@ export function Scrapertest512(props) {
         <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_C_1_KB3D_CBP_CyberBunny_A_PowerExhaustA.geometry} material={materials.KB3D_CBP_SteelGalvanGray} position={[-0.38, 47.04, 0.15]} />
         <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_C_1_KB3D_CBP_CyberBunny_A_Hvac.geometry} material={materials.KB3D_CBP_SteelGalvanGray} position={[-7.56, 24.14, -2.84]} />
         <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_C_1_KB3D_CBP_CyberBunny_A_Hologram.geometry} material={materials.KB3D_CBP_AtlasHoloC} position={[-0.54, 27.42, 7.86]} />
+        
+        <group position={[-0.54, 27.42, 7.96]} scale={1.75}>
+
+          <Html className='kk' castShadow receiveShadow occlude="blending" transform>
+        <img style={{ 
+          width: '180px', 
+          height: '540px',
+          objectFit: 'cover',
+      }}
+               onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+        src={poster} alt="embed" />
+        <h1
+        style={{
+          position: 'absolute',
+          top: '40%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          color: 'white',
+          fontSize: '25px',
+          fontFamily: 'Arial',
+          fontWeight: 'bold',
+          textShadow: '2px 2px 4px #000000',
+          zIndex: '100',
+          
+        }}
+        >finalshow</h1>
+
+
+  </Html>
+</group>
         <group position={[-2.02, 47.16, -1.75]}>
           
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_Helipad.geometry} material={materials.KB3D_CBP_LightsC} />
@@ -98,7 +136,7 @@ export function Scrapertest512(props) {
             <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BuildingB_6.geometry} material={materials.KB3D_CBP_SteelPanelWhiteD} />
             <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BuildingB_7.geometry} material={materials.KB3D_CBP_SteelPanelWhiteDFlat} />
             <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BuildingB_8.geometry} material={materials.KB3D_CBP_SteelPanelWhiteDirt} />
-          </group>xx
+          </group>
         <group position={[-0.55, 21.76, -0.16]}>
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BuildingA.geometry} material={materials.KB3D_CBP_AtlasDetails} />
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BuildingA_1.geometry} material={materials.KB3D_CBP_ConcreteLeaks} />
@@ -125,9 +163,10 @@ export function Scrapertest512(props) {
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardN_1.geometry} material={materials.KB3D_CBP_SteelPanelWhiteD} />
         </group>
 
-<group rotation={[0, -7.9, 0]} position={[-7.87, 27.15, 2.41]}>
+<group rotation={[0, -7.9, 0]} position={[-7.87, 27.15, 2.41]} >
   <Html className='kk' castShadow receiveShadow occlude="blending" transform>
     <a href="/livestream">
+
       <button className='imagebuilding' style={{ width: '200px', height: '760px', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor:'pointer' }}>
         <img  src={livestream}
                onMouseDown={handleMouseDown}
@@ -137,8 +176,8 @@ export function Scrapertest512(props) {
          style={{  maxHeight: '100%' }} alt="embed" />
       </button>
     </a>
-    <img className='clicked' src={clicked} alt="" />
-          <img className='clickme' src={clickme} alt="" />
+    {/* <img className='clicked' src={clicked} alt="" />
+          <img style={{width:'100px'}}  className='clickme' src={clickme} alt="" /> */}
 
   </Html>
 </group>
@@ -205,8 +244,8 @@ export function Scrapertest512(props) {
         <img src={info} style={{  maxHeight: '100%' }} alt="embed" />
       </button>
     </a>
-        <img className='clicked' src={clicked} alt="" />
-          <img className='clickme' src={clickme} alt="" />
+        {/* <img style={{width:'20px'}} className='clicked' src={clicked} alt="" />
+          <img style={{width:'20px'}}  className='clickme' src={clickme} alt="" /> */}
 
   </Html>
 </group>

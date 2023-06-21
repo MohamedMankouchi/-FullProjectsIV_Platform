@@ -61,7 +61,7 @@ export const Livestream = () => {
             />
           </div>
           <div className="media">
-            <p>Be ready on Friday June 23th.</p>
+            <p>Be ready on Friday June 23th at 19h00.</p>
             <div className="media_buttons">
               <Link
                 to={

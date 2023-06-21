@@ -11,6 +11,7 @@ import ButtonComponent from "../components/ButtonComponent";
 import { Html } from "@react-three/drei";
 import Mobilenav from "../components/MobileBtnComp";
 
+
 // for creating skybox: https://skybox.blockadelabs.com/
 
 const Home = () => {
@@ -33,14 +34,17 @@ const Home = () => {
 
   return (
     <>
+     
       <div className="nav"></div>
             <div className="testmenu">
   
             <Mobilenav onButtonClick={handleButtonClick} />
             </div>
-
+     
       {/*hamburger menu weg doen.*/}
-      <HamburgerMenu />
+      {/* <HamburgerMenu /> */}
+
+
       {loader ? (
         <Loader />
       ) : (
@@ -52,11 +56,10 @@ const Home = () => {
         >
   
 
-          <ambientLight intensity={1} />
 
           {cameraRigEnabled && <CameraRig position={position} />}{" "}
+
           {/* Conditionally render CameraRig */}
-          <pointLight color="blue" position={[10, 10, 10]} />
           <OrbitControls
             minDistance={20}
             minPolarAngle={Math.PI / 4}
@@ -65,14 +68,19 @@ const Home = () => {
             enablePan={false}
           />
 
-          
-
+          {/* building */}
           <Scrapertest512 />
 
-          <pointLight color="purple" position={[-10, 0, 10]} intensity={1.5} />
+          {/* light */}
+          <ambientLight  intensity={1} />
 
+          <pointLight color="purple" position={[-10, 0, -10]} intensity={2} />
+          <pointLight color="blue" position={[10, 10, 10]} />
+          <pointLight color="blue" intensity={2} position={[10, 0, -10]} />
+          <pointLight color="purple" position={[-10, 0, 10]} intensity={2} />
+
+          {/* background */}
           <mesh>
-            
             <sphereGeometry args={[400, 60, 40]} />
             <meshBasicMaterial
             
@@ -80,6 +88,7 @@ const Home = () => {
               side={THREE.BackSide}
             />
           </mesh>
+
         </Canvas>
       )}
     </>

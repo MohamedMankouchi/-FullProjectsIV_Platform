@@ -26,15 +26,15 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 background-color: #000;
-                color: rgb(255, 88, 186);
-                padding: 15px 50px;
+                color: rgb(255, 255, 255);
+                padding: 15px 60px;
                 border: none;
                 font-size: 24px;
                 font-family: 'Courier New', monospace;
                 text-transform: uppercase;
                 overflow: hidden;
                 cursor: pointer;
-                box-shadow: 0 0 10px rgb(255, 0, 191);
+                box-shadow: 0 0 20px rgb(111, 202, 149);
         }
     
         .click-me-button span {
@@ -43,10 +43,79 @@
             white-space: nowrap;
         }
 
+.click-me-button-info{
+                position: fixed;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  background-color: #000;
+                  color: rgb(255, 255, 255);
+                  padding: 5px 20px;
+                  border: none;
+                  font-size: 10px;
+                  font-family: 'Courier New', monospace;
+                  text-transform: uppercase;
+                  overflow: hidden;
+                  cursor: pointer;
+                  box-shadow: 0 0 10px rgb(30, 255, 0);
+
+}
+
+    .click-me-button-info span {
+      display: inline-block;
+      animation: moveText 2s infinite;
+      white-space: nowrap;
+    }
+
+    .click-me-button-livestream{
+            position: fixed;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              background-color: #000;
+              color: rgb(255, 255, 255);
+              padding: 15px 10px;
+              border: none;
+              font-size: 40px;
+              font-family: 'Courier New', monospace;
+              text-transform: uppercase;
+              overflow: hidden;
+              cursor: pointer;
+              box-shadow: 0 0 20px rgb(111, 202, 149);
+    }
+                .click-me-button-livestream span {
+                  display: inline-block;
+                  animation: moveText 2s infinite;
+                  white-space: nowrap;
+                }
+
+        .click-me-button-showcase {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: #000;
+          color: rgb(255, 255, 255);
+          padding: 15px 150px;
+          border: none;
+          font-size: 38px;
+          font-family: 'Courier New', monospace;
+          text-transform: uppercase;
+          overflow: hidden;
+          cursor: pointer;
+          box-shadow: 0 0 20px rgb(111, 202, 149);
+        }
+    
+        .click-me-button-showcase span {
+          display: inline-block;
+          animation: moveText 2s infinite;
+          white-space: nowrap;
+        }
+
 .clickme{
   position: fixed;
-  top: 90%;
-  left: 70%;
+  top: 63%;
+  left: 80%;
   transform: translate(-50%, -50%);
   z-index: 100;
   padding: 10px 20px;
@@ -58,7 +127,7 @@
 
 .clicked {
   position: fixed;
-  top:82%;
+  top:50%;
   left: 61%;
   transform: translate(-50%, -50%);
   z-index: 100;

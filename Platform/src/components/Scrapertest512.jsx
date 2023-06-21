@@ -4,13 +4,16 @@ Command: npx gltfjsx@6.1.4 Scrapertest512.glb --transform
 */
 
 import React, { useRef, useState } from 'react'
-import { useGLTF, Html} from '@react-three/drei'
+import { useGLTF, Html, Billboard} from '@react-three/drei'
 import '../styling/home.css';
-import livestream from '../assets/Bilboard2.gif'
-import info from '../images/info-billboard.png'
-import clickme from "../icon/clickme.svg"
+import info from '../assets/Billboard.gif'
+import clickme from "../icon/hand-pointer.png"
 import clicked from "../icon/Group 805.svg"
 import poster from "../images/poster1.png"
+import timetable from "../assets/timetableee.gif"
+import livestream from '../assets/bilboard2.gif'
+
+
 
 
 
@@ -45,17 +48,24 @@ export function Scrapertest512(props) {
 <group position={[-0.6, 24.94, -7.9]} rotation={[-Math.PI, 0, 3.15]} scale={1.75}>
   <Html className='kk' castShadow receiveShadow occlude="blending" transform>
     <a href="/timetable">
-      <button className='imagebuilding'  style={{ width: '250px', height: '500px', cursor:'pointer' }}>
+      <button className='imagebuilding'  style={{ width: '249px', height: '500px', 
+      cursor:'pointer',
+      objectFit: 'cover'
+
+       }}>
         <img 
                onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
-        src="https://cdn.discordapp.com/attachments/983660197144854598/1117719543255662643/aliali2.gif" alt="embed" />
+        src={timetable} alt="embed" />
       </button>
     </a>  
-        {/* <img className='clicked' src={clicked} alt="" />
-          <img style={{width:'50px'}}  className='clickme' src={clickme} alt="" />
-  <button class="click-me-button"><span>Click Me</span></button> */}
+          <img 
+                         onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+          style={{width:'50px'}}  className='clickme' src={clickme} alt="" />
+  <button class="click-me-button"><span>timetable</span></button> 
 
 
   </Html>
@@ -176,8 +186,11 @@ export function Scrapertest512(props) {
          style={{  maxHeight: '100%' }} alt="embed" />
       </button>
     </a>
-    {/* <img className='clicked' src={clicked} alt="" />
-          <img style={{width:'100px'}}  className='clickme' src={clickme} alt="" /> */}
+          {/* <img                onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp} style={{width:'100px'}}  className='clickme' src={clickme} alt="" /> */}
+            <button class="click-me-button-livestream"><span>livestream</span></button> 
+
 
   </Html>
 </group>
@@ -244,8 +257,11 @@ export function Scrapertest512(props) {
         <img src={info} style={{  maxHeight: '100%' }} alt="embed" />
       </button>
     </a>
-        {/* <img style={{width:'20px'}} className='clicked' src={clicked} alt="" />
-          <img style={{width:'20px'}}  className='clickme' src={clickme} alt="" /> */}
+          <img                 onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp} style={{width:'20px'}}  className='clickme' src={clickme} alt="" />
+                      <button class="click-me-button-info"><span>info</span></button> 
+
 
   </Html>
 </group>
@@ -277,8 +293,11 @@ export function Scrapertest512(props) {
           showcase
       </button>
     </a>
-        {/* <img style={{width:'20px'}} className='clicked' src={clicked} alt="" />
-          <img style={{width:'20px'}}  className='clickme' src={clickme} alt="" /> */}
+          <img                onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp} style={{width:'20px'}}  className='clickme' src={clickme} alt="" />
+                      <button style={{width:'20px'}} class="click-me-button-showcase"><span>showcase</span></button> 
+
 
   </Html>
           

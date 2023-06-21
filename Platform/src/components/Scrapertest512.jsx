@@ -13,6 +13,9 @@ import poster from "../images/poster1.png"
 import timetable from "../assets/timetableee.gif"
 import livestream from '../assets/bilboard2.gif'
 import showcase from '../assets/square.gif'
+import clickmerood from "../icon/Icon awesome-hand-pointer.png"
+
+
 
 
 
@@ -297,7 +300,7 @@ export function Scrapertest512(props) {
     </a>
           <img                onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
-        onMouseUp={handleMouseUp} style={{width:'50px'}}  className='clickme' src={clickme} alt="" />
+        onMouseUp={handleMouseUp} style={{width:'60px', top:'70%'}}  className='clickme' src={clickmerood} alt="" />
                       <button style={{width:'20px'}} class="click-me-button-showcase"><span>showcase</span></button> 
 
 

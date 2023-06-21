@@ -24,7 +24,7 @@ export const Video = () => {
             <iframe
               className="chat"
               height="300"
-              src="https://www.youtube.com/live_chat?v=7tNtU5XFwrU&embed_domain=finalshow.be/livestream"
+              src="https://www.youtube.com/live_chat?v=7tNtU5XFwrU&embed_domain=www.finalshow.be"
             ></iframe>
           </div>
         </div>

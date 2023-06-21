@@ -12,11 +12,11 @@
     
         @keyframes moveText {
           0% {
-              transform: translateX(-100%);
+              transform: translateX(-150%);
             }
           
             100% {
-              transform: translateX(100%);
+              transform: translateX(150%);
             }
         }
     
@@ -39,7 +39,7 @@
     
         .click-me-button span {
           display: inline-block;
-            animation: moveText 2s infinite;
+            animation: moveText 3s infinite;
             white-space: nowrap;
         }
 
@@ -63,9 +63,19 @@
 
     .click-me-button-info span {
       display: inline-block;
-      animation: moveText 2s infinite;
+      animation: moveTextInfo 2s infinite;
       white-space: nowrap;
     }
+
+                @keyframes moveTextInfo {
+                  0% {
+                    transform: translateX(-200%);
+                  }
+        
+                  100% {
+                    transform: translateX(200%);
+                  }
+                }
 
     .click-me-button-livestream{
             position: fixed;
@@ -85,10 +95,19 @@
     }
                 .click-me-button-livestream span {
                   display: inline-block;
-                  animation: moveText 2s infinite;
+                  animation: moveTextLive 3s infinite;
                   white-space: nowrap;
                 }
 
+                                @keyframes moveTextLive {
+                                  0% {
+                                    transform: translateX(-100%);
+                                  }
+                
+                                  100% {
+                                    transform: translateX(100%);
+                                  }
+                                }
         .click-me-button-showcase {
           position: fixed;
           top: 50%;
@@ -108,9 +127,10 @@
     
         .click-me-button-showcase span {
           display: inline-block;
-          animation: moveText 2s infinite;
+          animation: moveText 3s infinite;
           white-space: nowrap;
         }
+        
 
 .clickme{
   position: fixed;

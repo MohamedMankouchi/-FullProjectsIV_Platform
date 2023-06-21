@@ -11,7 +11,7 @@ import clickme from "../icon/hand-pointer.png"
 import clicked from "../icon/Group 805.svg"
 import poster from "../images/poster1.png"
 import timetable from "../assets/timetableee.gif"
-import livestream from '../assets/bilboard2.gif'
+import livestream from '../assets/Bilboard2.gif'
 import showcase from '../assets/square.gif'
 import clickmerood from "../icon/Icon awesome-hand-pointer.png"
 

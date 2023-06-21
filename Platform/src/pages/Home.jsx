@@ -11,14 +11,12 @@ import ButtonComponent from "../components/ButtonComponent";
 import { Html } from "@react-three/drei";
 import Mobilenav from "../components/MobileBtnComp";
 
-
 // for creating skybox: https://skybox.blockadelabs.com/
 
 const Home = () => {
   const [position, setPosition] = useState([-8.6, -5, 55]);
   const [loader, setLoader] = useState(true);
   const [cameraRigEnabled, setCameraRigEnabled] = useState(false); // State variable to control CameraRig activation
-
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -34,31 +32,26 @@ const Home = () => {
 
   return (
     <>
-     
-      <div className="nav"></div>
-            <div className="testmenu">
-  
-            <Mobilenav onButtonClick={handleButtonClick} />
-            </div>
-     
+      {!loader ? (
+        <div className="testmenu">
+          <Mobilenav onButtonClick={handleButtonClick} />
+        </div>
+      ) : (
+        ""
+      )}
       {/*hamburger menu weg doen.*/}
       {/* <HamburgerMenu /> */}
-
 
       {loader ? (
         <Loader />
       ) : (
-        
-        <Canvas id="c"
+        <Canvas
+          id="c"
           camera={{
             position: [30, -20, 45],
           }} // Set new default camera position here
         >
-  
-
-
           {cameraRigEnabled && <CameraRig position={position} />}{" "}
-
           {/* Conditionally render CameraRig */}
           <OrbitControls
             minDistance={20}
@@ -67,28 +60,22 @@ const Home = () => {
             maxDistance={50}
             enablePan={false}
           />
-
           {/* building */}
           <Scrapertest512 />
-
           {/* light */}
-          <ambientLight  intensity={1} />
-
+          <ambientLight intensity={1} />
           <pointLight color="purple" position={[-10, 0, -10]} intensity={2} />
           <pointLight color="blue" position={[10, 10, 10]} />
           <pointLight color="blue" intensity={2} position={[10, 0, -10]} />
           <pointLight color="purple" position={[-10, 0, 10]} intensity={2} />
-
           {/* background */}
           <mesh>
             <sphereGeometry args={[400, 60, 40]} />
             <meshBasicMaterial
-            
               map={new THREE.TextureLoader().load(skyImg)}
               side={THREE.BackSide}
             />
           </mesh>
-
         </Canvas>
       )}
     </>
@@ -105,4 +92,3 @@ function CameraRig({ position: [x, y, z] }) {
 }
 
 export default Home;
-

@@ -1,28 +1,27 @@
 import React, { useEffect, useState } from "react";
 import "../styling/home.css";
-import showAllImage from '../icon/plus-icon.png';
-import showcase from'../icon/livestreamicon.png';
-import info from'../icon/infoicon.png';
-import livestream from'../icon/logoicon.png';
-import timetable from'../icon/Icon ionic-md-time.png';
-
+import showAllImage from "../icon/plus-icon.png";
+import showcase from "../icon/livestreamicon.png";
+import info from "../icon/infoicon.png";
+import livestream from "../icon/logoicon.png";
+import timetable from "../icon/Icon ionic-md-time.png";
 
 const Mobilenav = ({ onButtonClick }) => {
   const [showMenu, setShowMenu] = useState(false);
 
   //info
-      const handleInfoButtonClick = () => {
+  const handleInfoButtonClick = () => {
     onButtonClick([30, 15, 5]);
     setShowMenu(false);
   };
 
-//show
+  //show
   const handleLiveShowButtonClick = () => {
-        onButtonClick([-30, -20, 0]);
+    onButtonClick([-30, -20, 0]);
 
     setShowMenu(false);
   };
-//time
+  //time
   const handleTimetableButtonClick = () => {
     onButtonClick([-30, 10, 0]);
 
@@ -32,7 +31,7 @@ const Mobilenav = ({ onButtonClick }) => {
   //zoom + draai y + draai x
   //livestream
   const handleShowroomButtonClick = () => {
-        onButtonClick([0, 15, -30]);
+    onButtonClick([0, 15, -30]);
 
     setShowMenu(false);
   };
@@ -42,17 +41,15 @@ const Mobilenav = ({ onButtonClick }) => {
   };
 
   return (
-    <div className="mobilebtn">
-      <nav className={`menu ${showMenu ? 'show' : ''}`}>
+    <div className="mobilebtn" id="mobilebtn">
+      <nav className={`menu ${showMenu ? "show" : ""}`}>
         <input
           checked={showMenu}
           className="menu-toggler"
           type="checkbox"
           onChange={handleToggleMenu}
         />
-        <label htmlFor="menu-toggler" className="plus-icon">
-          
-        </label>
+        <label htmlFor="menu-toggler" className="plus-icon"></label>
 
         <ul>
           <li className="menu-item">
@@ -64,13 +61,16 @@ const Mobilenav = ({ onButtonClick }) => {
           </li>
 
           <li className="menu-item">
-            <a className="fab fa-earlybirds" onClick={handleTimetableButtonClick}>
+            <a
+              className="fab fa-earlybirds"
+              onClick={handleTimetableButtonClick}
+            >
               <div className="image-blend">
                 <img src={timetable} alt="" />
               </div>
             </a>
           </li>
-                    <li className="menu-item">
+          <li className="menu-item">
             <a className="fas fa-cookie-bite" onClick={handleInfoButtonClick}>
               <div className="image-blend">
                 <img src={info} alt="" />
@@ -78,7 +78,10 @@ const Mobilenav = ({ onButtonClick }) => {
             </a>
           </li>
           <li className="menu-item">
-            <a className="fab fa-earlybirds" onClick={handleShowroomButtonClick}>
+            <a
+              className="fab fa-earlybirds"
+              onClick={handleShowroomButtonClick}
+            >
               <div className="image-blend">
                 <img src={showcase} alt="" />
               </div>
@@ -91,8 +94,6 @@ const Mobilenav = ({ onButtonClick }) => {
 };
 
 export default Mobilenav;
-
-
 
 /*    <div className="mobile-btn">
         

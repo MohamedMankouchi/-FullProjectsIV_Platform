@@ -265,6 +265,25 @@ export function Scrapertest512(props) {
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardF_2.geometry} material={materials.KB3D_CBP_SteelOld} />
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardF_3.geometry} material={materials.KB3D_CBP_SteelPanelWhiteD} />
         </group>
+
+                <group  rotation={[0, -1.56,0]} position={[-8, 6.45, -1]}>
+                    <Html className='kk' castShadow receiveShadow occlude="blending" transform>
+    <a href="/showcase">
+      <button className='imagebuilding' 
+       style={{ width: '300px', height: '300px', justifyContent: 'center', alignItems: 'center', cursor:'pointer' }}
+               onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}>
+          showcase
+      </button>
+    </a>
+        {/* <img style={{width:'20px'}} className='clicked' src={clicked} alt="" />
+          <img style={{width:'20px'}}  className='clickme' src={clickme} alt="" /> */}
+
+  </Html>
+          
+        </group>
+
         <group position={[-7.52, 5.45, -3.24]}>
           
           <mesh geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardE.geometry} material={materials.KB3D_CBP_AtlasDGBannerB} />

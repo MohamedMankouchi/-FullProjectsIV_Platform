@@ -16,22 +16,23 @@ const Mobilenav = ({ onButtonClick }) => {
     setShowMenu(false);
   };
 
-
+//show
   const handleLiveShowButtonClick = () => {
-        onButtonClick([0, -20, -20]);
+        onButtonClick([-30, -20, 0]);
 
     setShowMenu(false);
   };
-//showcase
+//time
   const handleTimetableButtonClick = () => {
-    onButtonClick([0, -10, 30]);
+    onButtonClick([-30, 10, 0]);
 
     setShowMenu(false);
   };
 
+  //zoom + draai y + draai x
   //livestream
   const handleShowroomButtonClick = () => {
-        onButtonClick([30, 15, 5]);
+        onButtonClick([0, 15, -30]);
 
     setShowMenu(false);
   };

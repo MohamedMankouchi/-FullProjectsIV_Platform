@@ -56,12 +56,12 @@ export const Livestream = () => {
             <h1>The show begins in...</h1>
             <Countdown
               renderer={renderer}
-              date={Date.now() + 5000}
+              date={new Date("2023-06-23T19:00:00").getTime()}
               onComplete={() => setStream(true)}
             />
           </div>
           <div className="media">
-            <p>Be ready on Friday June 23th at 19h00.</p>
+            <p>Be ready on Friday June 23th.</p>
             <div className="media_buttons">
               <Link
                 to={

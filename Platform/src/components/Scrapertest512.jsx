@@ -414,7 +414,7 @@ export function Scrapertest512(props) {
                   alt="embed"
                 />
               </button>
-              <a href="/info">
+              <a href="/livestream">
                 {" "}
                 <button
                   onMouseDown={handleMouseDown}

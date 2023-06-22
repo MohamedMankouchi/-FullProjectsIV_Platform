@@ -6,8 +6,12 @@
   min-height: 100vh;
   color: white;
   font-family: "monolisabook";
+  
 }
-
+.timetable {
+  height: 100%;
+  overflow-y: hidden;
+}
 .timetable-cover {
   background-image: url("../images/Group 784.svg");
   background-repeat: no-repeat;

@@ -322,11 +322,11 @@ img {
 }
 
 .menu-toggler:checked+label:before {
-  transform: rotate(45deg) translateY(-10px) translateX(-7px);
+  transform: rotate(50deg) translateY(-10px) translateX(-7px);
 }
 
 .menu-toggler:checked+label:after {
-  transform: rotate(-55deg) translateY(-5px) translateX(11px);
+  transform: rotate(-50deg) translateY(-5px) translateX(11px);
 }
 
 .menu-toggler:checked~ul .menu-item {
@@ -335,6 +335,11 @@ img {
 
 
 .menu-toggler:checked~ul .menu-item:nth-child(1) {
+  transform: rotate(95deg) translate(-90px);
+
+}
+
+.menu-toggler:hover~ul .menu-item:nth-child(1) {
   transform: rotate(95deg) translate(-90px);
 
 }

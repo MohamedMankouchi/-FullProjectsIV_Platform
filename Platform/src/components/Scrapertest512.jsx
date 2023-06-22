@@ -15,7 +15,7 @@ import livestream from "../assets/Bilboard2.gif";
 import showcase from "../assets/square.gif";
 import clickmerood from "../icon/Icon awesome-hand-pointer.png";
 import wasabi from "../images/logo-wasabi.png";
-import smartschool from "../images/logo-smartschool.png";
+import smartschool from "../images/logo-smartschool2.png";
 import springbok from "../images/logo-springbok.png";
 
 export function Scrapertest512(props) {
@@ -577,6 +577,7 @@ export function Scrapertest512(props) {
           </Html>
         </group>
 
+        {/* hier */}
         <group position={[6.42, 28.9, 0.52]}>
           <mesh
             geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardG.geometry}
@@ -595,7 +596,61 @@ export function Scrapertest512(props) {
             material={materials.KB3D_CBP_SteelPanelWhiteD}
           />
         </group>
-        <group position={[6.41, 5.63, 1.81]}>
+
+        {/* springbock */}
+        <group rotation={[0, 1.6, 0]} position={[6.41, 5.3, -1.81]}>
+          <Html
+            className="kk"
+            castShadow
+            receiveShadow
+            occlude="blending"
+            transform
+          >
+            <a href="https://www.springbokagency.com/" target="_blank">
+              <img
+                style={{
+                  width: "200px",
+                  height: "40px",
+                  objectFit: "cover",
+                  background: "black",
+                }}
+                onMouseDown={handleMouseDown}
+                onMouseMove={handleMouseMove}
+                onMouseUp={handleMouseUp}
+                src={springbok}
+                alt="embed"
+              />
+            </a>
+          </Html>
+        </group>
+        {/* smartschool */}
+        <group rotation={[0, 1.6, 0]} position={[6.41, 6.9, 1.81]}>
+          <Html
+            className="kk"
+            castShadow
+            receiveShadow
+            occlude="blending"
+            transform
+          >
+            <a href="https://www.smartschool.be/" target="_blank">
+              <img
+                style={{
+                  width: "200px",
+                  height: "40px",
+                  objectFit: "cover",
+                  background: "black",
+                }}
+                onMouseDown={handleMouseDown}
+                onMouseMove={handleMouseMove}
+                onMouseUp={handleMouseUp}
+                src={smartschool}
+                alt="embed"
+              />
+            </a>
+          </Html>
+        </group>
+
+        {/* <group position={[6.41, 5.63, 1.81]}>
           <mesh
             geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardF.geometry}
             material={materials.KB3D_CBP_AtlasDGBannerB}
@@ -612,7 +667,7 @@ export function Scrapertest512(props) {
             geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardF_3.geometry}
             material={materials.KB3D_CBP_SteelPanelWhiteD}
           />
-        </group>
+        </group> */}
 
         <group rotation={[0, -1.56, 0]} position={[-8, 6.45, -1]}>
           <Html
@@ -679,7 +734,7 @@ export function Scrapertest512(props) {
           />
         </group>
 
-        <group position={[6.22, 7.23, -1.44]}>
+        {/* <group position={[6.22, 7.23, -1.44]}>
           <mesh
             geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardD.geometry}
             material={materials.KB3D_CBP_AtlasDGBannerB}
@@ -688,7 +743,7 @@ export function Scrapertest512(props) {
             geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardD_1.geometry}
             material={materials.KB3D_CBP_SteelPanelWhiteD}
           />
-        </group>
+        </group> */}
         <group position={[-7.31, 7.34, -2.44]}>
           <mesh
             geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardC.geometry}
@@ -868,9 +923,11 @@ export function Scrapertest512(props) {
             material={materials.KB3D_CBP_WireTrim}
           />
         </group>
+
+        {/* wasabi */}
         <group
           rotation={[0, 1.6, 0]}
-          position={[7.41, 10.74, 0.75]}
+          position={[6.3, 10.5, -2]}
           style={{ borderRadius: "50%" }}
         >
           <Html
@@ -880,22 +937,25 @@ export function Scrapertest512(props) {
             occlude="blending"
             transform
           >
-            <img
-              style={{
-                width: "200px",
-                height: "200px",
-                objectFit: "cover",
-              }}
-              onMouseDown={handleMouseDown}
-              onMouseMove={handleMouseMove}
-              onMouseUp={handleMouseUp}
-              src={wasabi}
-              alt="embed"
-            />
+            <a href="https://www.studiowasabi.be/" target="_blank">
+              <img
+                style={{
+                  width: "150px",
+                  height: "150px",
+                  objectFit: "cover",
+                  background: "black",
+                }}
+                onMouseDown={handleMouseDown}
+                onMouseMove={handleMouseMove}
+                onMouseUp={handleMouseUp}
+                src={wasabi}
+                alt="embed"
+              />
+            </a>
           </Html>
         </group>
 
-        <group position={[6.41, 10.74, 0.75]}>
+        <group position={[6.41, 10.74, 2.45]}>
           <mesh
             geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardJ.geometry}
             material={materials.KB3D_CBP_AtlasDGBannerA}

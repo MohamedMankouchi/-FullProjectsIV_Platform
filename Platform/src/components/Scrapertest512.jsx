@@ -62,13 +62,17 @@ export function Scrapertest512(props) {
         onMouseUp={handleMouseUp}
         src={timetable} alt="embed" />
       </button>
-    </a>  
+          <a href="/timetable"> 
+
           <img 
                          onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
           style={{width:'50px'}}  className='clickme' src={clickme} alt="" />
   <button class="click-me-button"><span>timetable</span></button> 
+  </a>
+    </a>  
+      
 
 
   </Html>
@@ -188,11 +192,13 @@ export function Scrapertest512(props) {
         
          style={{  maxHeight: '100%' }} alt="embed" />
       </button>
+          <a href="/info"> <button  class="click-me-button-livestream"><span>livestream</span></button> 
+          </a>
+
     </a>
           {/* <img                onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp} style={{width:'100px'}}  className='clickme' src={clickme} alt="" /> */}
-            <button class="click-me-button-livestream"><span>livestream</span></button> 
 
 
   </Html>
@@ -259,11 +265,12 @@ export function Scrapertest512(props) {
         onMouseUp={handleMouseUp}>
         <img src={info} style={{  maxHeight: '100%' }} alt="embed" />
       </button>
-    </a>
-          <img                 onMouseDown={handleMouseDown}
+                <img                 onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp} style={{width:'20px'}}  className='clickme' src={clickme} alt="" />
-                      <button class="click-me-button-info"><span>info</span></button> 
+                    <a href="/info">  <button   class="click-me-button-info"><span>info</span></button> </a>
+
+    </a>
 
 
   </Html>
@@ -296,13 +303,14 @@ export function Scrapertest512(props) {
                         <img src={showcase} style={{  maxHeight: '100%' }} alt="embed" />
 
       </button>
-
-    </a>
-          <img                onMouseDown={handleMouseDown}
+                <img                onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp} style={{width:'60px', top:'70%'}}  className='clickme' src={clickmerood} alt="" />
                       <button style={{width:'20px'}} class="click-me-button-showcase"><span>showcase</span></button> 
 
+
+
+    </a>
 
   </Html>
           

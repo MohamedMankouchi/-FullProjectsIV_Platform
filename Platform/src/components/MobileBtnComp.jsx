@@ -52,7 +52,6 @@ const Mobilenav = ({ onButtonClick }) => {
         <label htmlFor="menu-toggler" className="plus-icon"></label>
 
         <ul>
-
           {/* show */}
           <li className="menu-item">
             <a className="fas fa-cat" onClick={handleLiveShowButtonClick}>
@@ -61,7 +60,7 @@ const Mobilenav = ({ onButtonClick }) => {
               </div>
             </a>
           </li>
-                    <li className="menu-item">
+          <li className="menu-item">
             <a className="fas fa-cookie-bite" onClick={handleInfoButtonClick}>
               <div className="image-blend">
                 <img src={info} alt="" />

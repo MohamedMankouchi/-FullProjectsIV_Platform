@@ -2,11 +2,11 @@
 
 @keyframes moveText {
   0% {
-    transform: translateX(-150%);
+    transform: translateX(150%);
   }
 
   100% {
-    transform: translateX(150%);
+    transform: translateX(-150%);
   }
 }
 
@@ -53,17 +53,17 @@
 
 .click-me-button-info span {
   display: inline-block;
-  animation: moveTextInfo 2s infinite;
+  animation: moveTextInfo 3s infinite;
   white-space: nowrap;
 }
 
 @keyframes moveTextInfo {
   0% {
-    transform: translateX(-200%);
+    transform: translateX(160%);
   }
 
   100% {
-    transform: translateX(200%);
+    transform: translateX(-160%);
   }
 }
 
@@ -86,17 +86,17 @@
 
 .click-me-button-livestream span {
   display: inline-block;
-  animation: moveTextLive 3s infinite;
+  animation: moveTextLive 6s infinite;
   white-space: nowrap;
 }
 
 @keyframes moveTextLive {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(100%);
   }
 
   100% {
-    transform: translateX(100%);
+    transform: translateX(-30%);
   }
 }
 
@@ -125,11 +125,11 @@
 
 @keyframes moveTextShow {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(100%);
   }
 
   100% {
-    transform: translateX(100%);
+    transform: translateX(-190%);
   }
 }
 

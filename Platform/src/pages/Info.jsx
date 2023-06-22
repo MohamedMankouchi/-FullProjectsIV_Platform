@@ -9,6 +9,9 @@ import { Faq } from "../components/Faq";
 import { motion } from "framer-motion";
 import Neon from "../images/neon.svg";
 import banner from "../images/info_banner.png";
+import LogoSmartschool from "../images/logo-smartschool.png";
+import LogoSpringbok from "../images/logo-springbok.png";
+import LogoStudioWasabi from "../images/logo-wasabi.png";
 
 export const Info = () => {
   const container = {
@@ -350,6 +353,23 @@ export const Info = () => {
         <div className="bg_opleiding"></div>
       </div>
       <Faq />
+      <div className="sponsors">
+        <div className="logo-smartschool">
+          <a href="https://www.smartschool.be/" target="_blank">
+            <img src={LogoSmartschool} alt="" />
+          </a>
+        </div>
+        <div className="logo-springbok">
+          <a href="https://www.springbokagency.com/" target="_blank">
+            <img src={LogoSpringbok} alt="" />
+          </a>
+        </div>
+        <div className="logo-studioWasabi">
+          <a href="https://www.studiowasabi.be/" target="_blank">
+            <img src={LogoStudioWasabi} alt="" />
+          </a>
+        </div>
+      </div>
     </div>
   );
 };

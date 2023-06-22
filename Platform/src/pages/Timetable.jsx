@@ -31,7 +31,7 @@ export const Timetable = () => {
   };
   return (
     <div className="timetable">
-      <HamburgerMenu className={"headerLive"}/>
+      <HamburgerMenu className={"headerLive"} />
 
       <div className="timetable-cover">
         <motion.div

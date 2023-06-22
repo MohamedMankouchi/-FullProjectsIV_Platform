@@ -14,6 +14,9 @@ import timetable from "../assets/timetableee.gif";
 import livestream from "../assets/Bilboard2.gif";
 import showcase from "../assets/square.gif";
 import clickmerood from "../icon/Icon awesome-hand-pointer.png";
+import wasabi from "../images/logo-wasabi.png";
+import smartschool from "../images/logo-smartschool.png";
+import springbok from "../images/logo-springbok.png";
 
 export function Scrapertest512(props) {
   const { nodes, materials } = useGLTF(
@@ -865,6 +868,33 @@ export function Scrapertest512(props) {
             material={materials.KB3D_CBP_WireTrim}
           />
         </group>
+        <group
+          rotation={[0, 1.6, 0]}
+          position={[7.41, 10.74, 0.75]}
+          style={{ borderRadius: "50%" }}
+        >
+          <Html
+            className="kk"
+            castShadow
+            receiveShadow
+            occlude="blending"
+            transform
+          >
+            <img
+              style={{
+                width: "200px",
+                height: "200px",
+                objectFit: "cover",
+              }}
+              onMouseDown={handleMouseDown}
+              onMouseMove={handleMouseMove}
+              onMouseUp={handleMouseUp}
+              src={wasabi}
+              alt="embed"
+            />
+          </Html>
+        </group>
+
         <group position={[6.41, 10.74, 0.75]}>
           <mesh
             geometry={nodes.KB3D_CBP_CyberBunny_A_BillboardJ.geometry}

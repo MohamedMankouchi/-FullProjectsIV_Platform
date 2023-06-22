@@ -113,14 +113,13 @@ export function Scrapertest512(props) {
         <h1
         style={{
           position: 'absolute',
-          top: '40%',
+          top: '22%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
           color: 'white',
-          fontSize: '25px',
-          fontFamily: 'Arial',
+          fontSize: '18px',
+          fontFamily: 'pirulen',
           fontWeight: 'bold',
-          textShadow: '2px 2px 4px #000000',
           zIndex: '100',
           
         }}

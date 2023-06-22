@@ -498,9 +498,8 @@ p.wanneer_span {
 
   .faqItem {
     margin-bottom: 10px;
-    max-height: 50px;
+    max-height: 60px;
     border-bottom: 2px solid white;
-
     line-height: 1.6;
   }
 

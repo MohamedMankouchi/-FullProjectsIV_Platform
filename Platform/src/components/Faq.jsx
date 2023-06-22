@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Arrow from '../icon/arrow-dropright.png'
 const Faq = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -38,7 +38,7 @@ const Faq = () => {
           key={index}
           onClick={() => toggleQuestion(index)}
         >
-          <span className="arrow">&rarr;</span>
+          <span className="arrow"><img src={Arrow} alt="" /></span>
           <h3>{item.question}</h3>
           <p className={`answer ${activeIndex === index ? "show" : ""}`}>
             {item.answer}

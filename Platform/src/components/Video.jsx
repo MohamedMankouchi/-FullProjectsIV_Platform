@@ -1,6 +1,7 @@
 import React from "react";
 import "../styling/video.css";
 import Overlay from "../images/overlay.svg";
+import { Link } from "react-router-dom";
 export const Video = () => {
   return (
     <div className="bigOne">
@@ -11,7 +12,7 @@ export const Video = () => {
             <div className="overlaytwo"></div>
             <iframe
               className="frame"
-              src="https://www.youtube.com/embed/7tNtU5XFwrU"
+              src="https://www.youtube.com/embed/fWcJGtS2fgM"
               title="YouTube video player"
               frameborder="0"
               allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -24,13 +25,19 @@ export const Video = () => {
             <iframe
               className="chat"
               height="300"
-              src="https://www.youtube.com/live_chat?v=7tNtU5XFwrU&embed_domain=www.finalshow.be"
+              src="https://www.youtube.com/live_chat?v=fWcJGtS2fgM&embed_domain=www.finalshow.be"
             ></iframe>
           </div>
         </div>
       </div>
       <button className="btnYoutube" style={{ marginTop: "55px" }}>
-        Watch on Youtube
+        <a
+          style={{ textDecoration: "none", color: "white" }}
+          href="https://www.youtube.com/embed/fWcJGtS2fgM"
+          target="_blank"
+        >
+          Watch on Youtube
+        </a>
       </button>
     </div>
   );

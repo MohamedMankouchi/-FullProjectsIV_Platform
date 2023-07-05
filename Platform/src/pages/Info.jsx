@@ -302,13 +302,22 @@ export const Info = () => {
           </ul>
         </div>
         <div className="map">
-          <iframe
+          {/* <iframe
             src="https://my.atlist.com/map/1d5eef2c-ad5d-44b3-8001-95b426bdc099?share=true"
             allow="geolocation 'self' https://my.atlist.com"
             width="100%"
             height="200px"
             frameborder="0"
             scrolling="no"
+            allowfullscreen
+          ></iframe> */}
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.401854977767!2d4.32023307686864!3d50.84224235907648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c40f19faf0f9%3A0x4ef5b683135ecb1e!2sErasmushogeschool%20Brussel!5e0!3m2!1snl!2sbe!4v1688540434699!5m2!1snl!2sbe"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            width="100%"
+            height="200px"
+            frameborder="0"
             allowfullscreen
           ></iframe>
         </div>
